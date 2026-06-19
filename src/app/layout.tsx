@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -60,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className="dark scroll-smooth">
+    <html lang="tr" className="dark scroll-smooth" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -70,7 +71,9 @@ export default function RootLayout({
       <body
         className={`${cormorant.variable} ${inter.variable} ${jetbrains.variable} antialiased bg-ink text-text min-h-screen`}
       >
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

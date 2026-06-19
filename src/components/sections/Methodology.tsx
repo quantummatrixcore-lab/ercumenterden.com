@@ -1,5 +1,8 @@
 "use client";
 
+import { useLanguage } from "@/context/LanguageContext";
+import VerificationSimulator from "./VerificationSimulator";
+
 interface Step {
   code: string;
   title: string;
@@ -8,26 +11,8 @@ interface Step {
 }
 
 export default function Methodology() {
-  const steps: Step[] = [
-    {
-      code: "01 / DATA_LAYER",
-      title: "Decentralized MRV (dMRV)",
-      description: "Fiziksel dünya emisyonlarını ve varlıklarını uydu radar verileri (SAR) ve IoT telemetrisi ile anlık olarak toplar, TLS Notary ve akıllı sözleşmeler aracılığıyla değiştirilemez olarak doğrular.",
-      details: ["Uzay Gözlem Uyduları (SAR/Multispectral)", "IoT Donanım Cihaz Entegrasyonu", "Blokzincir Zaman Damgalaması"],
-    },
-    {
-      code: "02 / SAFETY_LAYER",
-      title: "Model Behavior Security (MBS)",
-      description: "Yapay zeka modellerinin karar alma anomalilerini, veri sızıntılarını ve etik ihlallerini gerçek zamanlı token analizi ve guardrail filtreleriyle denetleyerek yasal uyum skoru üretir.",
-      details: ["EU AI Act & KVKK Parametreleri", "Milisaniyelik Güvenlik Filtreleri", "Anomali ve Halüsinasyon Tespiti"],
-    },
-    {
-      code: "03 / RISK_LAYER",
-      title: "Agentic Stress Simulator",
-      description: "Girişimlerin iş modellerini, pazar koşullarını, nakit akış tahminlerini ve kod tabanlarını 12 farklı otonom ajan üzerinden simüle ederek pazar uyumsuzluğu risklerini sayısallaştırır.",
-      details: ["12 Farklı Otonom Rol Simülasyonu", "Monte Carlo & Oyun Teorisi Testleri", "Zayıf Nokta ve Risk Modellemesi"],
-    },
-  ];
+  const { t } = useLanguage();
+  const steps: Step[] = t("methodology.steps") || [];
 
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 border-b border-rule">
@@ -35,13 +20,13 @@ export default function Methodology() {
         {/* Header */}
         <div className="space-y-4 max-w-2xl">
           <div className="font-mono-custom text-[10px] tracking-[0.2em] uppercase text-platin">
-            Teknik Yaklaşım
+            {t("methodology.eyebrow")}
           </div>
           <h2 className="font-display text-4xl md:text-5xl text-platin leading-[1.1]">
-            Doğrulama Metodolojisi
+            {t("methodology.title")}
           </h2>
           <p className="font-sans text-sm text-text-dim leading-relaxed">
-            Hantal, subjektif ve manipülasyona açık klasik denetimler yerine; matematiksel, gerçek zamanlı ve otonom doğrulama protokollerini kullanıyorum.
+            {t("methodology.description")}
           </p>
         </div>
 
@@ -80,6 +65,9 @@ export default function Methodology() {
             </div>
           ))}
         </div>
+
+        {/* Verification Terminal Simulator */}
+        <VerificationSimulator />
       </div>
     </section>
   );

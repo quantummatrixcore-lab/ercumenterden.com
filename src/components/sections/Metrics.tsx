@@ -1,11 +1,15 @@
 "use client";
 
+import { useLanguage } from "@/context/LanguageContext";
+
 export default function Metrics() {
+  const { t } = useLanguage();
+  
   const items = [
-    { value: "18+", label: "Yıl Deneyim", desc: "Teknoloji & Girişimcilik" },
-    { value: "5", label: "Aktif Platform", desc: "Venture Studio Ekosistemi" },
-    { value: "3", label: "Doğrulama Girişimi", desc: "Karbon, Güvenlik, Risk" },
-    { value: "2026", label: "EU Mevzuat Odağı", desc: "CBAM & AI Act Uyumlu" },
+    { value: t("metrics.experience_val"), label: t("metrics.experience_lbl"), desc: t("metrics.experience_desc") },
+    { value: t("metrics.platforms_val"), label: t("metrics.platforms_lbl"), desc: t("metrics.platforms_desc") },
+    { value: t("metrics.clusters_val"), label: t("metrics.clusters_lbl"), desc: t("metrics.clusters_desc") },
+    { value: t("metrics.compliance_val"), label: t("metrics.compliance_lbl"), desc: t("metrics.compliance_desc") },
   ];
 
   return (

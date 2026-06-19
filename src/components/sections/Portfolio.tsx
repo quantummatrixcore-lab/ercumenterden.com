@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Project {
   slug: string;
@@ -13,33 +14,35 @@ interface Project {
 }
 
 export default function Portfolio() {
+  const { t } = useLanguage();
+
   const trustLayer: Project[] = [
     {
       slug: "carbon-eco-market",
       name: "CarbonEcoMarket",
-      badge: "Doğrulama",
-      status: "EU CBAM 2026 Uyumlu",
-      description: "TİM (Türkiye İhracatçılar Meclisi) Pilot Ortaklığı & 14 Büyük İhracatçı LOI Anlaşması. Blockchain ve uydu verisi tabanlı dMRV teknolojisi ile karbon emisyonlarının dijital olarak ölçülmesi ve doğrulanması altyapısı.",
+      badge: t("portfolio.projects.carbon.badge"),
+      status: t("portfolio.projects.carbon.status"),
+      description: t("portfolio.projects.carbon.desc"),
       techLabel: "INFRA: DECENTRALIZED MRV",
       tags: ["Carbon Credits", "EU CBAM", "Satellite Data", "Web3"],
     },
     {
       slug: "alpar-ai",
       name: "AlparAI",
-      badge: "Güvenlik",
-      status: "Stripe for AI Safety",
-      description: "5 Milyon+ API Request Denetimi & FinTech Sektöründe 3 Büyük Pilot Entegrasyon. Yapay zeka modellerinin davranışlarını izleyen, EU AI Act ve KVKK uyumlu anlık güven skoru API katmanı.",
+      badge: t("portfolio.projects.alpar.badge"),
+      status: t("portfolio.projects.alpar.status"),
+      description: t("portfolio.projects.alpar.desc"),
       techLabel: "API: AI SAFETY PLATFORM",
-      tags: ["LLM Guardrails", "EU AI Act", "KVKK Uyum", "Realtime Audits"],
+      tags: ["LLM Guardrails", "EU AI Act", "Realtime Audits"],
     },
     {
       slug: "decas-hub",
       name: "DecasHub",
-      badge: "Risk Simülasyonu",
-      status: "12 Ajanlı Stres Testi",
-      description: "50+ Girişim Simülasyon Test Raporu & Yatırım Komiteleri Kabulü. Yeni girişimlerin pazar, operasyonel ve finansal risklerini test eden 12 otonom ajanlı stres testi simülatörü.",
+      badge: t("portfolio.projects.decas.badge"),
+      status: t("portfolio.projects.decas.status"),
+      description: t("portfolio.projects.decas.desc"),
       techLabel: "CORE: STARTUP SIMULATOR",
-      tags: ["Multi-Agent OS", "Risk Modeling", "Market Stress Test", "Agentic AI"],
+      tags: ["Multi-Agent OS", "Risk Modeling", "Agentic AI"],
     },
   ];
 
@@ -47,18 +50,18 @@ export default function Portfolio() {
     {
       slug: "lionexia",
       name: "Lionexia",
-      badge: "Altyapı",
-      status: "Dijital Dönüşüm Motoru",
-      description: "Tüm ekosistem girişimlerinin bulut altyapısını, otonom operasyonlarını ve yazılım geliştirme süreçlerini hızlandıran dijital dönüşüm omurgası.",
+      badge: t("portfolio.projects.lionexia.badge"),
+      status: t("portfolio.projects.lionexia.status"),
+      description: t("portfolio.projects.lionexia.desc"),
       techLabel: "ENGINE: OPERATIONS & SAAS",
       tags: ["Cloud Infra", "SaaS Core", "DevOps Pipeline", "NextJS"],
     },
     {
       slug: "fresh-rider",
       name: "FreshRider",
-      badge: "Fiziksel IoT",
-      status: "Akıllı Kask Otomatı",
-      description: "Mikromobilite kullanıcıları için akıllı IoT donanım entegrasyonu sunan ve fiziksel temizlik & sterilizasyon işlemlerini doğrulayan otomat sistemi.",
+      badge: t("portfolio.projects.fresh.badge"),
+      status: t("portfolio.projects.fresh.status"),
+      description: t("portfolio.projects.fresh.desc"),
       techLabel: "HARDWARE: IoT AUTOMATION",
       tags: ["IoT Hardware", "Micro-Mobility", "CleanTech", "Automation"],
     },
@@ -78,7 +81,7 @@ export default function Portfolio() {
           <span className="font-mono-custom text-[9px] tracking-[0.16em] uppercase px-2 py-0.5 border border-rule bg-surface-3 text-platin-dim">
             {project.badge}
           </span>
-          <span className="font-mono-custom text-[10px] tracking-[0.1em] text-text-faint">
+          <span className="font-mono-custom text-[10px] tracking-[0.15em] text-text-faint">
             {project.status}
           </span>
         </div>
@@ -119,13 +122,13 @@ export default function Portfolio() {
         {/* Header */}
         <div className="space-y-4 max-w-2xl">
           <div className="font-mono-custom text-[10px] tracking-[0.2em] uppercase text-platin">
-            Venture Studio Portfolio
+            {t("portfolio.eyebrow")}
           </div>
           <h2 className="font-display text-4xl md:text-5xl text-platin leading-[1.1]">
-            Platform Modülleri
+            {t("portfolio.title")}
           </h2>
           <p className="font-sans text-sm text-text-dim leading-relaxed">
-            Doğrulama ve altyapı odağında kurgulanmış, birbirini besleyen ve küresel standartlara entegre çalışan girişim kümeleri.
+            {t("portfolio.description")}
           </p>
         </div>
 
@@ -133,7 +136,7 @@ export default function Portfolio() {
         <div className="space-y-6">
           <div className="border-b border-rule pb-2">
             <h3 className="font-mono-custom text-xs tracking-[0.18em] uppercase text-platin font-medium">
-              01 — Doğrulama & Güven Katmanı
+              {t("portfolio.cluster_1")}
             </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -147,7 +150,7 @@ export default function Portfolio() {
         <div className="space-y-6">
           <div className="border-b border-rule pb-2">
             <h3 className="font-mono-custom text-xs tracking-[0.18em] uppercase text-platin font-medium">
-              02 — Operasyon & Altyapı Katmanı
+              {t("portfolio.cluster_2")}
             </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -1,7 +1,10 @@
 "use client";
 
+import { useLanguage } from "@/context/LanguageContext";
+
 export default function ThesisBand() {
-  const texts = Array(8).fill("Ölçülemeyen şeye güvenilmez.");
+  const { t } = useLanguage();
+  const texts = Array(8).fill(t("thesis_band.text"));
 
   return (
     <section className="w-full overflow-hidden border-y border-rule py-6 bg-surface-1/30">

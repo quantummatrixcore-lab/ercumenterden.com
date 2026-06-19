@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="w-full border-t border-rule bg-ink py-12 mt-auto">
@@ -11,10 +13,10 @@ export default function Footer() {
         {/* Brand Mark */}
         <div className="flex flex-col items-center md:items-start space-y-1">
           <span className="font-display text-xl text-platin tracking-wide">
-            Ercüment Erden
+            {t("footer.title")}
           </span>
           <span className="font-mono-custom text-[8px] tracking-[0.2em] uppercase text-text-faint">
-            Verification Infrastructure Architect
+            {t("footer.subtitle")}
           </span>
         </div>
 
@@ -29,10 +31,10 @@ export default function Footer() {
             LinkedIn
           </a>
           <Link href="/insights" className="text-text-dim hover:text-platin transition-colors">
-            İçgörüler
+            {t("nav.insights")}
           </Link>
           <Link href="/investor" className="text-text-dim hover:text-platin transition-colors">
-            Yatırımcı
+            {t("nav.investor")}
           </Link>
           <a
             href="mailto:ercument@ercumenterden.com"
@@ -44,7 +46,7 @@ export default function Footer() {
 
         {/* Copy / Version */}
         <div className="font-mono-custom text-[9px] tracking-[0.12em] text-text-faint">
-          © {currentYear} EE. ALL RIGHTS RESERVED.
+          © {currentYear} {t("footer.all_rights")}
         </div>
       </div>
     </footer>

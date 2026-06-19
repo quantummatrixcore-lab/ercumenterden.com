@@ -1,6 +1,9 @@
+"use client";
+
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface Article {
   slug: string;
@@ -12,32 +15,8 @@ interface Article {
 }
 
 export default function InsightsPage() {
-  const articles: Article[] = [
-    {
-      slug: "verification-economy",
-      title: "Doğrulama Ekonomisi: Yapay Zeka Çağında Güveni Yeniden Tanımlamak",
-      category: "MANIFESTO",
-      date: "Haziran 2026",
-      readTime: "6 Dk Okuma",
-      excerpt: "Otonom yapay zeka ajanlarının ve sınır ötesi veri akışlarının hakim olduğu yeni dünyada, geleneksel denetimler yavaş kalıyor. Matematiksel olarak doğrulanabilir sistem mimarilerini kurmak neden geleceğin tek güven seçeneği?",
-    },
-    {
-      slug: "ai-safety-audits",
-      title: "LLM Davranış Denetimi: EU AI Act & KVKK Perspektifinden Güvenlik Modelleri",
-      category: "AI SAFETY",
-      date: "Mayıs 2026",
-      readTime: "8 Dk Okuma",
-      excerpt: "Büyük dil modellerinin ürettiği çıktıların etik ve yasal sınırlarda tutulması sadece yazılımsal bir filtre değil, kurumsal risk yönetimi problemidir. Stripe-like otonom koruma katmanlarının mimari analizi.",
-    },
-    {
-      slug: "cbam-2026-compliance",
-      title: "EU CBAM 2026 ve dMRV: Karbon Emisyonlarında Gerçek Zamanlı Doğrulama Altyapısı",
-      category: "CARBON MARKETS",
-      date: "Nisan 2026",
-      readTime: "10 Dk Okuma",
-      excerpt: "Sınırda Karbon Düzenleme Mekanizması'na (CBAM) uyum sağlamak isteyen ihracatçıların karbon emisyonlarını dijital verilerle (dMRV) nasıl kanıtlayabileceğini ve bunun küresel ticaret dengelerindeki rolünü inceliyoruz.",
-    },
-  ];
+  const { t } = useLanguage();
+  const articles: Article[] = t("insights.articles") || [];
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -46,13 +25,13 @@ export default function InsightsPage() {
         {/* Header */}
         <div className="space-y-4 border-b border-rule pb-8 mb-12">
           <div className="font-mono-custom text-[10px] tracking-[0.2em] uppercase text-platin">
-            Araştırmalar & Düşünce Liderliği
+            {t("insights.eyebrow")}
           </div>
           <h1 className="font-display text-4xl md:text-6xl text-platin leading-none">
-            İçgörüler
+            {t("insights.title")}
           </h1>
           <p className="font-sans text-sm text-text-dim max-w-2xl leading-relaxed">
-            Yapay zeka etiği, otonom sistem güvenliği, karbon sertifikasyonu ve sınır ötesi dijital regülasyonlar üzerine derinlemesine teknik analizler ve teolojik tezler.
+            {t("insights.description")}
           </p>
         </div>
 
@@ -90,7 +69,7 @@ export default function InsightsPage() {
               {/* Read More Link */}
               <div className="mt-6 pt-4 border-t border-rule/50 flex items-center justify-between">
                 <span className="font-mono-custom text-[9px] tracking-[0.15em] uppercase text-platin-dim group-hover:text-platin transition-colors">
-                  Tezi Oku →
+                  {t("insights.read_thesis")}
                 </span>
               </div>
             </Link>

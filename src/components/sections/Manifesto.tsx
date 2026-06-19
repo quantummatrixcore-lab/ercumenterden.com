@@ -1,5 +1,7 @@
 "use client";
 
+import { useLanguage } from "@/context/LanguageContext";
+
 interface TimelineEvent {
   year: string;
   title: string;
@@ -7,28 +9,8 @@ interface TimelineEvent {
 }
 
 export default function Manifesto() {
-  const events: TimelineEvent[] = [
-    {
-      year: "2008",
-      title: "Başlangıç & İlk Sistemler",
-      description: "Teknolojik inovasyon, otonom yazılımlar ve dijital dönüşüm süreçlerine ilk adım.",
-    },
-    {
-      year: "2016",
-      title: "Lionexia'nın Kuruluşu",
-      description: "SaaS altyapıları, kurumsal entegrasyonlar ve ekosistem için dijital dönüşüm motorunun inşası.",
-    },
-    {
-      year: "2022",
-      title: "CarbonEcoMarket & dMRV",
-      description: "Karbon emisyonlarının blokzincir ve uydu verileriyle doğrulanması modelinin kurulması.",
-    },
-    {
-      year: "2024+",
-      title: "Yapay Zeka ve Otonom Testler",
-      description: "AlparAI (AI Safety) ve DecasHub (Multi-Agent Simulator) ile doğrulama tezi ve güven katmanının olgunlaşması.",
-    },
-  ];
+  const { t } = useLanguage();
+  const events: TimelineEvent[] = t("manifesto.events") || [];
 
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 border-b border-rule">
@@ -36,20 +18,20 @@ export default function Manifesto() {
         {/* Left Column: Manifesto Quote & Text */}
         <div className="lg:col-span-6 space-y-6">
           <div className="font-mono-custom text-[10px] tracking-[0.2em] uppercase text-platin">
-            Manifesto & Felsefe
+            {t("manifesto.eyebrow")}
           </div>
           <h2 className="font-display text-4xl md:text-5xl text-platin leading-[1.1] manifesto-quote">
-            "Güven, otonom ekonomilerin para birimidir."
+            {t("manifesto.title")}
           </h2>
           <div className="space-y-4 font-sans text-sm text-text-dim leading-relaxed">
             <p>
-              Geleneksel dünyada güven; sözleşmeler, regülasyonlar ve merkezi kurumların hantal denetimleriyle sağlanıyordu. Ancak yapay zeka ajanlarının kararlar aldığı, karbon ekonomisinin küreselleştiği ve otonom sistemlerin hızlandığı yeni düzende, eski yöntemler yetersiz kalmaktadır.
+              {t("manifesto.desc_1")}
             </p>
             <p>
-              Bugün ihtiyaç duyduğumuz şey, her işlemin ve her sistem davranışının matematiksel olarak izlenebildiği, anlık olarak doğrulanabildiği bir güven katmanıdır. Geliştirdiğim tüm platformlar bu tek teze hizmet ediyor: <strong>Ölçülemeyen şeye güvenilemez.</strong>
+              {t("manifesto.desc_2")}
             </p>
             <p className="font-display text-[15px] italic text-platin-dim mt-4">
-              "İnşa ettiğimiz her teknoloji, her satır kod nihayetinde tek bir soruya yanıt vermelidir: Bu dünyayı daha iyi bir yer yapıyor mu?"
+              {t("manifesto.core_question")}
             </p>
           </div>
         </div>
@@ -57,7 +39,7 @@ export default function Manifesto() {
         {/* Right Column: Sleek Timeline */}
         <div className="lg:col-span-6 space-y-8">
           <div className="font-mono-custom text-[10px] tracking-[0.2em] uppercase text-platin">
-            Zaman Çizelgesi
+            {t("manifesto.timeline_eyebrow")}
           </div>
 
           <div className="relative border-l border-rule pl-8 ml-2 space-y-8 py-2">

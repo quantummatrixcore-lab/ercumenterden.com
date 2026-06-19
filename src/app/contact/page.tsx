@@ -2,8 +2,11 @@
 
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ContactPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="flex flex-col min-h-screen">
       <Nav />
@@ -11,13 +14,13 @@ export default function ContactPage() {
         {/* Header */}
         <div className="space-y-4 border-b border-rule pb-8 mb-12">
           <div className="font-mono-custom text-[10px] tracking-[0.2em] uppercase text-platin">
-            İletişim & Koordinasyon
+            {t("contact.eyebrow")}
           </div>
           <h1 className="font-display text-4xl md:text-6xl text-platin leading-none">
-            Görüşelim
+            {t("contact.title")}
           </h1>
           <p className="font-sans text-sm text-text-dim max-w-2xl leading-relaxed">
-            Doğrulama altyapıları, ortaklık teklifleri, yatırım olanakları veya araştırma davetleri için doğrudan aşağıdaki kanallardan ulaşabilirsiniz.
+            {t("contact.description")}
           </p>
         </div>
 
@@ -26,13 +29,13 @@ export default function ContactPage() {
           {/* Email */}
           <div className="bg-surface-1 border border-rule p-6 rounded-lg space-y-3">
             <div className="font-mono-custom text-[9px] tracking-[0.2em] uppercase text-platin-dim">
-              01 — Kurumsal İletişim
+              01 — {t("contact.channel_1_title")}
             </div>
             <h3 className="font-display text-xl text-platin">
-              E-Posta
+              {t("contact.channel_1_type")}
             </h3>
             <p className="font-sans text-xs text-text-faint">
-              Tüm kurumsal yazışmalar, case study ortaklıkları ve bilgi talepleri için:
+              {t("contact.channel_1_desc")}
             </p>
             <a
               href="mailto:ercument@ercumenterden.com"
@@ -45,13 +48,13 @@ export default function ContactPage() {
           {/* Professional Network */}
           <div className="bg-surface-1 border border-rule p-6 rounded-lg space-y-3">
             <div className="font-mono-custom text-[9px] tracking-[0.2em] uppercase text-platin-dim">
-              02 — Profesyonel Ağ
+              02 — {t("contact.channel_2_title")}
             </div>
             <h3 className="font-display text-xl text-platin">
-              LinkedIn
+              {t("contact.channel_2_type")}
             </h3>
             <p className="font-sans text-xs text-text-faint">
-              Güncel duyurular, makaleler ve profesyonel ağ iletişimi için:
+              {t("contact.channel_2_desc")}
             </p>
             <a
               href="https://linkedin.com/in/ercumenterden"
@@ -69,33 +72,33 @@ export default function ContactPage() {
           {/* Media Kit */}
           <div className="bg-surface-1 border border-rule p-6 rounded-lg space-y-3">
             <div className="font-mono-custom text-[9px] tracking-[0.2em] uppercase text-platin-dim">
-              03 — Basın & Medya
+              03 — {t("contact.channel_3_title")}
             </div>
             <h3 className="font-display text-xl text-platin">
-              Medya Kiti
+              {t("contact.channel_3_type")}
             </h3>
             <p className="font-sans text-xs text-text-faint">
-              Röportaj talepleri, sunum görselleri ve biyografi içeren resmi medya dosyalarına erişin:
+              {t("contact.channel_3_desc")}
             </p>
             <a
               href="#"
               onClick={(e) => e.preventDefault()}
               className="font-mono-custom text-xs text-platin hover:underline block pt-2"
             >
-              [MEDYA KİTİNİ İNDİR (ZIP)]
+              {t("contact.channel_3_btn")}
             </a>
           </div>
 
           {/* Careers / Talent */}
           <div className="bg-surface-1 border border-rule p-6 rounded-lg space-y-3">
             <div className="font-mono-custom text-[9px] tracking-[0.2em] uppercase text-platin-dim">
-              04 — Açık Pozisyonlar
+              04 — {t("contact.channel_4_title")}
             </div>
             <h3 className="font-display text-xl text-platin">
-              Kariyer / Talent
+              {t("contact.channel_4_type")}
             </h3>
             <p className="font-sans text-xs text-text-faint">
-              AI Safety, Rust/WASM, dMRV ve akıllı donanım IoT alanında ekibimize katılmak için:
+              {t("contact.channel_4_desc")}
             </p>
             <a
               href="mailto:talent@ercumenterden.com"
@@ -110,19 +113,19 @@ export default function ContactPage() {
         <div className="bg-surface-1 border border-rule p-8 rounded-lg space-y-6 text-center">
           <div className="space-y-2">
             <div className="font-mono-custom text-[9px] tracking-[0.2em] uppercase text-platin">
-              DIRECT CALENDAR SCHEDULER
+              {t("contact.booking_eyebrow")}
             </div>
             <h3 className="font-display text-2xl text-platin">
-              Görüşme Planlayın
+              {t("contact.booking_title")}
             </h3>
             <p className="font-sans text-xs text-text-faint max-w-md mx-auto">
-              Ekosistem platformlarıyla ilgili yatırım veya entegrasyon görüşmesi yapmak için doğrudan takvimden uygun gün ve saati rezerve edin.
+              {t("contact.booking_desc")}
             </p>
           </div>
 
           <div className="border border-rule-strong p-8 rounded-[2px] bg-ink/50 space-y-4">
             <div className="font-mono-custom text-[11px] tracking-widest text-platin-dim">
-              OFFICIAL CALENDLY WIDGET ACTIVE
+              {t("contact.booking_active")}
             </div>
             <a
               href="https://calendly.com"
@@ -130,7 +133,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="font-mono-custom text-[10px] tracking-[0.15em] uppercase bg-platin text-ink px-6 py-3 rounded-[2px] inline-block font-medium hover:opacity-85 transition-opacity"
             >
-              TAKVİMİ AÇIN →
+              {t("contact.booking_btn")}
             </a>
           </div>
         </div>

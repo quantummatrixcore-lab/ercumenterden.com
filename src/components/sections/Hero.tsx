@@ -1,27 +1,30 @@
 "use client";
 
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 lg:py-32">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         {/* Left Side: Typography and Philosophy */}
         <div className="lg:col-span-8 flex flex-col space-y-6">
           <div className="font-mono-custom text-[10px] tracking-[0.2em] uppercase text-platin">
-            Verification Infrastructure Architect
+            {t("hero.eyebrow")}
           </div>
 
           <h1 className="font-display text-[48px] md:text-[68px] leading-[0.95] text-platin tracking-tight hero-name">
-            Ercüment Erden
+            {t("hero.title")}
           </h1>
 
           <div className="max-w-xl space-y-4">
             <p className="font-sans text-[15px] md:text-[16px] leading-[1.7] text-text-dim hero-thesis">
-              Yapay zeka ve dijitalleşmenin yön verdiği yeni nesil ekonomilerde güven, soyut bir vaat değil, ölçülebilir bir altyapı olmak zorundadır. Karbon emisyonlarından yapay zeka güvenliğine kadar dijital dünyanın doğrulama katmanlarını inşa ediyorum.
+              {t("hero.description")}
             </p>
             <p className="font-display text-[18px] md:text-[22px] leading-relaxed text-platin-dim manifesto-quote">
-              "Ölçülemeyen şeye güvenilmez."
+              {t("hero.quote")}
             </p>
           </div>
 
@@ -31,13 +34,13 @@ export default function Hero() {
               href="#ecosystem"
               className="font-mono-custom text-[10px] tracking-[0.14em] uppercase bg-platin text-ink hover:opacity-85 px-6 py-3 transition-opacity duration-150 rounded-[2px] font-medium"
             >
-              Projeleri Keşfet
+              {t("hero.cta_discover")}
             </Link>
             <Link
               href="/contact"
               className="font-mono-custom text-[10px] tracking-[0.14em] uppercase border border-rule-strong bg-transparent text-platin hover:border-platin px-6 py-3 transition-colors duration-150 rounded-[2px]"
             >
-              İletişime Geç
+              {t("hero.cta_contact")}
             </Link>
           </div>
         </div>
@@ -92,7 +95,7 @@ export default function Hero() {
             <div className="absolute flex flex-col items-center justify-center text-center">
               <span className="font-display text-[42px] leading-none text-platin">5</span>
               <span className="font-mono-custom text-[9px] tracking-[0.2em] uppercase text-text-faint mt-1">
-                Platform
+                {t("hero.metrics_label")}
               </span>
             </div>
           </div>

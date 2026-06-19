@@ -48,6 +48,9 @@ export default function Manifesto() {
             <p>
               Bugün ihtiyaç duyduğumuz şey, her işlemin ve her sistem davranışının matematiksel olarak izlenebildiği, anlık olarak doğrulanabildiği bir güven katmanıdır. Geliştirdiğim tüm platformlar bu tek teze hizmet ediyor: <strong>Ölçülemeyen şeye güvenilemez.</strong>
             </p>
+            <p className="font-display text-[15px] italic text-platin-dim mt-4">
+              "İnşa ettiğimiz her teknoloji, her satır kod nihayetinde tek bir soruya yanıt vermelidir: Bu dünyayı daha iyi bir yer yapıyor mu?"
+            </p>
           </div>
         </div>
 

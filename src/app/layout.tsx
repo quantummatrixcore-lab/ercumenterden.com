@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { LanguageProvider } from "@/context/LanguageContext";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -23,13 +22,13 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ercüment Erden — Verification Infrastructure Architect",
+  title: "Ercüment Erden — Venture Studio Dashboard",
   description: "Verification Infrastructure Architect. AI-native ekonomiler için doğrulama altyapısı inşa ediyorum.",
   alternates: {
     canonical: "https://ercumenterden.com",
   },
   openGraph: {
-    title: "Ercüment Erden — Verification Infrastructure Architect",
+    title: "Ercüment Erden — Venture Studio Dashboard",
     description: "Verification Infrastructure Architect. AI-native ekonomiler için doğrulama altyapısı inşa ediyorum.",
     url: "https://ercumenterden.com",
     siteName: "Ercüment Erden Portfolio",
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ercüment Erden — Verification Infrastructure Architect",
+    title: "Ercüment Erden — Venture Studio Dashboard",
     description: "Verification Infrastructure Architect. AI-native ekonomiler için doğrulama altyapısı inşa ediyorum.",
   },
 };
@@ -52,7 +51,7 @@ const personSchema = {
   "sameAs": [
     "https://linkedin.com/in/ercumenterden"
   ],
-  "knowsAbout": ["AI Safety", "Carbon Markets", "dMRV", "EU AI Act", "CBAM 2026"]
+  "knowsAbout": ["AI Safety", "Carbon Markets", "dMRV", "EU AI Act", "CBAM 2026", "Hardware IoT", "Agentic Systems"]
 };
 
 export default function RootLayout({
@@ -71,9 +70,7 @@ export default function RootLayout({
       <body
         className={`${cormorant.variable} ${inter.variable} ${jetbrains.variable} antialiased bg-ink text-text min-h-screen`}
       >
-        <LanguageProvider>
-          {children}
-        </LanguageProvider>
+        {children}
       </body>
     </html>
   );

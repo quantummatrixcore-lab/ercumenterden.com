@@ -1,55 +1,49 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useLanguage } from "@/context/LanguageContext";
 
 export default function Nav() {
-  const pathname = usePathname();
-  const { language, setLanguage, t } = useLanguage();
 
   const navLinks = [
-    { name: t("nav.portfolio"), href: pathname === "/" ? "#ecosystem" : "/#ecosystem" },
-    { name: t("nav.insights"), href: "/insights" },
-    { name: t("nav.investor"), href: "/investor" },
-    { name: t("nav.contact"), href: "/contact" },
+    { name: "EKOSİSTEM", href: "#ecosystem" },
+    { name: "MANİFESTO", href: "#manifesto" },
+    { name: "İLETİŞİM", href: "#contact" },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-rule bg-ink/75 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-display text-2xl tracking-wide text-platin select-none">
-          EE
+        <Link href="/" className="flex flex-col select-none group">
+          <span className="font-display text-2xl tracking-wide text-platin group-hover:text-cyan-neon transition-colors duration-200">
+            Ercüment Erden
+          </span>
+          <span className="font-mono-custom text-[8px] tracking-[0.25em] uppercase text-text-faint">
+            Venture Studio Dashboard
+          </span>
         </Link>
 
         {/* Navigation Links */}
-        <nav className="hidden md:flex items-center gap-8 font-mono-custom text-[11px] tracking-[0.16em] uppercase">
+        <nav className="hidden md:flex items-center gap-10 font-mono-custom text-[10px] tracking-[0.2em] uppercase">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-text-dim hover:text-platin transition-colors duration-150"
+              className="text-text-dim hover:text-platin hover:tracking-[0.25em] transition-all duration-300"
             >
               {link.name}
             </Link>
           ))}
         </nav>
 
-        {/* Switcher & Contact CTA */}
+        {/* Live Engine Status */}
         <div className="flex items-center gap-4">
-          <button
-            onClick={() => setLanguage(language === "tr" ? "en" : "tr")}
-            className="font-mono-custom text-[10px] tracking-[0.14em] text-text-dim hover:text-platin px-2 py-1 transition-colors duration-150 border border-rule-strong rounded-[2px]"
-          >
-            {language === "tr" ? "EN" : "TR"}
-          </button>
-
-          <Link
-            href="/contact"
-            className="font-mono-custom text-[10px] tracking-[0.14em] uppercase border border-rule-strong bg-transparent text-platin hover:bg-platin hover:text-ink px-4 py-2 transition-all duration-200 rounded-[2px]"
-          >
-            {language === "tr" ? "Görüşelim →" : "Connect →"}
-          </Link>
+          <div className="flex items-center gap-2 border border-rule-strong bg-surface-2 px-3 py-1.5 rounded-[2px] font-mono-custom text-[9px] tracking-wider text-emerald-neon glow-emerald">
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-neon opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-neon"></span>
+            </span>
+            <span>SYSTEM: 100% OPERATIONAL</span>
+          </div>
         </div>
       </div>
     </header>

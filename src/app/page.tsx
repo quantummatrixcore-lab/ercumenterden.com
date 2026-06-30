@@ -1,6 +1,7 @@
 import Nav from "@/components/sections/Nav";
 import Hero from "@/components/sections/Hero";
 import EcosystemDashboard from "@/components/sections/EcosystemDashboard";
+import FounderStory from "@/components/sections/FounderStory";
 import Manifesto from "@/components/sections/Manifesto";
 import Footer from "@/components/sections/Footer";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <EcosystemDashboard />
+        <FounderStory />
         <Manifesto />
       </main>
       <Footer />

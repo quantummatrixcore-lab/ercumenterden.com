@@ -6,6 +6,7 @@ export default function Nav() {
 
   const navLinks = [
     { name: "EKOSİSTEM", href: "#ecosystem" },
+    { name: "ALPAR AI", href: "https://alparai.com", external: true },
     { name: "MANİFESTO", href: "#manifesto" },
     { name: "İLETİŞİM", href: "#contact" },
   ];
@@ -24,15 +25,27 @@ export default function Nav() {
 
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center gap-10 font-mono-custom text-[10px] tracking-[0.2em] uppercase">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-text-dim hover:text-platin hover:tracking-[0.25em] transition-all duration-300"
-            >
-              {link.name}
-            </Link>
-          ))}
+          {navLinks.map((link) => 
+            link.external ? (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-text-dim hover:text-platin hover:tracking-[0.25em] transition-all duration-300"
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-text-dim hover:text-platin hover:tracking-[0.25em] transition-all duration-300"
+              >
+                {link.name}
+              </Link>
+            )
+          )}
         </nav>
 
         {/* Live Engine Status */}

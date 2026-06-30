@@ -11,8 +11,8 @@ export default function Footer() {
           <span className="font-display text-xl text-platin tracking-wide">
             Ercüment Erden
           </span>
-          <span className="font-mono-custom text-[8px] tracking-[0.2em] uppercase text-text-faint">
-            Verification Infrastructure Architect
+          <span className="font-mono-custom text-[8px] tracking-[0.15em] uppercase text-text-faint">
+            AI Ethics Advocate & Verification Infrastructure Architect | Founder, ALPAR AI
           </span>
         </div>
 
@@ -25,6 +25,14 @@ export default function Footer() {
             className="text-text-dim hover:text-cyan-neon transition-colors duration-200"
           >
             LinkedIn
+          </a>
+          <a
+            href="https://alparai.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-dim hover:text-cyan-neon transition-colors duration-200"
+          >
+            alparai.com
           </a>
           <a
             href="#ecosystem"

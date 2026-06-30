@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { 
-  Cpu, 
   CheckCircle2, 
   Lock
 } from "lucide-react";
@@ -18,8 +17,6 @@ export default function EcosystemDashboard() {
   const [waterModel, setWaterModel] = useState<"Elite" | "Eco">("Elite");
   const [phLevel, setPhLevel] = useState<number>(7.2);
   const [flowRate, setFlowRate] = useState<number>(2.4);
-  const [vitaminA] = useState<number>(85);
-  const [vitaminC] = useState<number>(90);
   
   // Randomize telemetry for AyazWater
   useEffect(() => {
@@ -143,155 +140,35 @@ export default function EcosystemDashboard() {
           </div>
         </div>
 
-        {/* Dashboard Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
-          {/* Card 1: AyazWater (Cyan Neon) */}
+        {/* Featured Showcase: ALPAR AI & System Monitor */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Card: ALPARAI (Featured - lg:col-span-2) */}
           <motion.div
             whileHover={{ y: -4 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className={`elite-card border-t-2 border-t-cyan-neon hover:glow-cyan flex flex-col justify-between h-[360px] cursor-pointer ${activeModule === "ayazwater" ? "border-cyan-neon/60 bg-surface-2" : ""}`}
-            onClick={() => setActiveModule(activeModule === "ayazwater" ? null : "ayazwater")}
-          >
-            <div>
-              <div className="flex justify-between items-start">
-                <span className="font-mono-custom text-[9px] tracking-widest text-cyan-neon bg-cyan-neon/10 px-2 py-0.5 rounded-[2px]">
-                  AYAZWATER
-                </span>
-                <span className="font-mono-custom text-[8px] text-text-faint tracking-wider">
-                  HARDWARE // WET-WARE
-                </span>
-              </div>
-              <h3 className="font-display text-2xl text-platin mt-4 select-none">
-                Smart Vitamin Water Altyapısı
-              </h3>
-              <p className="font-sans text-xs text-text-dim leading-relaxed mt-2 select-none">
-                Yeni nesil donanımsal su arıtım ve vitamin dozajlama sistemi. Akıllı sensor telemetrisi ile şebeke suyunu canlı mineralli içeceğe dönüştürür.
-              </p>
-            </div>
-
-            {/* Live Interactive Telemetry */}
-            <div className="border-t border-rule pt-4 space-y-3 font-mono-custom text-[10px]">
-              <div className="flex justify-between text-text-dim">
-                <span>Model Seçimi:</span>
-                <div className="flex gap-2">
-                  <button 
-                    onClick={(e) => { e.stopPropagation(); setWaterModel("Elite"); }} 
-                    className={`px-1.5 py-0.5 rounded-[1px] ${waterModel === "Elite" ? "bg-cyan-neon/20 text-cyan-neon border border-cyan-neon/40" : "text-text-faint"}`}
-                  >
-                    ELITE
-                  </button>
-                  <button 
-                    onClick={(e) => { e.stopPropagation(); setWaterModel("Eco"); }} 
-                    className={`px-1.5 py-0.5 rounded-[1px] ${waterModel === "Eco" ? "bg-cyan-neon/20 text-cyan-neon border border-cyan-neon/40" : "text-text-faint"}`}
-                  >
-                    ECO
-                  </button>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-ink/50 p-2 border border-rule rounded-[1px]">
-                  <span className="text-text-faint block uppercase text-[8px]">ANLIK PH SEVİYESİ</span>
-                  <span className="text-cyan-neon text-xs font-bold">{phLevel} pH</span>
-                </div>
-                <div className="bg-ink/50 p-2 border border-rule rounded-[1px]">
-                  <span className="text-text-faint block uppercase text-[8px]">AKIŞ HIZI (FLOW)</span>
-                  <span className="text-cyan-neon text-xs font-bold">{flowRate} L/dk</span>
-                </div>
-              </div>
-              <div className="space-y-1">
-                <div className="flex justify-between text-[8px] text-text-faint">
-                  <span>VİTAMİN KARTUŞ DEĞERİ (A / C)</span>
-                  <span>{vitaminA}% / {vitaminC}%</span>
-                </div>
-                <div className="w-full bg-ink h-1 border border-rule rounded-[1px] overflow-hidden">
-                  <div className="bg-cyan-neon h-full" style={{ width: `${(vitaminA + vitaminC)/2}%` }} />
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Card 2: FreshRider (Lime/Emerald Neon) */}
-          <motion.div
-            whileHover={{ y: -4 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className={`elite-card border-t-2 border-t-emerald-neon hover:glow-emerald flex flex-col justify-between h-[360px] cursor-pointer ${activeModule === "freshrider" ? "border-emerald-neon/60 bg-surface-2" : ""}`}
-            onClick={() => setActiveModule(activeModule === "freshrider" ? null : "freshrider")}
-          >
-            <div>
-              <div className="flex justify-between items-start">
-                <span className="font-mono-custom text-[9px] tracking-widest text-emerald-neon bg-emerald-neon/10 px-2 py-0.5 rounded-[2px]">
-                  FRESHRIDER
-                </span>
-                <span className="font-mono-custom text-[8px] text-text-faint tracking-wider">
-                  IoT HARDWARE // FLEET
-                </span>
-              </div>
-              <h3 className="font-display text-2xl text-platin mt-4 select-none">
-                IoT Helmet Sanitizer Vending
-              </h3>
-              <p className="font-sans text-xs text-text-dim leading-relaxed mt-2 select-none">
-                Mikro-mobilite paylaşımlı scooter kullanıcıları için kask temizliği ve sterilizasyonu doğrulayan otonom IoT kask kabini.
-              </p>
-            </div>
-
-            {/* Live Interactive Telemetry */}
-            <div className="border-t border-rule pt-4 space-y-3 font-mono-custom text-[10px]">
-              <div className="flex justify-between items-center text-text-dim">
-                <span>Sterilizasyon Durumu:</span>
-                <span className={`px-2 py-0.5 rounded-[1px] text-[9px] ${sanitizeStatus === "COMPLETE" ? "text-emerald-neon bg-emerald-neon/10" : sanitizeStatus === "IDLE" ? "text-text-faint bg-surface-3" : "text-amber-500 bg-amber-500/10 animate-pulse"}`}>
-                  {sanitizeStatus === "IDLE" && "HAZIR"}
-                  {sanitizeStatus === "SANITY_CHECK" && "OTOMATİK KONTROL"}
-                  {sanitizeStatus === "UVC_ACTIVE" && "UV-C AKTİF"}
-                  {sanitizeStatus === "SPRAY_PUMP" && "PÜSKÜRTME Pompası"}
-                  {sanitizeStatus === "COMPLETE" && "TEMİZLİK BİTTİ"}
-                </span>
-              </div>
-
-              <div className="bg-ink/50 p-3 border border-rule rounded-[1px] space-y-2">
-                <div className="flex justify-between text-[8px] text-text-faint">
-                  <span>TEMİZLİK DÖNGÜSÜ</span>
-                  <span>{sanitizeProgress}%</span>
-                </div>
-                <div className="w-full bg-ink h-1.5 border border-rule rounded-[1px] overflow-hidden">
-                  <div 
-                    className="bg-emerald-neon h-full transition-all duration-300" 
-                    style={{ width: `${sanitizeProgress}%` }} 
-                  />
-                </div>
-              </div>
-
-              <button
-                onClick={(e) => { e.stopPropagation(); startSanitization(); }}
-                disabled={sanitizeStatus !== "IDLE"}
-                className={`w-full py-2.5 rounded-[2px] font-mono-custom text-[9px] tracking-widest uppercase transition-all duration-200 border ${
-                  sanitizeStatus === "IDLE" 
-                    ? "bg-transparent border-emerald-neon text-emerald-neon hover:bg-emerald-neon hover:text-ink cursor-pointer" 
-                    : "bg-surface-3 border-rule text-text-faint cursor-not-allowed"
-                }`}
-              >
-                {sanitizeStatus === "IDLE" ? "TEMİZLİK SİMÜLASYONU BAŞLAT" : "DÖNGÜ ÇALIŞIYOR..."}
-              </button>
-            </div>
-          </motion.div>
-
-          {/* Card 3: AlparAI & Agent-OS (Purple Neon) */}
-          <motion.div
-            whileHover={{ y: -4 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className={`elite-card border-t-2 border-t-purple-neon hover:glow-purple flex flex-col justify-between h-[360px] cursor-pointer ${activeModule === "alparai" ? "border-purple-neon/60 bg-surface-2" : ""}`}
+            className={`elite-card border-t-2 border-t-purple-neon hover:glow-purple flex flex-col justify-between h-[380px] lg:col-span-2 cursor-pointer ${activeModule === "alparai" ? "border-purple-neon/60 bg-surface-2" : ""}`}
             onClick={() => setActiveModule(activeModule === "alparai" ? null : "alparai")}
           >
             <div>
               <div className="flex justify-between items-start">
-                <span className="font-mono-custom text-[9px] tracking-widest text-purple-neon bg-purple-neon/10 px-2 py-0.5 rounded-[2px]">
-                  ALPARAI & AGENT-OS
-                </span>
-                <span className="font-mono-custom text-[8px] text-text-faint tracking-wider">
-                  AI SAFETY // ORCHESTRATOR
-                </span>
+                <div className="flex items-center gap-3">
+                  <span className="font-mono-custom text-[9px] tracking-widest text-purple-neon bg-purple-neon/10 px-2 py-0.5 rounded-[2px]">
+                    ALPARAI & AGENT-OS
+                  </span>
+                  {/* LIVE Badge */}
+                  <span className="flex h-2 w-2 relative">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-neon opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-neon"></span>
+                  </span>
+                  <span className="font-mono-custom text-[8px] text-emerald-neon tracking-wider uppercase font-bold">
+                    LIVE
+                  </span>
+                </div>
+                <div className="font-mono-custom text-[9px] text-platin tracking-wider">
+                  64 Verified Incidents &middot; 23 Providers
+                </div>
               </div>
-              <h3 className="font-display text-2xl text-platin mt-4 select-none">
+              <h3 className="font-display text-3xl text-platin mt-4 select-none">
                 Stripe for AI Safety & Ajan Filosu
               </h3>
               <p className="font-sans text-xs text-text-dim leading-relaxed mt-2 select-none">
@@ -300,12 +177,12 @@ export default function EcosystemDashboard() {
             </div>
 
             {/* Live Interactive Telemetry */}
-            <div className="border-t border-rule pt-4 space-y-3 font-mono-custom text-[10px]">
-              <div className="flex justify-between text-text-dim">
+            <div className="border-t border-rule pt-4 space-y-4 font-mono-custom text-[10px]">
+              <div className="flex justify-between items-center text-text-dim">
                 <span>Aktif Ajan Sinyali:</span>
                 <span className="text-purple-neon font-bold animate-pulse">{activeAgent}</span>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 <div className="bg-ink/50 p-2 border border-rule rounded-[1px]">
                   <span className="text-text-faint block uppercase text-[8px]">TOPLAM İSTEK</span>
                   <span className="text-purple-neon text-xs font-bold">{gatewayRequests.toLocaleString()}</span>
@@ -314,109 +191,245 @@ export default function EcosystemDashboard() {
                   <span className="text-text-faint block uppercase text-[8px]">ANLIK GECİKME</span>
                   <span className="text-purple-neon text-xs font-bold">{avgLatency} ms</span>
                 </div>
+                <div className="bg-ink/50 p-2 border border-rule rounded-[1px]">
+                  <span className="text-text-faint block uppercase text-[8px]">GÜVENLİK SKORU</span>
+                  <span className="text-emerald-neon text-xs font-bold">{safetyScore}%</span>
+                </div>
               </div>
-              <div className="flex justify-between items-center bg-ink/50 border border-rule px-3 py-1.5 rounded-[1px]">
-                <span className="text-text-faint text-[8px] uppercase">GÜVENLİK GÜVENİLİRLİK SKORU</span>
-                <span className="text-emerald-neon text-xs font-bold">{safetyScore}%</span>
+              
+              <div className="flex justify-between items-center pt-2 border-t border-rule/50">
+                <span className="text-text-faint text-[9px]">DIŞ BAĞLANTI:</span>
+                <a 
+                  href="https://alparai.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-purple-neon hover:underline font-mono-custom text-[10px] tracking-wider"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Visit alparai.com &rarr;
+                </a>
               </div>
             </div>
           </motion.div>
 
-          {/* Card 4: CarbonEcoMarket (Teal Neon) */}
-          <motion.div
-            whileHover={{ y: -4 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className={`elite-card border-t-2 border-t-teal-neon hover:glow-teal flex flex-col justify-between h-[360px] cursor-pointer lg:col-span-2 ${activeModule === "carboneco" ? "border-teal-neon/60 bg-surface-2" : ""}`}
-            onClick={() => setActiveModule(activeModule === "carboneco" ? null : "carboneco")}
-          >
+          {/* System Monitor (lg:col-span-1) */}
+          <div className="elite-card border border-rule-strong bg-surface-1/50 flex flex-col justify-between h-[380px] p-6">
             <div>
-              <div className="flex justify-between items-start">
-                <span className="font-mono-custom text-[9px] tracking-widest text-teal-neon bg-teal-neon/10 px-2 py-0.5 rounded-[2px]">
-                  CARBONECOMARKET
-                </span>
-                <span className="font-mono-custom text-[8px] text-text-faint tracking-wider">
-                  DECENTRALIZED MRV // ECOSYSTEM
-                </span>
+              <div className="flex justify-between items-center border-b border-rule pb-2">
+                <span className="font-mono-custom text-[9px] tracking-widest text-platin">SYSTEM TELEMETRY</span>
+                <span className="font-mono-custom text-[8px] text-emerald-neon bg-emerald-neon/10 px-1.5 py-0.5 rounded-[1px]">ACTIVE</span>
               </div>
-              <h3 className="font-display text-2xl text-platin mt-4 select-none">
-                360° Karbon Doğrulama ve Ticaret Platformu
-              </h3>
-              <p className="font-sans text-xs text-text-dim leading-relaxed mt-2 select-none">
-                Sentinel-2 uydularından alınan SAR radar verileri ve IoT donanımları yardımıyla karbon emisyonunu ve yeşil yutak alanları anlık doğrular. Blockchain ledger kayıtları ile Avrupa Birliği CBAM 2026 sınır vergisine uyumlu veri tescili yapar.
-              </p>
-            </div>
-
-            {/* Live Interactive Telemetry */}
-            <div className="border-t border-rule pt-4 space-y-3 font-mono-custom text-[10px]">
-              <div className="flex justify-between items-center text-text-dim">
-                <span>EVM dMRV Blok Yüksekliği:</span>
-                <span className="text-teal-neon font-bold"># {blockHeight}</span>
-              </div>
-              
-              <div className="space-y-2">
-                <span className="text-text-faint block uppercase text-[8px]">SON KANITLANMIŞ KARBON İŞLEMLERİ (TR VERIFIED)</span>
-                <div className="space-y-1.5">
-                  {recentTXs.map((tx, idx) => (
-                    <div key={idx} className="flex justify-between items-center bg-ink/50 border border-rule px-3 py-1.5 rounded-[1px] text-[9px]">
-                      <span className="text-text-dim">{tx.id}</span>
-                      <span className="text-text-dim font-bold">{tx.target}</span>
-                      <span className="text-teal-neon font-bold">+{tx.amount} TCO2e</span>
-                      <span className="text-emerald-neon font-bold text-[8px] tracking-wider bg-emerald-neon/10 px-1 rounded-[1px]">
-                        {tx.status}
-                      </span>
-                    </div>
-                  ))}
+              <div className="mt-4 space-y-3 font-mono-custom text-[10px]">
+                <div className="flex justify-between">
+                  <span className="text-text-faint">QUANTUM ENGINE:</span>
+                  <span className="text-platin">V7.4.2</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-text-faint">UPTIME:</span>
+                  <span className="text-platin">99.998%</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-text-faint">AI NODES SYNCED:</span>
+                  <span className="text-platin">{activeBrains} / 12</span>
                 </div>
               </div>
             </div>
-          </motion.div>
 
-          {/* Card 5: Quantum-Matrix V7 (Crimson Neon) */}
-          <motion.div
-            whileHover={{ y: -4 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className={`elite-card border-t-2 border-t-crimson-neon hover:glow-crimson flex flex-col justify-between h-[360px] cursor-pointer ${activeModule === "quantum" ? "border-crimson-neon/60 bg-surface-2" : ""}`}
-            onClick={() => setActiveModule(activeModule === "quantum" ? null : "quantum")}
-          >
-            <div>
-              <div className="flex justify-between items-start">
-                <span className="font-mono-custom text-[9px] tracking-widest text-crimson-neon bg-crimson-neon/10 px-2 py-0.5 rounded-[2px]">
-                  QUANTUM-MATRIX V7
-                </span>
-                <span className="font-mono-custom text-[8px] text-text-faint tracking-wider">
-                  SELF-BUILDING // MULTI-BRAIN
-                </span>
+            <div className="bg-ink/60 border border-rule-strong p-3 rounded-[1px] font-mono-custom text-[9px] text-text-faint leading-relaxed">
+              <span className="text-platin block mb-1">REAL-TIME TELEMETRY STREAM</span>
+              <div className="h-[100px] overflow-y-hidden space-y-1">
+                <div>[SYS] EVM BLOCK REGISTERED AT #{blockHeight}</div>
+                <div>[AI] {activeAgent} EXECUTING DECISION STACK</div>
+                <div>[NET] MBS PORT ACCESS OPERATIONAL</div>
+                <div className="text-emerald-neon">[OK] ALL SYSTEMS NOMINAL</div>
               </div>
-              <h3 className="font-display text-2xl text-platin mt-4 select-none">
-                Otonom Multi-Brain AI Framework
-              </h3>
-              <p className="font-sans text-xs text-text-dim leading-relaxed mt-2 select-none">
-                Geliştirici müdahalesine gerek kalmadan, yazılımı kendi kendine kurgulayabilen, test edebilen ve deploy eden multi-agent yapay zeka yapısı.
-              </p>
             </div>
+          </div>
+        </div>
 
-            {/* Live Interactive Telemetry */}
-            <div className="border-t border-rule pt-4 space-y-3 font-mono-custom text-[10px]">
-              <div className="flex justify-between text-text-dim">
-                <span>Aktif Çalışan Beyin (Ajan):</span>
-                <span className="text-crimson-neon font-bold">{activeBrains} Agents</span>
+        {/* Section Label: PREVIOUS VENTURES & R&D */}
+        <div className="space-y-4 pt-12 border-t border-rule">
+          <div className="font-mono-custom text-[10px] tracking-[0.25em] uppercase text-text-faint">
+            PREVIOUS VENTURES & R&D
+          </div>
+          
+          {/* Grid of Other 4 Ventures (Condensed to 60% of size) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Card 1: AyazWater (Cyan Neon) */}
+            <motion.div
+              whileHover={{ y: -4 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className={`elite-card border-t border-t-cyan-neon hover:glow-cyan flex flex-col justify-between h-[290px] p-5 cursor-pointer ${activeModule === "ayazwater" ? "border-cyan-neon/60 bg-surface-2" : ""}`}
+              onClick={() => setActiveModule(activeModule === "ayazwater" ? null : "ayazwater")}
+            >
+              <div>
+                <div className="flex justify-between items-start">
+                  <span className="font-mono-custom text-[8px] tracking-widest text-cyan-neon bg-cyan-neon/10 px-1.5 py-0.5 rounded-[1px]">
+                    AYAZWATER
+                  </span>
+                  <span className="font-mono-custom text-[7px] text-text-faint tracking-wider">
+                    HARDWARE
+                  </span>
+                </div>
+                <h4 className="font-display text-lg text-platin mt-3 select-none">
+                  Smart Vitamin Water Altyapısı
+                </h4>
+                <p className="font-sans text-[11px] text-text-dim leading-relaxed mt-1 select-none">
+                  Akıllı sensor telemetrisi ile şebeke suyunu mineralli içeceğe dönüştürür.
+                </p>
               </div>
-              
-              <div className="bg-ink/50 p-3 border border-rule rounded-[1px] space-y-1.5">
-                <span className="text-text-faint block uppercase text-[8px]">YAZILAN KOD DERLEME DÖNGÜSÜ</span>
-                <div className="flex items-center gap-2">
-                  <Cpu size={12} className="text-crimson-neon animate-spin" />
-                  <span className="text-text-dim text-[9px] font-bold">COMPILING: {compilingModule}...</span>
+
+              {/* Condensed Telemetry */}
+              <div className="border-t border-rule pt-3 space-y-2 font-mono-custom text-[9px]">
+                <div className="flex justify-between text-text-dim">
+                  <span>Model: {waterModel}</span>
+                  <div className="flex gap-1.5">
+                    <button 
+                      onClick={(e) => { e.stopPropagation(); setWaterModel("Elite"); }} 
+                      className={`text-[8px] px-1 py-0.2 rounded-[1px] ${waterModel === "Elite" ? "bg-cyan-neon/20 text-cyan-neon border border-cyan-neon/40" : "text-text-faint"}`}
+                    >
+                      ELITE
+                    </button>
+                    <button 
+                      onClick={(e) => { e.stopPropagation(); setWaterModel("Eco"); }} 
+                      className={`text-[8px] px-1 py-0.2 rounded-[1px] ${waterModel === "Eco" ? "bg-cyan-neon/20 text-cyan-neon border border-cyan-neon/40" : "text-text-faint"}`}
+                    >
+                      ECO
+                    </button>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-[8px]">
+                  <div className="bg-ink/50 p-1 border border-rule">
+                    <span className="text-text-faint block uppercase text-[7px]">PH</span>
+                    <span className="text-cyan-neon font-bold">{phLevel} pH</span>
+                  </div>
+                  <div className="bg-ink/50 p-1 border border-rule">
+                    <span className="text-text-faint block uppercase text-[7px]">FLOW</span>
+                    <span className="text-cyan-neon font-bold">{flowRate} L/d</span>
+                  </div>
                 </div>
               </div>
+            </motion.div>
 
-              <div className="flex justify-between items-center text-[8px] text-text-faint">
-                <span>KOD ENTEGRASYONU</span>
-                <span className="text-emerald-neon font-bold">100% SUCCESS RATE</span>
+            {/* Card 2: FreshRider (Lime/Emerald Neon) */}
+            <motion.div
+              whileHover={{ y: -4 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className={`elite-card border-t border-t-emerald-neon hover:glow-emerald flex flex-col justify-between h-[290px] p-5 cursor-pointer ${activeModule === "freshrider" ? "border-emerald-neon/60 bg-surface-2" : ""}`}
+              onClick={() => setActiveModule(activeModule === "freshrider" ? null : "freshrider")}
+            >
+              <div>
+                <div className="flex justify-between items-start">
+                  <span className="font-mono-custom text-[8px] tracking-widest text-emerald-neon bg-emerald-neon/10 px-1.5 py-0.5 rounded-[1px]">
+                    FRESHRIDER
+                  </span>
+                  <span className="font-mono-custom text-[7px] text-text-faint tracking-wider">
+                    IoT FLEET
+                  </span>
+                </div>
+                <h4 className="font-display text-lg text-platin mt-3 select-none">
+                  IoT Helmet Sanitizer Vending
+                </h4>
+                <p className="font-sans text-[11px] text-text-dim leading-relaxed mt-1 select-none">
+                  Kask temizliği ve sterilizasyonu doğrulayan otonom IoT kabini.
+                </p>
               </div>
-            </div>
-          </motion.div>
 
+              {/* Condensed Telemetry */}
+              <div className="border-t border-rule pt-3 space-y-2 font-mono-custom text-[9px]">
+                <div className="flex justify-between items-center text-text-dim">
+                  <span>Döngü:</span>
+                  <span className="text-emerald-neon font-bold text-[8px]">
+                    {sanitizeStatus === "IDLE" ? "HAZIR" : "AKTİF"}
+                  </span>
+                </div>
+                <div className="bg-ink/50 p-2 border border-rule">
+                  <div className="w-full bg-ink h-1 border border-rule rounded-[1px] overflow-hidden">
+                    <div className="bg-emerald-neon h-full" style={{ width: `${sanitizeProgress}%` }} />
+                  </div>
+                </div>
+                <button
+                  onClick={(e) => { e.stopPropagation(); startSanitization(); }}
+                  disabled={sanitizeStatus !== "IDLE"}
+                  className="w-full py-1 bg-transparent border border-emerald-neon text-emerald-neon hover:bg-emerald-neon hover:text-ink text-[8px] rounded-[1px] transition-colors font-mono-custom"
+                >
+                  {sanitizeStatus === "IDLE" ? "BAŞLAT" : "DÖNGÜDE"}
+                </button>
+              </div>
+            </motion.div>
+
+            {/* Card 3: CarbonEcoMarket (Teal Neon) */}
+            <motion.div
+              whileHover={{ y: -4 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className={`elite-card border-t border-t-teal-neon hover:glow-teal flex flex-col justify-between h-[290px] p-5 cursor-pointer ${activeModule === "carboneco" ? "border-teal-neon/60 bg-surface-2" : ""}`}
+              onClick={() => setActiveModule(activeModule === "carboneco" ? null : "carboneco")}
+            >
+              <div>
+                <div className="flex justify-between items-start">
+                  <span className="font-mono-custom text-[8px] tracking-widest text-teal-neon bg-teal-neon/10 px-1.5 py-0.5 rounded-[1px]">
+                    CARBONECOMARKET
+                  </span>
+                  <span className="font-mono-custom text-[7px] text-text-faint tracking-wider">
+                    dMRV
+                  </span>
+                </div>
+                <h4 className="font-display text-lg text-platin mt-3 select-none">
+                  Karbon Doğrulama & Ticaret
+                </h4>
+                <p className="font-sans text-[11px] text-text-dim leading-relaxed mt-1 select-none">
+                  Sentinel-2 radar verileriyle karbon sınır vergisi veri tescili.
+                </p>
+              </div>
+
+              {/* Condensed Telemetry */}
+              <div className="border-t border-rule pt-3 space-y-1 font-mono-custom text-[9px]">
+                <div className="flex justify-between text-text-dim">
+                  <span>Blok:</span>
+                  <span className="text-teal-neon font-bold"># {blockHeight}</span>
+                </div>
+                <div className="text-[8px] text-text-faint truncate">
+                  Son TX: {recentTXs[0]?.id || "0x000"} &middot; {recentTXs[0]?.amount}t
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 4: Quantum-Matrix V7 (Crimson Neon) */}
+            <motion.div
+              whileHover={{ y: -4 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className={`elite-card border-t border-t-crimson-neon hover:glow-crimson flex flex-col justify-between h-[290px] p-5 cursor-pointer ${activeModule === "quantum" ? "border-crimson-neon/60 bg-surface-2" : ""}`}
+              onClick={() => setActiveModule(activeModule === "quantum" ? null : "quantum")}
+            >
+              <div>
+                <div className="flex justify-between items-start">
+                  <span className="font-mono-custom text-[8px] tracking-widest text-crimson-neon bg-crimson-neon/10 px-1.5 py-0.5 rounded-[1px]">
+                    QUANTUM V7
+                  </span>
+                  <span className="font-mono-custom text-[7px] text-text-faint tracking-wider">
+                    MULTI-BRAIN
+                  </span>
+                </div>
+                <h4 className="font-display text-lg text-platin mt-3 select-none">
+                  Otonom Multi-Brain Framework
+                </h4>
+                <p className="font-sans text-[11px] text-text-dim leading-relaxed mt-1 select-none">
+                  Kendi yazılımını kurgulayıp deploy eden multi-agent yapay zeka yapısı.
+                </p>
+              </div>
+
+              {/* Condensed Telemetry */}
+              <div className="border-t border-rule pt-3 space-y-1 font-mono-custom text-[9px]">
+                <div className="flex justify-between text-text-dim">
+                  <span>Beyin Sinyali:</span>
+                  <span className="text-crimson-neon font-bold">{activeBrains} Ajan</span>
+                </div>
+                <div className="text-[8px] text-text-faint truncate">
+                  Derlenen: {compilingModule}
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
 
         {/* Secure Investor Passcode Lock Module (Consolidated from separate routes) */}

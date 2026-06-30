@@ -17,7 +17,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="font-mono-custom text-[10px] tracking-[0.25em] uppercase text-platin"
           >
-            VERIFICATION INFRASTRUCTURE ARCHITECT
+            AI ETHICS ADVOCATE
           </motion.div>
 
           <motion.h1 
@@ -26,8 +26,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-[48px] md:text-[72px] leading-[0.9] text-platin tracking-tight select-none"
           >
-            Ölçülemeyen şeye <br />
-            <span className="text-text-dim">güvenilmez.</span>
+            Verification Infrastructure <br />
+            <span className="text-text-dim">Architect</span>
           </motion.h1>
 
           <motion.div 
@@ -37,7 +37,11 @@ export default function Hero() {
             className="max-w-xl space-y-6"
           >
             <p className="font-sans text-[15px] md:text-[16px] leading-[1.8] text-text-dim">
-              Yapay zeka otonomisi ve dijitalleşmenin yön verdiği yeni nesil ekonomilerde güven, soyut bir vaat değil; matematiksel ve ölçülebilir bir altyapı olmak zorundadır. Karbon emisyonlarından yapay zeka güvenliğine kadar dijital dünyanın doğrulama katmanlarını inşa ediyorum.
+              Building accountability systems for the AI economy. Founder of ALPAR AI &mdash; the world&apos;s first community-governed AI accountability platform.
+            </p>
+            
+            <p className="font-display text-[22px] md:text-[26px] leading-relaxed text-platin-dim my-2">
+              &ldquo;Ölçülemeyen şeye güvenilmez.&rdquo;
             </p>
             
             {/* Core Philosophical Filter Box */}
@@ -58,16 +62,18 @@ export default function Hero() {
             className="flex flex-wrap gap-4 pt-4"
           >
             <a
-              href="#ecosystem"
+              href="https://alparai.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-mono-custom text-[10px] tracking-[0.18em] uppercase bg-platin text-ink hover:bg-white hover:tracking-[0.22em] px-8 py-3.5 transition-all duration-300 rounded-[2px] font-medium"
             >
-              EKOSİSTEMİ KEŞFET
+              Explore ALPAR AI
             </a>
             <a
-              href="#contact"
+              href="#founder-story"
               className="font-mono-custom text-[10px] tracking-[0.18em] uppercase border border-rule-strong bg-transparent text-platin hover:border-platin px-8 py-3.5 transition-all duration-300 rounded-[2px]"
             >
-              İLETİŞİME GEÇ
+              Read My Story
             </a>
           </motion.div>
         </div>

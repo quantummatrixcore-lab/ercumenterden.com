@@ -22,14 +22,14 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ercüment Erden — Venture Studio Dashboard",
-  description: "Verification Infrastructure Architect. AI-native ekonomiler için doğrulama altyapısı inşa ediyorum.",
+  title: "Ercüment Erden — AI Ethics Advocate & Founder, ALPAR AI",
+  description: "AI Ethics Advocate & Verification Infrastructure Architect. Founder of ALPAR AI — the world's first community-governed AI accountability platform.",
   alternates: {
     canonical: "https://ercumenterden.com",
   },
   openGraph: {
-    title: "Ercüment Erden — Venture Studio Dashboard",
-    description: "Verification Infrastructure Architect. AI-native ekonomiler için doğrulama altyapısı inşa ediyorum.",
+    title: "Ercüment Erden — AI Ethics Advocate & Founder, ALPAR AI",
+    description: "AI Ethics Advocate & Verification Infrastructure Architect. Founder of ALPAR AI — the world's first community-governed AI accountability platform.",
     url: "https://ercumenterden.com",
     siteName: "Ercüment Erden Portfolio",
     locale: "tr_TR",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ercüment Erden — Venture Studio Dashboard",
-    description: "Verification Infrastructure Architect. AI-native ekonomiler için doğrulama altyapısı inşa ediyorum.",
+    title: "Ercüment Erden — AI Ethics Advocate & Founder, ALPAR AI",
+    description: "AI Ethics Advocate & Verification Infrastructure Architect. Founder of ALPAR AI — the world's first community-governed AI accountability platform.",
   },
 };
 

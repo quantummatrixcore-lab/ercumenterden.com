@@ -1,0 +1,50 @@
+{
+  "nav": { "alparai": "ALPAR AI", "manifesto": "Manifesto", "contact": "İletişim", "switchLang": "English" },
+  "hero": {
+    "badge": "Kurucu & Baş Mimar",
+    "h1": "Yapay Zeka İçin Güven Katmanını İnşa Ediyorum.",
+    "sub": "ALPAR AI, DecasHub ve Agent-OS’u kuruyorum — yapay zeka hesap verebilirliği için egemen altyapı.",
+    "cta1": "ALPAR AI’yı Gör",
+    "cta2": "Manifesto’yu Oku"
+  },
+  "ecosystem": {
+    "title": "Ekosistem",
+    "alparai_title": "ALPAR AI",
+    "alparai_tag": "Güven Altyapısı",
+    "alparai_desc": "Dünyanın ilk bağımsız YZ olay sicili. AB YZ Yasası Madde 73 uyumlu. Sıfır-bilgi günlükleme. YZ sağlayıcıları için Güven Rozeti.",
+    "decashub_title": "DecasHub",
+    "decashub_tag": "Otonom Donanım Kümesi",
+    "decashub_desc": "Otonom fiziksel sistemler için bir girişim studiosu. YZ koordineli su, karbon, lojistik ve enerji varlıkları.",
+    "agetos_title": "Agent-OS",
+    "agetos_tag": "YZ Ajanları İçin İşletim Sistemi",
+    "agetos_desc": "Açık kaynak otonom ajan çalışma zamanı. Çoklu ajan sürülerini, bellek, kimlik ve yürütmeyi yönetir."
+  },
+  "manifesto": {
+    "title": "Manifesto",
+    "p1": "Yapay zeka, insan tarihinin en belirleyici teknolojisi olacak.",
+    "p2": "Çoğu şirket onu inşa etmek için yarışıyor. Çok azı hesap sorulabilirliği için altyapı inşa ediyor.",
+    "p3": "Güven bir özellik değildir — temeldir. Denetlenemeyen, itiraz edilemeyen veya yönetilemeyen bir YZ sistemi bir araç değildir. Bir yüktür.",
+    "p4": "ALPAR AI, hesap verebilirliğin düzenlemeyi bekleyemeyeceği için var. Mimariye gömülmesi gerekir — ilk günden itibaren. Bu benim yaşam eserim."
+  },
+  "timeline": {
+    "title": "Seçili Çalışmalar",
+    "e1_year": "2024", "e1_title": "Agent-OS v1", "e1_desc": "İlk otonom ajan çalışma zamanı",
+    "e2_year": "2025", "e2_title": "ALPAR AI", "e2_desc": "İlk bağımsız YZ olay sicili",
+    "e3_year": "2026", "e3_title": "AB YZ Yasası Madde 73", "e3_desc": "Tam uyum altyapısı",
+    "e4_year": "2026", "e4_title": "DecasHub", "e4_desc": "Otonom donanım girişim studiosu"
+  },
+  "signals": {
+    "title": "Göstergeler",
+    "s1": "16.000+", "s1_label": "LinkedIn Bağlantısı",
+    "s2": "AGPL-3.0", "s2_label": "Açık Kaynak Lisansı",
+    "s3": "Md. 73", "s3_label": "AB YZ Yasası Uyumlu",
+    "s4": "PRO", "s4_label": "Vercel Altyapısı"
+  },
+  "contact": {
+    "title": "İletişim",
+    "email": "E-posta",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": "Tüm haklar saklıdır."
+}

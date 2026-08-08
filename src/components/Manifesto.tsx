@@ -1,35 +1,29 @@
-"use client";
-
-import { motion } from "framer-motion";
+'use client';
+import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
 
 export default function Manifesto() {
+  const t = useTranslations('manifesto');
+
   return (
-    <section id="manifesto" className="py-32 px-6 bg-[#0a0a0f]">
-      <div className="max-w-3xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 1 }}
-          className="space-y-12 text-2xl md:text-4xl font-serif font-black leading-snug tracking-tight text-white"
-        >
-          <p className="text-brand">
-            "AI will be the most consequential technology in human history."
-          </p>
-          <p>
-            Most companies are racing to build it. Few are building the infrastructure to hold it accountable.
-          </p>
-          <p>
-            I believe trust is not a feature — it is the foundation. An AI system that cannot be audited, contested, or governed is not a tool. It is a liability.
-          </p>
-          <p>
-            ALPAR AI exists because accountability cannot wait for regulation. It must be built into the architecture — from day one.
-          </p>
-          <p className="text-brand-purple">
-            This is my life's work.
-          </p>
-        </motion.div>
-      </div>
+    <section id="manifesto" className="py-32 px-6 max-w-4xl mx-auto text-center font-serif">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 1 }}
+      >
+        <h2 className="text-sm font-sans font-bold tracking-[0.3em] uppercase text-white/50 mb-12">
+          {t('title')}
+        </h2>
+        
+        <div className="space-y-12 text-3xl md:text-5xl font-black leading-tight text-white/90">
+          <p>{t('p1')}</p>
+          <p className="text-white/60">{t('p2')}</p>
+          <p>{t('p3')}</p>
+          <p className="text-white/40">{t('p4')}</p>
+        </div>
+      </motion.div>
     </section>
   );
 }

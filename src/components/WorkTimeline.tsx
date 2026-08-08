@@ -1,39 +1,37 @@
-"use client";
-
-import { motion } from "framer-motion";
-
-const MILESTONES = [
-  { year: "2024", title: "Agent-OS v1", description: "İlk otonom ajan çalışma zamanı" },
-  { year: "2025", title: "ALPAR AI", description: "İlk bağımsız AI olay sicili" },
-  { year: "2026", title: "EU AI Act Article 73 Uyumluluk Altyapısı", description: "Canlıya Geçiş" },
-  { year: "2026", title: "DecasHub", description: "Otonom fiziksel sistem venture studio'su" }
-];
+'use client';
+import { useTranslations } from 'next-intl';
 
 export default function WorkTimeline() {
+  const t = useTranslations('timeline');
+
+  const items = [
+    { id: 'e4' },
+    { id: 'e3' },
+    { id: 'e2' },
+    { id: 'e1' }
+  ];
+
   return (
-    <section className="py-24 px-6 relative">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl font-serif font-bold mb-12 text-center md:text-left">Selected Work</h2>
+    <section className="py-24 px-6 max-w-3xl mx-auto">
+      <h2 className="text-3xl font-bold mb-16 text-center">{t('title')}</h2>
+      
+      <div className="relative border-l border-white/10 ml-4 md:ml-0 md:border-l-0">
+        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent -translate-x-1/2" />
         
-        <div className="relative border-l border-white/10 ml-4 md:ml-0">
-          {MILESTONES.map((item, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="mb-12 pl-8 relative"
-            >
-              <div className="absolute w-3 h-3 bg-brand rounded-full -left-[6.5px] top-1.5 shadow-[0_0_10px_rgba(59,130,246,0.5)]" />
-              <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
-                <span className="text-brand font-mono font-bold text-xl">{item.year}</span>
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-1">{item.title}</h3>
-                  <p className="text-white/60">{item.description}</p>
-                </div>
+        <div className="space-y-16">
+          {items.map((item, i) => (
+            <div key={item.id} className={`relative flex flex-col md:flex-row items-start md:items-center ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+              
+              <div className="absolute left-[-21px] md:left-1/2 top-1 md:top-1/2 w-3 h-3 rounded-full bg-white md:-translate-x-1/2 md:-translate-y-1/2 animate-pulse shadow-[0_0_15px_rgba(255,255,255,0.8)]" />
+              
+              <div className="ml-8 md:ml-0 md:w-1/2 px-8">
+                <span className="text-white/50 text-sm font-mono mb-2 block">
+                  {t(`${item.id}_year`)}
+                </span>
+                <h3 className="text-xl font-bold mb-2">{t(`${item.id}_title`)}</h3>
+                <p className="text-white/70">{t(`${item.id}_desc`)}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

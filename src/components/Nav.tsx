@@ -1,30 +1,31 @@
-"use client";
-
-import { motion } from "framer-motion";
-import Link from "next/link";
+'use client';
+import { useTranslations } from 'next-intl';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function Nav() {
+  const t = useTranslations('nav');
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const toggleLanguage = () => {
+    // Assuming pathname starts with /en or /tr
+    const newLocale = pathname.startsWith('/en') ? 'tr' : 'en';
+    const newPath = pathname.replace(/^\/(en|tr)/, `/${newLocale}`);
+    router.push(newPath || `/${newLocale}`);
+  };
+
   return (
-    <motion.nav
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 px-6 py-4 border-b border-white/10 bg-white/5 backdrop-blur-xl"
-    >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link href="/" className="font-serif font-bold text-xl tracking-tighter">
-          EE
-        </Link>
-        <div className="flex items-center gap-6">
-          <Link
-            href="https://alparai.com"
-            target="_blank"
-            className="text-sm font-medium hover:text-brand transition-colors"
-          >
-            ALPAR AI
-          </Link>
-        </div>
+    <nav className="sticky top-0 z-50 backdrop-blur-xl bg-black/20 border-b border-white/5 py-4 px-6 flex justify-between items-center">
+      <div className="font-bold text-lg tracking-tight">
+        {t('alparai')}
       </div>
-    </motion.nav>
+      <div className="flex gap-6 items-center">
+        <a href="#manifesto" className="text-sm font-medium hover:text-white/80 transition-colors">{t('manifesto')}</a>
+        <a href="#contact" className="text-sm font-medium hover:text-white/80 transition-colors">{t('contact')}</a>
+        <button onClick={toggleLanguage} className="text-xs font-semibold px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 transition-all">
+          {t('switchLang')}
+        </button>
+      </div>
+    </nav>
   );
 }

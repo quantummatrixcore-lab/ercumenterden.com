@@ -1,0 +1,50 @@
+{
+  "nav": { "alparai": "ALPAR AI", "manifesto": "Manifesto", "contact": "Contact", "switchLang": "Türkçe" },
+  "hero": {
+    "badge": "Founder & Chief Architect",
+    "h1": "I Build the Trust Layer for AI.",
+    "sub": "Building ALPAR AI, DecasHub & Agent-OS — the sovereign infrastructure for AI accountability.",
+    "cta1": "View ALPAR AI",
+    "cta2": "Read Manifesto"
+  },
+  "ecosystem": {
+    "title": "The Ecosystem",
+    "alparai_title": "ALPAR AI",
+    "alparai_tag": "The Trust Infrastructure",
+    "alparai_desc": "World’s first independent AI incident registry. EU AI Act Article 73 compliant. Zero-knowledge logging. Trust Badges for AI providers.",
+    "decashub_title": "DecasHub",
+    "decashub_tag": "The Autonomous Hardware Cluster",
+    "decashub_desc": "A venture studio for autonomous physical systems. AI-coordinated water, carbon, logistics, and energy assets.",
+    "agetos_title": "Agent-OS",
+    "agetos_tag": "The OS for AI Agents",
+    "agetos_desc": "Open-source autonomous agent runtime. Manages multi-agent swarms, memory, identity, and execution."
+  },
+  "manifesto": {
+    "title": "Manifesto",
+    "p1": "AI will be the most consequential technology in human history.",
+    "p2": "Most companies are racing to build it. Few are building the infrastructure to hold it accountable.",
+    "p3": "I believe trust is not a feature — it is the foundation. An AI system that cannot be audited, contested, or governed is not a tool. It is a liability.",
+    "p4": "ALPAR AI exists because accountability cannot wait for regulation. It must be built into the architecture — from day one. This is my life’s work."
+  },
+  "timeline": {
+    "title": "Selected Work",
+    "e1_year": "2024", "e1_title": "Agent-OS v1", "e1_desc": "First autonomous agent runtime",
+    "e2_year": "2025", "e2_title": "ALPAR AI", "e2_desc": "First independent AI incident registry",
+    "e3_year": "2026", "e3_title": "EU AI Act Article 73", "e3_desc": "Full compliance infrastructure",
+    "e4_year": "2026", "e4_title": "DecasHub", "e4_desc": "Autonomous hardware venture studio"
+  },
+  "signals": {
+    "title": "Signals",
+    "s1": "16,000+", "s1_label": "LinkedIn Connections",
+    "s2": "AGPL-3.0", "s2_label": "Open Source License",
+    "s3": "Art. 73", "s3_label": "EU AI Act Compliant",
+    "s4": "PRO", "s4_label": "Vercel Infrastructure"
+  },
+  "contact": {
+    "title": "Connect",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": "All rights reserved."
+}

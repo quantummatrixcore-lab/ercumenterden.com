@@ -7,7 +7,11 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[80vh] flex flex-col items-center justify-center overflow-hidden px-6 text-center">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/10 via-black to-black pointer-events-none" />
+      <motion.div 
+        animate={{ scale: [1, 1.05, 1], opacity: [0.8, 1, 0.8] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/10 via-black to-black pointer-events-none origin-center" 
+      />
       
       <motion.div
         initial={{ opacity: 0, y: 20 }}

@@ -1,6 +1,31 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, useTransform, animate, useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+
+function Counter({ text }: { text: string }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const count = useMotionValue(0);
+  
+  const numericMatch = text.replace(/,/g, '').match(/^(\d+)(.*)$/);
+  const isNumber = numericMatch !== null;
+  const targetNumber = isNumber ? parseInt(numericMatch[1], 10) : 0;
+  const suffix = isNumber ? numericMatch[2] : "";
+
+  const rounded = useTransform(count, (latest) => Math.round(latest).toLocaleString() + suffix);
+
+  useEffect(() => {
+    if (isInView && isNumber) {
+      const controls = animate(count, targetNumber, { duration: 2, ease: "easeOut" });
+      return controls.stop;
+    }
+  }, [isInView, isNumber, targetNumber, count]);
+
+  if (!isNumber) return <span>{text}</span>;
+
+  return <motion.span ref={ref}>{rounded}</motion.span>;
+}
 
 export default function Signals() {
   const t = useTranslations('signals');
@@ -30,7 +55,7 @@ export default function Signals() {
               className="p-6"
             >
               <div className="text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50">
-                {t(item.id)}
+                <Counter text={t(item.id)} />
               </div>
               <div className="text-sm text-white/60 font-medium">
                 {t(`${item.id}_label`)}

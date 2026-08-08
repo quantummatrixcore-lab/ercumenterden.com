@@ -38,7 +38,7 @@ export default async function LocaleLayout({
   const { locale } = await params;
   const messages = await getMessages();
   return (
-    <html lang={locale} className={`${inter.variable} ${plusJakarta.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${plusJakarta.variable} scroll-smooth`}>
       <body className="antialiased bg-black text-white selection:bg-brand/30">
         <NextIntlClientProvider messages={messages}>
           {children}

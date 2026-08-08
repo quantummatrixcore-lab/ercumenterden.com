@@ -1,5 +1,10 @@
 {
-  "nav": { "alparai": "ALPAR AI", "manifesto": "Manifesto", "contact": "İletişim", "switchLang": "English" },
+  "nav": {
+    "alparai": "ALPAR AI",
+    "manifesto": "Manifesto",
+    "contact": "İletişim",
+    "switchLang": "English"
+  },
   "hero": {
     "badge": "Kurucu & Baş Mimar",
     "h1": "Yapay Zeka İçin Güven Katmanını İnşa Ediyorum.",
@@ -28,23 +33,64 @@
   },
   "timeline": {
     "title": "Seçili Çalışmalar",
-    "e1_year": "2024", "e1_title": "Agent-OS v1", "e1_desc": "İlk otonom ajan çalışma zamanı",
-    "e2_year": "2025", "e2_title": "ALPAR AI", "e2_desc": "İlk bağımsız YZ olay sicili",
-    "e3_year": "2026", "e3_title": "AB YZ Yasası Madde 73", "e3_desc": "Tam uyum altyapısı",
-    "e4_year": "2026", "e4_title": "DecasHub", "e4_desc": "Otonom donanım girişim studiosu"
+    "e1_year": "2024",
+    "e1_title": "Agent-OS v1",
+    "e1_desc": "İlk otonom ajan çalışma zamanı",
+    "e2_year": "2025",
+    "e2_title": "ALPAR AI",
+    "e2_desc": "İlk bağımsız YZ olay sicili",
+    "e3_year": "2026",
+    "e3_title": "AB YZ Yasası Madde 73",
+    "e3_desc": "Tam uyum altyapısı",
+    "e4_year": "2026",
+    "e4_title": "DecasHub",
+    "e4_desc": "Otonom donanım girişim studiosu"
   },
   "signals": {
     "title": "Göstergeler",
-    "s1": "16.000+", "s1_label": "LinkedIn Bağlantısı",
-    "s2": "AGPL-3.0", "s2_label": "Açık Kaynak Lisansı",
-    "s3": "Md. 73", "s3_label": "AB YZ Yasası Uyumlu",
-    "s4": "PRO", "s4_label": "Vercel Altyapısı"
+    "s1": "16.000+",
+    "s1_label": "LinkedIn Bağlantısı",
+    "s2": "AGPL-3.0",
+    "s2_label": "Açık Kaynak Lisansı",
+    "s3": "Md. 73",
+    "s3_label": "AB YZ Yasası Uyumlu",
+    "s4": "PRO",
+    "s4_label": "Vercel Altyapısı"
   },
   "contact": {
     "title": "İletişim",
     "email": "E-posta",
     "linkedin": "LinkedIn",
-    "github": "GitHub"
+    "github": "GitHub",
+    "namePlaceholder": "Adınız",
+    "emailPlaceholder": "eposta@adresiniz.com",
+    "messagePlaceholder": "Nasıl işbirliği yapabiliriz?",
+    "sendButton": "Mesaj Gönder"
   },
-  "footer": "Tüm haklar saklıdır."
+  "footer": "Tüm haklar saklıdır.",
+  "writing": {
+    "title": "Yazılar",
+    "w1_title": "Neden YZ Hesap Verebilirliği Düzenlemeyi Bekleyemez",
+    "w1_desc": "Güven bir özellik değil, temeldir. Endüstrinin neden bağımsız hesap verebilirlik katmanları inşa etmesi gerektiğine dair.",
+    "w1_date": "2026",
+    "w2_title": "Güven Katmanını İnşa Etmek: ALPAR AI Mimari Derinleme",
+    "w2_desc": "ALPAR AI güven altyapısına güç veren sıfır-bilgi günlükleme ve değişmez denetim izlerine teknik bir bakış.",
+    "w2_date": "2026",
+    "w3_title": "Egemen YZ: Bir Sonraki Sınır Neden Otonom Donanım",
+    "w3_desc": "DecasHub çağında fiziksel YZ ajanları ve egemen, otonom donanım kümelerinin gerekliliği.",
+    "w3_date": "2026",
+    "read_more": "Oku →"
+  },
+  "speaking": {
+    "title": "Konuşmalar & Medya",
+    "s1_title": "AB YZ Yasası & Bağımsız Hesap Verebilirlik",
+    "s1_event": "Global YZ Etik Zirvesi",
+    "s1_date": "2026",
+    "s2_title": "Otonom Donanımın Geleceği",
+    "s2_event": "DeepTech Podcast",
+    "s2_date": "2026",
+    "s3_title": "Agent-OS İnşası",
+    "s3_event": "Açık Kaynak Semineri",
+    "s3_date": "2025"
+  }
 }

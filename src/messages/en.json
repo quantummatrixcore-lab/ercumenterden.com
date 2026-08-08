@@ -1,5 +1,10 @@
 {
-  "nav": { "alparai": "ALPAR AI", "manifesto": "Manifesto", "contact": "Contact", "switchLang": "Türkçe" },
+  "nav": {
+    "alparai": "ALPAR AI",
+    "manifesto": "Manifesto",
+    "contact": "Contact",
+    "switchLang": "Türkçe"
+  },
   "hero": {
     "badge": "Founder & Chief Architect",
     "h1": "I Build the Trust Layer for AI.",
@@ -28,23 +33,64 @@
   },
   "timeline": {
     "title": "Selected Work",
-    "e1_year": "2024", "e1_title": "Agent-OS v1", "e1_desc": "First autonomous agent runtime",
-    "e2_year": "2025", "e2_title": "ALPAR AI", "e2_desc": "First independent AI incident registry",
-    "e3_year": "2026", "e3_title": "EU AI Act Article 73", "e3_desc": "Full compliance infrastructure",
-    "e4_year": "2026", "e4_title": "DecasHub", "e4_desc": "Autonomous hardware venture studio"
+    "e1_year": "2024",
+    "e1_title": "Agent-OS v1",
+    "e1_desc": "First autonomous agent runtime",
+    "e2_year": "2025",
+    "e2_title": "ALPAR AI",
+    "e2_desc": "First independent AI incident registry",
+    "e3_year": "2026",
+    "e3_title": "EU AI Act Article 73",
+    "e3_desc": "Full compliance infrastructure",
+    "e4_year": "2026",
+    "e4_title": "DecasHub",
+    "e4_desc": "Autonomous hardware venture studio"
   },
   "signals": {
     "title": "Signals",
-    "s1": "16,000+", "s1_label": "LinkedIn Connections",
-    "s2": "AGPL-3.0", "s2_label": "Open Source License",
-    "s3": "Art. 73", "s3_label": "EU AI Act Compliant",
-    "s4": "PRO", "s4_label": "Vercel Infrastructure"
+    "s1": "16,000+",
+    "s1_label": "LinkedIn Connections",
+    "s2": "AGPL-3.0",
+    "s2_label": "Open Source License",
+    "s3": "Art. 73",
+    "s3_label": "EU AI Act Compliant",
+    "s4": "PRO",
+    "s4_label": "Vercel Infrastructure"
   },
   "contact": {
     "title": "Connect",
     "email": "Email",
     "linkedin": "LinkedIn",
-    "github": "GitHub"
+    "github": "GitHub",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "How can we collaborate?",
+    "sendButton": "Send Message"
   },
-  "footer": "All rights reserved."
+  "footer": "All rights reserved.",
+  "writing": {
+    "title": "Writing",
+    "w1_title": "Why AI Accountability Can't Wait for Regulation",
+    "w1_desc": "Trust is not a feature — it is the foundation. Exploring why the industry must build independent accountability layers.",
+    "w1_date": "2026",
+    "w2_title": "Building the Trust Layer: ALPAR AI Architecture Deep Dive",
+    "w2_desc": "A technical look at the zero-knowledge logging and immutable audit trails.",
+    "w2_date": "2026",
+    "w3_title": "Sovereign AI: Why the Next Frontier is Autonomous Hardware",
+    "w3_desc": "Physical AI agents and the necessity of sovereign, autonomous hardware clusters.",
+    "w3_date": "2026",
+    "read_more": "Read →"
+  },
+  "speaking": {
+    "title": "Speaking & Media",
+    "s1_title": "EU AI Act & Independent Accountability",
+    "s1_event": "Global AI Ethics Summit",
+    "s1_date": "2026",
+    "s2_title": "The Future of Autonomous Hardware",
+    "s2_event": "DeepTech Podcast",
+    "s2_date": "2026",
+    "s3_title": "Building Agent-OS",
+    "s3_event": "Open Source Webinar",
+    "s3_date": "2025"
+  }
 }

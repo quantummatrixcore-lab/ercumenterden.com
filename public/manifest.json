@@ -1,0 +1,12 @@
+{
+  "name": "Ercüment Erden",
+  "short_name": "EE",
+  "description": "Founder of ALPAR AI & DecasHub",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#3b82f6",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}

@@ -9,7 +9,23 @@ const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-se
 
 export const metadata: Metadata = {
   title: 'Ercüment Erden — Founder of ALPAR AI & DecasHub',
-  description: 'Building the trust infrastructure for AI accountability.',
+  description: 'Building the trust infrastructure for AI accountability. Founder of ALPAR AI (EU AI Act Article 73) and DecasHub.',
+  metadataBase: new URL('https://ercumenterden.com'),
+  openGraph: {
+    title: 'Ercüment Erden — Founder of ALPAR AI & DecasHub',
+    description: 'Building the trust infrastructure for AI accountability.',
+    url: 'https://ercumenterden.com',
+    siteName: 'Ercüment Erden',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ercüment Erden — Founder of ALPAR AI & DecasHub',
+    description: 'Building the trust infrastructure for AI accountability.',
+    creator: '@ercumenterden',
+  },
+  robots: { index: true, follow: true },
+  manifest: '/manifest.json',
 };
 
 export default async function LocaleLayout({

@@ -1,17 +1,15 @@
 'use client';
-import { useTranslations } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { useTranslations, useLocale } from 'next-intl';
+import { useRouter, usePathname } from '@/i18n/navigation';
 
 export default function Nav() {
   const t = useTranslations('nav');
+  const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
 
   const toggleLanguage = () => {
-    // Assuming pathname starts with /en or /tr
-    const newLocale = pathname.startsWith('/en') ? 'tr' : 'en';
-    const newPath = pathname.replace(/^\/(en|tr)/, `/${newLocale}`);
-    router.push(newPath || `/${newLocale}`);
+    router.replace(pathname, { locale: locale === 'en' ? 'tr' : 'en' });
   };
 
   return (

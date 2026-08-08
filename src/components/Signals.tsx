@@ -33,8 +33,7 @@ export default function Signals() {
   const signals = [
     { id: 's1' },
     { id: 's2' },
-    { id: 's3' },
-    { id: 's4' }
+    { id: 's3' }
   ];
 
   return (
@@ -44,7 +43,7 @@ export default function Signals() {
           {t('title')}
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {signals.map((item, i) => (
             <motion.div 
               key={item.id}

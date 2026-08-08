@@ -1,21 +1,24 @@
-import Nav from "@/components/sections/Nav";
-import Hero from "@/components/sections/Hero";
-import EcosystemDashboard from "@/components/sections/EcosystemDashboard";
-import FounderStory from "@/components/sections/FounderStory";
-import Manifesto from "@/components/sections/Manifesto";
-import Footer from "@/components/sections/Footer";
+import Nav from "@/components/Nav";
+import Hero from "@/components/Hero";
+import Ecosystem from "@/components/Ecosystem";
+import Manifesto from "@/components/Manifesto";
+import WorkTimeline from "@/components/WorkTimeline";
+import Signals from "@/components/Signals";
+import Contact from "@/components/Contact";
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="flex flex-col min-h-screen bg-ink selection:bg-cyan-neon/30 selection:text-cyan-neon">
+    <main className="min-h-screen">
       <Nav />
-      <main className="flex-grow">
-        <Hero />
-        <EcosystemDashboard />
-        <FounderStory />
-        <Manifesto />
-      </main>
-      <Footer />
-    </div>
+      <Hero />
+      <Ecosystem />
+      <Manifesto />
+      <WorkTimeline />
+      <Signals />
+      <Contact />
+      <footer className="py-8 text-center text-sm text-white/40 border-t border-white/5">
+        &copy; {new Date().getFullYear()} Sovereign AI Holding. All rights reserved.
+      </footer>
+    </main>
   );
 }

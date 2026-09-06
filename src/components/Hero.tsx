@@ -1,8 +1,8 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { content, Language } from '@/data/content';
-import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Shield, Cpu, Activity, Lock } from 'lucide-react';
 
 interface HeroProps {
   lang: Language;
@@ -12,56 +12,44 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
   const t = content[lang].hero;
 
   return (
-    <section className="relative overflow-hidden border-b border-white/10 bg-radial-gradient pb-20 pt-16 sm:pb-28 sm:pt-24">
-      {/* Background Architectural Grid Accent */}
-      <div className="pointer-events-none absolute inset-0 bg-grid-sovereign opacity-40" />
+    <section className="relative overflow-hidden pt-36 pb-20 sm:pt-44 sm:pb-28">
+      {/* Subtle Background Radial Focus */}
+      <div className="pointer-events-none absolute top-10 left-1/2 -translate-x-1/2 h-[500px] w-[700px] rounded-full bg-[#00F0FF]/5 blur-[140px]" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Executive Sub-Badge */}
-        <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-[#0A0E17]/90 px-4 py-1.5 shadow-[0_0_20px_-3px_rgba(0,240,255,0.15)] backdrop-blur-md">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00F0FF] opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-[#00F0FF]" />
-          </span>
-          <span className="font-mono text-xs font-semibold tracking-wider text-[#00F0FF]">
-            {t.badge}
-          </span>
-          <span className="text-zinc-600">|</span>
-          <span className="text-xs font-medium text-zinc-300">
-            {t.subBadge}
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col items-start text-left">
+        {/* Live Systems Telemetry Capsule */}
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#0F172A]/70 px-3.5 py-1 text-xs backdrop-blur-md">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#00F0FF] animate-pulse" />
+          <span className="font-mono text-[11px] font-bold tracking-wider text-slate-300">
+            SYSTEMS NOMINAL • MESH LATENCY &lt; 100µs • ISTANBUL &amp; GLOBAL
           </span>
         </div>
 
-        {/* Executive Title */}
-        <div className="mb-6 max-w-5xl">
-          <h1 className="text-5xl font-black tracking-tight text-white sm:text-7xl lg:text-8xl">
-            <span className="block text-[#F8FAFC]">{t.titlePrefix}</span>
-            <span className="block bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
-              {t.titleSuffix}
-            </span>
-          </h1>
-        </div>
+        {/* Sculpted Towering Name */}
+        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[1.05] mb-4">
+          <span className="text-gradient block">ERCÜMENT ERDEN</span>
+        </h1>
 
-        {/* Master Manifesto Lead */}
-        <div className="mb-8 max-w-3xl">
-          <p className="text-2xl font-bold tracking-tight text-[#00F0FF] sm:text-3xl">
-            {t.manifestoLead}{' '}
-            <span className="text-[#F8FAFC]">{t.manifestoSub}</span>
+        {/* Executive Subtitle */}
+        <p className="font-mono text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#00F0FF] mb-6">
+          Founder &amp; CEO @ ALPAR AI • DeepTech Systems Architect • Serial Entrepreneur
+        </p>
+
+        {/* Impact Quote Box */}
+        <div className="border-l-2 border-[#00F0FF]/60 pl-5 my-3 max-w-3xl">
+          <p className="text-lg sm:text-xl font-medium text-slate-200 leading-relaxed italic">
+            "{t.manifestoLead} {t.manifestoSub}"
           </p>
-        </div>
-
-        {/* Narrative Paragraph */}
-        <div className="mb-10 max-w-3xl">
-          <p className="text-base leading-relaxed text-zinc-300 sm:text-lg">
+          <p className="text-sm text-slate-400 mt-2 font-normal leading-relaxed">
             {t.narrative}
           </p>
         </div>
 
-        {/* Direct Action Buttons */}
-        <div className="mb-16 flex flex-wrap items-center gap-4 sm:gap-5">
+        {/* CTAs */}
+        <div className="mt-8 flex flex-wrap items-center gap-4">
           <a
             href="#ecosystem"
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#00F0FF] bg-[#00F0FF] px-6 py-3.5 font-mono text-xs font-bold uppercase tracking-wider text-[#05070C] shadow-[0_0_25px_rgba(0,240,255,0.35)] transition-all duration-300 hover:bg-white hover:border-white hover:shadow-[0_0_35px_rgba(255,255,255,0.5)]"
+            className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-slate-200 to-white px-6 py-3 font-mono text-xs font-black uppercase tracking-wider text-[#07090E] primary-glow hover:brightness-110 transition-all"
           >
             <span>{t.primaryCta}</span>
             <ArrowDown className="h-4 w-4" />
@@ -71,7 +59,7 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
             href="https://alparai.com/cases/001-grok-passport"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 bg-[#0A0E17] px-6 py-3.5 font-mono text-xs font-semibold uppercase tracking-wider text-[#F8FAFC] transition-all duration-300 hover:border-[#00F0FF]/60 hover:text-[#00F0FF] hover:shadow-[0_0_20px_-3px_rgba(0,240,255,0.25)]"
+            className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-6 py-3 font-mono text-xs font-semibold uppercase tracking-wider text-slate-200 hover:border-[#00F0FF] hover:text-[#00F0FF] transition-all"
           >
             <span>{t.secondaryCta}</span>
             <ArrowUpRight className="h-4 w-4" />
@@ -79,28 +67,25 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
 
           <a
             href="#contact"
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/10 bg-transparent px-5 py-3.5 font-mono text-xs font-medium uppercase tracking-wider text-zinc-400 transition-colors hover:border-white/30 hover:text-white"
+            className="inline-flex items-center gap-2 rounded-lg border border-transparent px-4 py-3 font-mono text-xs font-medium uppercase tracking-wider text-slate-400 hover:text-white transition-colors"
           >
             <span>{t.directLineCta}</span>
           </a>
         </div>
 
-        {/* Institutional Metrics Ticker */}
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
-          {t.ticker.map((item, index) => (
-            <div
-              key={index}
-              className="glass-card rounded-xl p-4 sm:p-5"
-            >
-              <div className="mb-1 font-mono text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+        {/* 4-Metric Glass Ticker */}
+        <div className="mt-14 w-full grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+          {t.ticker.map((item, idx) => (
+            <div key={idx} className="glass-panel p-4 rounded-xl flex flex-col justify-between">
+              <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">
                 {item.label}
-              </div>
-              <div className="font-mono text-lg font-black tracking-tight text-[#00F0FF] sm:text-xl lg:text-2xl">
+              </span>
+              <span className="font-mono text-xl sm:text-2xl font-black text-[#00F0FF]">
                 {item.value}
-              </div>
-              <div className="mt-1 font-mono text-xs text-zinc-400">
-                {item.desc}
-              </div>
+              </span>
+              <span className="font-mono text-[10px] text-slate-500 mt-1">
+                {item.desc || 'Verified Protocol'}
+              </span>
             </div>
           ))}
         </div>

@@ -1,0 +1,25 @@
+﻿<svg viewBox="0 0 100 100" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ee-silver-grad" x1="10" y1="10" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="ee-cyan-glow" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="ee-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="#07090e" />
+  <rect width="100" height="100" rx="22" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+  <circle cx="15" cy="15" r="30" fill="#00f0ff" fill-opacity="0.1" filter="url(#ee-glow)" />
+  <g fill="url(#ee-silver-grad)" filter="url(#ee-glow)">
+    <path d="M22 26 H42 V34 H31 V46 H40 V54 H31 V66 H42 V74 H22 Z" />
+    <path d="M50 26 H70 V34 H59 V46 H68 V54 H59 V66 H70 V74 H50 Z" />
+  </g>
+  <circle cx="78" cy="74" r="3.5" fill="#00f0ff" />
+</svg>

@@ -1,0 +1,20 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project_id": "ercumenterden",
+  "project_name": "Ercument Erden - Founder Authority & Investor Data Room",
+  "category": "Founder Authority Hub & Sovereign Data Room",
+  "domain": "ercumenterden.com",
+  "local_workspace": "D:/01_SaaS_Products/ercumenterden.com",
+  "remote_deployment": {
+    "host": "45.143.4.92",
+    "path": "/data/apps/ercumenterden",
+    "runtime": "next-standalone",
+    "port": 3008,
+    "health_endpoint": "http://localhost:3008"
+  },
+  "isolation_rules": {
+    "strict_workspace_boundary": true,
+    "forbidden_cross_talk": ["decashub", "lionexia", "alparai", "ercuos"],
+    "server_query_command": "/data/apps/check_project.sh ercumenterden"
+  }
+}

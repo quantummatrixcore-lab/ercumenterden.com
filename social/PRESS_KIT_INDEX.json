@@ -1,0 +1,246 @@
+{
+  "manifestVersion": "1.0.0",
+  "releaseDate": "2026-09-07T20:00:00.000Z",
+  "ecosystem": "Ercüment Erden Egemen Teknoloji Ekosistemi",
+  "curator": "9. HEZARFEN (NEXUS) Medya ve Büyüme Mimarı",
+  "syndicatePartner": "Ahmet Rıfat Albuz (TÜRKİNFORM & Yeni Nesil TV)",
+  "status": "PRODUCTION_READY",
+  "embargo": "FOR IMMEDIATE RELEASE / AMBARGOSUZ DERHAL YAYIN",
+  "syndicateBoard": [
+    {
+      "id": "FOUNDER_ARCHITECT",
+      "name": "Ercüment Erden",
+      "role": "Kurucu & Egemen Sistemler Baş Mimarı",
+      "bio": "15 yılı aşkın fintech, finansal teknolojiler, derin teknoloji ve egemen sistem mimarisi liderliği. Yüksek hacimli enerji sözleşmeleri müzakereleri, sınır ötesi kurumsal satış stratejisi ve sıfır dış bağımlılıklı yazılım felsefesinin kurucusu.",
+      "contact": {
+        "email": "founder@ercumenterden.com",
+        "portal": "https://ercumenterden.com",
+        "dealroom": "https://ercumenterden.com/dealroom"
+      },
+      "location": "İstanbul, Türkiye"
+    },
+    {
+      "id": "MEDIA_AUTHORITY",
+      "name": "Ahmet Rıfat Albuz",
+      "role": "Medya Stratejisi ve İletişim Otoritesi",
+      "bio": "20 yılı aşkın ana akım ve dijital medya tecrübesiyle geleneksel medyanın mutfağından yetişen, TÜRKİNFORM Genel Yayın Yönetmeni ve yeninesil.tv kurucusu. Kriz iletişimi, algoritmik şeffaflık, veri gazeteciliği ve kamuoyu inşası duayeni.",
+      "contact": {
+        "email": "press@ahmetrifatalbuz.com",
+        "portal": "https://ahmetrifatalbuz.com",
+        "mediaOutlets": [
+          "TÜRKİNFORM",
+          "yeninesil.tv"
+        ]
+      },
+      "location": "İstanbul, Türkiye"
+    },
+    {
+      "id": "LEGAL_GOVERNANCE",
+      "name": "Prof. Dr. Musa Aygül",
+      "role": "Hukuki Yönetişim ve Uluslararası Tahkim Otoritesi",
+      "bio": "Selçuk Üniversitesi Hukuk Fakültesi Özel Hukuk Bölümü Milletlerarası Özel Hukuk Anabilim Dalı Başkanı. Milletlerarası tahkim, sınır ötesi yatırım hukuku, regülasyon uyumu, AB Yapay Zeka Yasası (EU AI Act Article 73) ve otonom sistemler etik yönetişim güvencesi.",
+      "contact": {
+        "email": "legal@ercumenterden.com",
+        "institution": "Selçuk Üniversitesi Hukuk Fakültesi"
+      },
+      "location": "Konya / İstanbul, Türkiye"
+    }
+  ],
+  "platforms": [
+    {
+      "name": "ALPAR AI",
+      "domain": "alparai.com",
+      "category": "AI Constitution & Ethics Platform",
+      "tam": "$12.4 Billion",
+      "features": [
+        "Bayesian TrustScore v2.5",
+        "Zero-Knowledge Proof (ZKP) Whistleblowing",
+        "EU AI Act Article 73 Full Compliance"
+      ],
+      "moat": "Patent-pending non-repudiation cryptographic verification for enterprise LLMs"
+    },
+    {
+      "name": "DECASHUB",
+      "domain": "decashub.com",
+      "category": "Sovereign Cloud & Edge Infrastructure",
+      "tam": "$48.0 Billion",
+      "features": [
+        "Bare-Metal DeHost Xeon 16C/32T",
+        "Multi-Region Private Edge Mesh",
+        "Zero-Tunnel Direct Edge"
+      ],
+      "moat": "Sub-millisecond latency with 50% infrastructure cost savings over hyperscalers"
+    },
+    {
+      "name": "LIONEXIA",
+      "domain": "lionexia.com",
+      "category": "High-Frequency Algorithmic Finance & Carbon Settlement",
+      "tam": "$18.5 Billion",
+      "features": [
+        "Microsecond Order-Matching Engine",
+        "Renewable Energy & Carbon Credits Registry",
+        "Dual-Engine Real-Time Settlement"
+      ],
+      "moat": "Ultra-low latency FPGA-accelerated green energy arbitrage engine"
+    },
+    {
+      "name": "ERCUOS",
+      "domain": "ercuos.com",
+      "category": "142-Lego-Engine Sovereign AI Operating System",
+      "tam": "$65.0 Billion",
+      "features": [
+        ".ercu Turing-Complete JIT DSL",
+        "1 Billion ops/sec Giga-Ops Saturation",
+        "4-Agent Closed-Loop Self-Healing"
+      ],
+      "moat": "Hermetic zero-dependency modular architecture with zero external supply chain vulnerability"
+    }
+  ],
+  "mediaAssets": {
+    "pressReleases": [
+      {
+        "language": "tr",
+        "title": "Resmi Ekosistem Basın Bülteni (Türkiye Lansmanı)",
+        "file": {
+          "path": "D:/01_SaaS_Products/ercumenterden.com/press_release.md",
+          "filename": "press_release.md",
+          "bytes": 6933,
+          "lines": 98,
+          "sha256": "b7834921d61b0bc395d3f7ca5bf07fb0f667f301114ef874f97d4fc3a600e7e4"
+        },
+        "format": "Markdown / GFM",
+        "accessUrl": "https://ercumenterden.com/press_release.md"
+      },
+      {
+        "language": "multi (tr, en, de)",
+        "title": "Global Press Kit & International Distribution Manifesto (TR, EN, DE)",
+        "file": {
+          "path": "D:/01_SaaS_Products/ercumenterden.com/social/GLOBAL_PRESS_RELEASE_TR_EN_DE.md",
+          "filename": "GLOBAL_PRESS_RELEASE_TR_EN_DE.md",
+          "bytes": 19285,
+          "lines": 217,
+          "sha256": "e201406fb5c273b5252a71bfac3821ce3aebf7550b1d695543b924e8f172d281"
+        },
+        "format": "Markdown / GFM",
+        "accessUrl": "https://ercumenterden.com/social/GLOBAL_PRESS_RELEASE_TR_EN_DE.md"
+      }
+    ],
+    "investorMaterials": [
+      {
+        "title": "Executive Investor Pitch One-Pager",
+        "file": {
+          "path": "D:/01_SaaS_Products/ercumenterden.com/social/INVESTOR_PITCH_ONEPAGER.md",
+          "filename": "INVESTOR_PITCH_ONEPAGER.md",
+          "bytes": 15331,
+          "lines": 191,
+          "sha256": "d24a07f8b02dd1dd3b84636e7f3198ee402215f32afb7740404e2a187a4b3d0e"
+        },
+        "access": "CONFIDENTIAL (NDA Required)",
+        "accessUrl": "https://ercumenterden.com/dealroom",
+        "targetFunding": "$3.5 Million (Post-Seed / Pre-Series A)"
+      }
+    ],
+    "agencyAndSocialKits": [
+      {
+        "title": "7-Day Multi-Platform Social Launch Calendar (LinkedIn, X, YouTube)",
+        "file": {
+          "path": "D:/01_SaaS_Products/ercumenterden.com/social/content_calendar_7day.md",
+          "filename": "content_calendar_7day.md",
+          "bytes": 19173,
+          "lines": 335,
+          "sha256": "1dc4da3ca59702360b1a743909afd258f9ce11f09a155f01bc224caf2b0bd56a"
+        },
+        "format": "Schedule Blueprint",
+        "accessUrl": "https://ercumenterden.com/social/content_calendar_7day.md"
+      },
+      {
+        "title": "5 Viral Video Blueprints & Production Storyboard Kit (Shorts/Reels/YouTube)",
+        "file": {
+          "path": "D:/01_SaaS_Products/ercumenterden.com/social/viral_video_blueprints.md",
+          "filename": "viral_video_blueprints.md",
+          "bytes": 14072,
+          "lines": 178,
+          "sha256": "572682d1b7ec127fbd71723ad8877e649b4fb21386cbba41a6174ea5ed67d994"
+        },
+        "format": "Production Storyboard",
+        "accessUrl": "https://ercumenterden.com/social/viral_video_blueprints.md"
+      }
+    ]
+  },
+  "brandIdentity": {
+    "designPhilosophy": "Linear-tier Obsidian Dark Minimalist Authority (WCAG AAA & APCA Lc 85+ Compliant)",
+    "colorPalette": {
+      "backgroundDark": {
+        "hex": "#0B0F17",
+        "oklch": "oklch(0.12 0.02 245)",
+        "usage": "Core background and negative space"
+      },
+      "surfaceCard": {
+        "hex": "#111827",
+        "oklch": "oklch(0.18 0.03 250)",
+        "usage": "Card elevation and container background"
+      },
+      "primaryCyan": {
+        "hex": "#00E5FF",
+        "oklch": "oklch(0.85 0.16 200)",
+        "usage": "Interactive elements, key buttons, and metrics"
+      },
+      "secondaryMagenta": {
+        "hex": "#FF00E5",
+        "oklch": "oklch(0.75 0.28 320)",
+        "usage": "Accents, viral hooks, and high-contrast badges"
+      },
+      "matrixGreen": {
+        "hex": "#00FF66",
+        "oklch": "oklch(0.88 0.24 145)",
+        "usage": "Compliance verified, trust badges, and active status"
+      },
+      "textPrimary": {
+        "hex": "#FFFFFF",
+        "oklch": "oklch(1.00 0.00 0)",
+        "usage": "Headings, primary typography"
+      },
+      "textMuted": {
+        "hex": "#9CA3AF",
+        "oklch": "oklch(0.70 0.02 250)",
+        "usage": "Secondary documentation and captions"
+      }
+    },
+    "typography": {
+      "headings": "Montserrat, Syne, -apple-system, sans-serif (Font-weight: 700-900)",
+      "body": "Inter, system-ui, sans-serif (Font-weight: 400-500)",
+      "codeAndTerminal": "JetBrains Mono, Roboto Mono, monospace (Font-weight: 500)"
+    },
+    "logoAssets": {
+      "vectorSvgUrl": "https://presskit.ercumenterden.com/assets/vector/logo_pack.svg",
+      "resolution4kPngUrl": "https://presskit.ercumenterden.com/assets/4k/brand_assets.zip",
+      "faviconUrl": "https://ercumenterden.com/favicon.ico"
+    }
+  },
+  "distributionRouting": {
+    "tier1NationalMedia": [
+      "TÜRKİNFORM Manşet",
+      "Yeni Nesil TV Özel Stüdyo Yayını",
+      "Anadolu Ajansı (AA)",
+      "Bloomberg HT"
+    ],
+    "tier2GlobalTech": [
+      "TechCrunch",
+      "PR Newswire Global Wire",
+      "Sifted (FT Network)",
+      "Handelsblatt",
+      "Hacker News Show HN"
+    ],
+    "tier3SocialAmplification": [
+      "LinkedIn Founder Authority Articles",
+      "X/Twitter High-Impact Threads",
+      "YouTube Shorts / Podcasts"
+    ]
+  },
+  "verification": {
+    "verifiedBy": "v67 Sovereign AI Model Orchestrator",
+    "modelSource": "groq:openai/gpt-oss-120b",
+    "status": "VERIFIED_100_PERCENT",
+    "verifiedAt": "2026-09-07T17:25:59.505Z"
+  }
+}

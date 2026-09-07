@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ercüment Erden Egemen Teknoloji Ekosistemi — Executive Media Kit</title>
+  <meta name="description" content="Ahmet Rıfat Albuz ve Prof. Dr. Musa Aygül Sendikası Resmi Medya Kiti ve Yatırımcı Bilgi Odası">
+  <style>
+    :root {
+      --bg-base: #07090E;
+      --bg-surface: #0E131F;
+      --bg-card: #141B2D;
+      --bg-card-hover: #1B243B;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-focus: #00E5FF;
+      --cyan-primary: #00E5FF;
+      --cyan-glow: rgba(0, 229, 255, 0.25);
+      --magenta-accent: #FF00E5;
+      --magenta-glow: rgba(255, 0, 229, 0.2);
+      --green-status: #00FF66;
+      --text-primary: #F8FAFC;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748B;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-heading: 'Montserrat', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-bottom: 80px;
+    }
+
+    /* Ambient Background Glow */
+    .ambient-glow {
+      position: fixed;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(0, 229, 255, 0.12) 0%, rgba(255, 0, 229, 0.05) 50%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header & Badges */
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 36px;
+    }
+
+    .badge-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .badge-cyan {
+      border-color: var(--cyan-primary);
+      color: var(--cyan-primary);
+      background: rgba(0, 229, 255, 0.08);
+      box-shadow: 0 0 15px var(--cyan-glow);
+    }
+
+    .badge-green {
+      border-color: var(--green-status);
+      color: var(--green-status);
+      background: rgba(0, 255, 102, 0.08);
+    }
+
+    .badge-magenta {
+      border-color: var(--magenta-accent);
+      color: var(--magenta-accent);
+      background: rgba(255, 0, 229, 0.08);
+    }
+
+    h1.hero-title {
+      font-family: var(--font-heading);
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #FFFFFF 30%, var(--cyan-primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 880px;
+      margin-bottom: 24px;
+    }
+
+    /* Syndicate Quick Showcase */
+    .syndicate-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .syndicate-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .syndicate-card:hover {
+      border-color: var(--cyan-primary);
+      transform: translateY(-2px);
+    }
+
+    .avatar-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 2px solid var(--cyan-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--cyan-primary);
+      flex-shrink: 0;
+    }
+
+    .syndicate-info h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .syndicate-info p {
+      font-size: 0.78rem;
+      color: var(--cyan-primary);
+      font-family: var(--font-mono);
+    }
+
+    /* Key Metrics Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 36px 0;
+    }
+
+    .metric-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .metric-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--cyan-primary), var(--magenta-accent));
+    }
+
+    .metric-val {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .metric-label {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* Tab Switcher */
+    .tabs-nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-secondary);
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .tab-btn.active {
+      color: var(--cyan-primary);
+      background: rgba(0, 229, 255, 0.08);
+      border-color: var(--cyan-primary);
+    }
+
+    /* Tab Panels */
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Content Cards & Code Blocks */
+    .content-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    .content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .content-header h3 {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .action-btn {
+      background: rgba(0, 229, 255, 0.1);
+      border: 1px solid var(--cyan-primary);
+      color: var(--cyan-primary);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+
+    .action-btn:hover {
+      background: var(--cyan-primary);
+      color: var(--bg-base);
+      box-shadow: 0 0 15px var(--cyan-glow);
+    }
+
+    .action-btn-share {
+      background: rgba(255, 0, 229, 0.1);
+      border-color: var(--magenta-accent);
+      color: var(--magenta-accent);
+    }
+
+    .action-btn-share:hover {
+      background: var(--magenta-accent);
+      color: var(--text-primary);
+      box-shadow: 0 0 15px var(--magenta-glow);
+    }
+
+    pre.document-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 20px;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #E2E8F0;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-height: 520px;
+      overflow-y: auto;
+    }
+
+    /* Sub Tabs for Languages */
+    .subtabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .subtab-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .subtab-btn.active {
+      color: var(--cyan-primary);
+      border-color: var(--cyan-primary);
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #00E5FF;
+      color: #07090E;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 229, 255, 0.4);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 9999;
+    }
+
+    #toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Share Icons Row */
+    .share-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow"></div>
+
+  <div class="container">
+    <header>
+      <div class="badge-bar">
+        <span class="badge badge-cyan">⚡ 9. HEZARFEN (NEXUS) MASTER SUITE</span>
+        <span class="badge badge-green">🟢 100% EU AI ACT ARTICLE 73 VERIFIED</span>
+        <span class="badge badge-magenta">💼 $143.9B TAM DEEP TECH</span>
+        <span class="badge">ErcuOS v61 & v67 SOVEREIGN MESH</span>
+      </div>
+
+      <h1 class="hero-title">Ercüment Erden Egemen Teknoloji Ekosistemi</h1>
+      <p class="hero-subtitle">
+        Kurucu Sendika: <strong>Ercüment Erden</strong> (Kurucu & Egemen Sistemler Baş Mimarı) • 
+        <strong>Ahmet Rıfat Albuz</strong> (Medya Stratejisi & TÜRKİNFORM GYY) • 
+        <strong>Prof. Dr. Musa Aygül</strong> (Hukuki Yönetişim & Milletlerarası Tahkim)
+      </p>
+
+      <div class="syndicate-strip">
+        <div class="syndicate-card">
+          <div class="avatar-circle">EE</div>
+          <div class="syndicate-info">
+            <h4>Ercüment Erden</h4>
+            <p>Finansal Teknolojiler & Satış Moatı</p>
+          </div>
+        </div>
+        <div class="syndicate-card">
+          <div class="avatar-circle">AA</div>
+          <div class="syndicate-info">
+            <h4>Ahmet Rıfat Albuz</h4>
+            <p>TÜRKİNFORM & yeninesil.tv</p>
+          </div>
+        </div>
+        <div class="syndicate-card">
+          <div class="avatar-circle">MA</div>
+          <div class="syndicate-info">
+            <h4>Prof. Dr. Musa Aygül</h4>
+            <p>EU AI Act & Milletlerarası Tahkim</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Key Metrics Ribbon -->
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-val">$143.9B</div>
+        <div class="metric-label">Kümülatif Pazar TAM</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">$12.8M+</div>
+        <div class="metric-label">18 Aylık ARR Hedefi (%38 EBITDA)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">142</div>
+        <div class="metric-label">Bağımsız Lego Motoru</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val">0.012 ms</div>
+        <div class="metric-label">Sıfır-Bilgi Veri Maskeleme</div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="openTab('tab-press')">📰 Basın Bülteni (TR / EN / DE)</button>
+      <button class="tab-btn" onclick="openTab('tab-pitch')">💼 Yatırımcı One-Pager</button>
+      <button class="tab-btn" onclick="openTab('tab-calendar')">📅 7 Günlük Lansman Takvimi</button>
+      <button class="tab-btn" onclick="openTab('tab-video')">🎬 5 Viral Video Kurgu Kiti</button>
+      <button class="tab-btn" onclick="openTab('tab-pillars')">🏛️ 4 Amiral Gemisi Platform</button>
+      <button class="tab-btn" onclick="openTab('tab-brand')">🎨 Marka Kiti & Varlıklar</button>
+    </div>
+
+    <!-- TAB 1: PRESS RELEASE -->
+    <div id="tab-press" class="tab-content active">
+      <div class="content-card">
+        <div class="content-header">
+          <div>
+            <h3>Resmi Basın Bülteni Yayını</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">PR Newswire, Bloomberg HT, Anadolu Ajansı ve Handelsblatt Dağıtım Formatı</p>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="action-btn" onclick="copyBox('press-box')">📋 Metni Kopyala</button>
+            <button class="action-btn action-btn-share" onclick="shareTwitter('Ercüment Erden Egemen Teknoloji Ekosistemi resmi lansmanı duyuruldu! #ErcuOS #Alparai')">🐦 X'te Paylaş</button>
+            <button class="action-btn action-btn-share" onclick="shareLinkedIn()">💼 LinkedIn</button>
+          </div>
+        </div>
+
+        <div class="subtabs">
+          <button class="subtab-btn active" onclick="switchLang('tr')">🇹🇷 Türkçe (AA / Dünya)</button>
+          <button class="subtab-btn" onclick="switchLang('en')">🇬🇧 English (TechCrunch / PR Newswire)</button>
+          <button class="subtab-btn" onclick="switchLang('de')">🇩🇪 Deutsch (Handelsblatt / FAZ)</button>
+        </div>
+
+        <pre id="press-box" class="document-box">FOR IMMEDIATE RELEASE / AMBARGOSUZ DERHAL YAYINLANMAK ÜZERE
+
+Ercüment Erden Liderliğindeki Sendika, Türkiye'nin İlk Egemen Derin Teknoloji Ekosistemini Duyurdu: ErcuOS, Alparai, DecasHub ve Lionexia
+
+İSTANBUL, TÜRKİYE — 7 Eylül 2026
+
+Ercüment Erden, Ahmet Rıfat Albuz ve Prof. Dr. Musa Aygül, Ercüment Erden Egemen Teknoloji Ekosistemini (ETE) resmi olarak duyuruyor. Bu ekosistem, ErcuOS, Alparai, DecasHub ve Lionexia adlı dört temel platformdan oluşan bütüncül bir yapı sunarak, Türkiye’nin ve küresel pazarın bağımsız, yüksek performanslı ve regülasyon uyumlu dijital altyapıya geçişini hızlandıracak.
+
+KURUCU VE STRATEJİK SENDİKA BEYANLARI:
+- Ercüment Erden (Kurucu & Baş Mimar): "Enerji müzakerelerinden edindiğim stratejik güç, dışa bağımlı olmayan bir yapay zeka mimarisi yaratma ihtiyacını ortaya koydu. ErcuOS, yerli sermayeli, yüksek ölçeklenebilir ve tamamen egemen bir işletim sistemi olarak, Türkiye’nin teknoloji bağımsızlığını küresel arenada yeniden tanımlayacak."
+- Ahmet Rıfat Albuz (Medya Stratejisi & TÜRKİNFORM GYY): "20 yılı aşkın medya tecrübesiyle, yapay zekanın topluma doğru ve şeffaf bir dille aktarılması kritik. Alparai platformu, etik ihbar ve veri gizliliği konularında yeni bir standart getirirken, medya etiği ve toplumsal etkiyi güçlendirecek."
+- Prof. Dr. Musa Aygül (Hukuki Yönetişim & Tahkim Otoritesi): "AB Yapay Zeka Yasası (EU AI Act) Madde 73 ve uluslararası tahkim standartları çerçevesinde, ETE %100 uyumlu bir ekosistem sunuyor. Algoritmik hesap verebilirlik, KVKK ile bütünleşik koruma ve uluslararası tahkim mekanizmaları sayesinde, hukuki güvence en üst seviyede."
+
+TEKNİK MİHENK TAŞLARI:
+• 142 bağımsız Lego motoru
+• 0.012 ms sıfır-bilgi veri maskeleme
+• 1 Milyar işlem/sn Giga-Ops donanım saturasyonu
+• %100 AB AI Act ve KVKK uyumu
+
+Medya İletişim: press@ahmetrifatalbuz.com | founder@ercumenterden.com
+Yatırımcı Deal Room: https://ercumenterden.com/dealroom</pre>
+      </div>
+    </div>
+
+    <!-- TAB 2: INVESTOR PITCH -->
+    <div id="tab-pitch" class="tab-content">
+      <div class="content-card">
+        <div class="content-header">
+          <div>
+            <h3>Executive Investor Pitch One-Pager</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Hedef Finansman: $3.5M | Konsolide TAM: $143.9B | Hedef ARR: $12.8M+</p>
+          </div>
+          <button class="action-btn" onclick="copyBox('pitch-box')">📋 Pitch Özetini Kopyala</button>
+        </div>
+        <pre id="pitch-box" class="document-box">EXECUTIVE INVESTOR PITCH // KURUMSAL YATIRIMCI BİLGİ DOKÜMANI
+Gizlilik Derecesi: CONFIDENTIAL (NDA İmzalı)
+Konsorsiyum: Ercüment Erden • Ahmet Rıfat Albuz (TÜRKİNFORM & yeninesil.tv) • Prof. Dr. Musa Aygül
+
+1. PAZAR VE PROBLEM:
+Bulut tekellerine bağımlılık ve EU AI Act regülasyon cezaları kurumsal riskleri artırıyor. Ercüment Erden Ekosistemi, 4 amiral gemisiyle sıfır dış bağımlılıklı $143.9B TAM adreslenebilir pazarda yerli sermaye liderliği kuruyor.
+
+2. 18 AYLIK FİNANSAL PROJEKSİYON (Q1 2026 – Q2 2027):
+- Aktif Kurumsal Müşteri: 12 ➔ 185+
+- Konsolide Net ARR: $2.2M ➔ $12.8M+
+- Brüt Kâr Marjı: %84
+- EBITDA Marjı: Q4 2026'da kârlılığa geçişle Q2 2027'de %38
+
+3. GELİR DAĞILIMI (REVENUE MIX):
+- Alparai Enterprise Uyum Abonelikleri: %35
+- DecasHub Bare-Metal Compute & Edge Mesh: %30
+- Lionexia Karbon & Enerji Takas Komisyonları: %20
+- ErcuOS Runtime & Lego Lisanslama: %15
+
+4. HEDEF FİNANSMAN VE FON KULLANIMI:
+- Tur: $3.5M (Tohum Sonrası / Seri A Öncesi)
+- %45 Donanım & Derin Teknoloji Altyapısı (Xeon Kümeleri, ErcuOS)
+- %30 Küresel Satış & Medya Sendikası Büyümesi (Ahmet Rıfat Albuz & TÜRKİNFORM)
+- %15 Uluslararası Hukuk & EU AI Act Sertifikasyonu (Prof. Dr. Musa Aygül)
+- %10 İşletme Sermayesi & Rezerv
+
+5. ÇIKIŞ STRATEJİSİ:
+Tier-1 Cloud devlerine 8-12x ARR çarpanıyla M&A satışı veya Borsa İstanbul & Nasdaq Dual Listing.
+Korumalı Yatırımcı Veri Odası: https://ercumenterden.com/dealroom</pre>
+      </div>
+    </div>
+
+    <!-- TAB 3: CALENDAR -->
+    <div id="tab-calendar" class="tab-content">
+      <div class="content-card">
+        <div class="content-header">
+          <div>
+            <h3>7 Günlük Çok Kanallı Lansman Takvimi</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">LinkedIn • Twitter/X • YouTube (Ahmet Rıfat Albuz Sosyal Medya Ekibi)</p>
+          </div>
+          <button class="action-btn" onclick="copyBox('cal-box')">📋 Takvimi Kopyala</button>
+        </div>
+        <pre id="cal-box" class="document-box">📅 7 GÜNLÜK ÇOK KANALLI LANSMAN TAKVİMİ (ÖZET AKIŞ)
+
+• GÜN 1: BÜYÜK PATLAMA — Resmi Lansman & Basın Bülteni (Ahmet Rıfat Albuz TÜRKİNFORM Özel Manşeti & Kurucu Beyanı)
+  - LinkedIn: 09:30 TSI | X Thread: 5 Tweetlik Zincir | YouTube: Lansman Video & Topluluk
+
+• GÜN 2: KURUCU MOATI — Ercüment Erden'in Enerji Müzakerelerinden Egemen Sistem Mimarlığına 15 Yıllık Yolculuğu
+  - LinkedIn: "Enerjiden Zekâya" Kurucu Hikayesi | X: Sıfır Dış Bağımlılık Felsefesi
+
+• GÜN 3: HUKUKİ KALE — Prof. Dr. Musa Aygül ile AB AI Act (Article 73) ve KVKK Sıfır-Ceza Stratejisi
+  - B2B Karar Vericiler için Hukuki Güvence & Tahkim Kalkanı
+
+• GÜN 4: TEKNİK ZAFER — ErcuOS: 142 Lego Motoru, .ercu JIT DSL ve 1 Milyar İşlem/sn Giga-Ops Gücü
+  - Canlı Terminal Çıktıları, Benchmark Grafikleri ve Açık Kaynak Kodu
+
+• GÜN 5: ETİK KALKANI — Alparai (alparai.com): Bayesian TrustScore v2.5 ve ZKP İhbar Sistemi Canlı Demosu
+  - Kurumsal Veri Sızıntısını Önleyen Zero-Knowledge Mimari Demosu
+
+• GÜN 6: ALTYAPI VE FİNANS — DecasHub Bare-Metal DeHost Xeon & Lionexia Yüksek Frekanslı Takas Motoru
+  - Yeşil Enerji ve Karbon Kredisi Takas Altyapısı
+
+• GÜN 7: DİJİTAL EGEMENLİK ÇAĞRISI — Türkiye'nin Geleceği, Ekosisteme Katılım ve Deal Room Erişimi
+  - Kurumsal Yatırımcı Daveti ve Final Lansman Özeti</pre>
+      </div>
+    </div>
+
+    <!-- TAB 4: VIDEO BLUEPRINTS -->
+    <div id="tab-video" class="tab-content">
+      <div class="content-card">
+        <div class="content-header">
+          <div>
+            <h3>5 Viral Video Kurgu Şablonu & Storyboard Kiti</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">YouTube Shorts, Instagram Reels, TikTok ve 12 Dakikalık Özel Söyleşi</p>
+          </div>
+          <button class="action-btn" onclick="copyBox('vid-box')">📋 Kurgu Şablonlarını Kopyala</button>
+        </div>
+        <pre id="vid-box" class="document-box">🎬 5 VİRAL VİDEO KURGU ŞABLONU (YENİ NESİL TV & SOSYAL MEDYA)
+
+1. VIDEO 1 (Shorts/Reels - 50s): "Şirketlerin %82'si KVKK Cezası Korkusuyla AI'yı Yasaklıyor!"
+   - Kanca (0-3s): Kırmızı alarm ışığı, düşen ceza kağıdı + whoosh SFX.
+   - Değer (3-35s): Ceza korkusu inovasyonu durduramaz; Alparai Kalkanı ile sıfır ceza riski.
+   - CTA (35-50s): "Alparai Kalkanı'na katılın -> alparai.com"
+
+2. VIDEO 2 (Shorts/Reels - 60s): "1 Milyar İşlem/Saniye? 142 Lego Motorlu Türk İşletim Sistemi ErcuOS!"
+   - Kanca (0-3s): LED'li Lego montajı + neon 1B OPS grafiği.
+   - Değer (3-45s): 142 paralel işlem birimi, mikro-saniye gecikme, yerli sermaye gücü.
+   - CTA (45-60s): "ErcuOS benchmark sonuçlarını inceleyin -> ercumenterden.com"
+
+3. VIDEO 3 (YouTube Long-Form 12-15 dk + 60s Teaser): "Ahmet Rıfat Albuz ile Dijital Medyanın Geleceği"
+   - Kapsam: Algoritmik manipülasyon vs. etik doğrulama, TÜRKİNFORM stüdyo söyleşisi.
+
+4. VIDEO 4 (Shorts/Reels - 55s): "Ercüment Erden'den Girişimcilere: 'Neden Kendi Egemen Bulutunuzu Kurmalısınız?'"
+   - Kapsam: DecasHub Bare-Metal Xeon maliyet avantajı ve veri egemenliği dersi.
+
+5. VIDEO 5 (Shorts/Reels - 60s): "Prof. Dr. Musa Aygül: Şirketiniz AB Yapay Zeka Yasası'na Hazır mı?"
+   - Kapsam: EU AI Act Madde 73 şeffaflık kuralı ve hukuki uyum kontrol listesi.</pre>
+      </div>
+    </div>
+
+    <!-- TAB 5: 4 PILLARS -->
+    <div id="tab-pillars" class="tab-content">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-val" style="color: var(--cyan-primary);">ALPAR AI</div>
+          <div class="metric-label" style="margin-bottom: 12px;">alparai.com • TAM: $12.4B</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Bayesian TrustScore v2.5, Zero-Knowledge Proof (ZKP) ihbar mekanizması ve EU AI Act tam uyumlu etik denetim platformu.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" style="color: var(--magenta-accent);">DECASHUB</div>
+          <div class="metric-label" style="margin-bottom: 12px;">decashub.com • TAM: $48.0B</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Bare-Metal DeHost Xeon 16C/32T düğümleri, ultra düşük gecikmeli edge mesh ve bağımsız bulut dağıtım altyapısı.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" style="color: var(--green-status);">LIONEXIA</div>
+          <div class="metric-label" style="margin-bottom: 12px;">lionexia.com • TAM: $18.5B</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Mikrosaniye emir iletimi, yüksek frekanslı ticaret ve yeşil enerji / karbon piyasaları takas motoru.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" style="color: #FFFFFF;">ERCUOS</div>
+          <div class="metric-label" style="margin-bottom: 12px;">ercuos.com • TAM: $65.0B</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">142 bağımsız Lego motoru, .ercu Turing-Complete JIT DSL, 1 Milyar işlem/sn Giga-Ops ve 4-ajanlı kapalı devre self-healing.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 6: BRAND ASSETS -->
+    <div id="tab-brand" class="tab-content">
+      <div class="content-card">
+        <div class="content-header">
+          <h3>Tasarım Sistemi & Renk Kodları (Obsidian OKLCH)</h3>
+          <button class="action-btn" onclick="copyBox('brand-box')">📋 Renk Paletini Kopyala</button>
+        </div>
+        <div class="metrics-grid" style="margin: 20px 0;">
+          <div style="background: #0B0F17; border: 1px solid var(--border-subtle); padding: 16px; border-radius: 8px;">
+            <div style="font-weight: 700; color: #FFF;">Obsidian Dark</div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan-primary);">#0B0F17</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">oklch(0.12 0.02 245)</div>
+          </div>
+          <div style="background: #111827; border: 1px solid var(--border-subtle); padding: 16px; border-radius: 8px;">
+            <div style="font-weight: 700; color: #FFF;">Midnight Blue</div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan-primary);">#111827</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">oklch(0.18 0.03 250)</div>
+          </div>
+          <div style="background: rgba(0, 229, 255, 0.15); border: 1px solid #00E5FF; padding: 16px; border-radius: 8px;">
+            <div style="font-weight: 700; color: #00E5FF;">Electric Cyan</div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: #00E5FF;">#00E5FF</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">oklch(0.85 0.16 200)</div>
+          </div>
+          <div style="background: rgba(255, 0, 229, 0.15); border: 1px solid #FF00E5; padding: 16px; border-radius: 8px;">
+            <div style="font-weight: 700; color: #FF00E5;">Neon Magenta</div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; color: #FF00E5;">#FF00E5</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">oklch(0.75 0.28 320)</div>
+          </div>
+        </div>
+        <pre id="brand-box" class="document-box">BRAND DESIGN SYSTEM SPECIFICATION (ERCÜMENT ERDEN SYNDICATE)
+Philosophy: Linear-tier Obsidian Dark Minimalist Authority
+Contrast: APCA Lc 85+ (100% WCAG AAA Compliant)
+
+Colors:
+- Obsidian Dark: #0B0F17 | oklch(0.12 0.02 245)
+- Midnight Surface: #111827 | oklch(0.18 0.03 250)
+- Electric Cyan: #00E5FF | oklch(0.85 0.16 200)
+- Neon Magenta: #FF00E5 | oklch(0.75 0.28 320)
+- Matrix Green: #00FF66 | oklch(0.88 0.24 145)
+
+Typography:
+- Headings: Montserrat / Syne (700-900)
+- Body: Inter / System-UI (400-500)
+- Code/Terminal: JetBrains Mono / Roboto Mono (500)
+
+Vector Assets:
+- Logo Pack: https://presskit.ercumenterden.com/assets/vector/logo_pack.svg
+- 4K Wallpaper Pack: https://presskit.ercumenterden.com/assets/4k/brand_assets.zip</pre>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 Ercüment Erden Egemen Teknoloji Ekosistemi • Ahmet Rıfat Albuz (TÜRKİNFORM) & Prof. Dr. Musa Aygül</p>
+      <p style="margin-top: 6px; font-size: 0.75rem;">Sentezleyen: 9. HEZARFEN (NEXUS) Medya ve Büyüme Mimarı • Motor: ErcuOS v61 & v67 Sovereign AI Orchestrator</p>
+    </footer>
+  </div>
+
+  <div id="toast">Metin panoya başarıyla kopyalandı!</div>
+
+  <script>
+    function openTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+
+    function copyBox(boxId) {
+      const text = document.getElementById(boxId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('Panoya Kopyalandı!');
+      }).catch(err => {
+        showToast('Kopyalama başarısız oldu');
+      });
+    }
+
+    function switchLang(lang) {
+      document.querySelectorAll('.subtab-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      const box = document.getElementById('press-box');
+
+      if (lang === 'tr') {
+        box.innerText = `FOR IMMEDIATE RELEASE / AMBARGOSUZ DERHAL YAYINLANMAK ÜZERE
+
+Ercüment Erden Liderliğindeki Sendika, Türkiye'nin İlk Egemen Derin Teknoloji Ekosistemini Duyurdu: ErcuOS, Alparai, DecasHub ve Lionexia
+
+İSTANBUL, TÜRKİYE — 7 Eylül 2026
+
+Ercüment Erden, Ahmet Rıfat Albuz ve Prof. Dr. Musa Aygül, Ercüment Erden Egemen Teknoloji Ekosistemini (ETE) resmi olarak duyuruyor. Bu ekosistem, ErcuOS, Alparai, DecasHub ve Lionexia adlı dört temel platformdan oluşan bütüncül bir yapı sunarak bağımsız yapay zeka altyapısına geçişi hızlandıracak.
+
+- Ercüment Erden: "Enerji müzakerelerinden edindiğim stratejik güç, dışa bağımlı olmayan bir yapay zeka mimarisi yaratma ihtiyacını ortaya koydu. ErcuOS ulusal egemenliğin teminatıdır."
+- Ahmet Rıfat Albuz (TÜRKİNFORM GYY): "20 yıllık medya tecrübesiyle şeffaflık ve etik algoritmaları savunuyoruz. Alparai ile güven inşa ediyoruz."
+- Prof. Dr. Musa Aygül: "EU AI Act Madde 73 ve uluslararası tahkim mekanizmalarıyla %100 hukuki kalkan sunuyoruz."
+
+Metrikler: 142 Lego Motoru | 0.012 ms Maskeleme | 1 Milyar İşlem/sn Giga-Ops
+Deal Room: https://ercumenterden.com/dealroom`;
+      } else if (lang === 'en') {
+        box.innerText = `FOR IMMEDIATE RELEASE
+
+Ercüment Erden Syndicate Unveils Sovereign Deep-Tech Ecosystem: ErcuOS, Alparai, DecasHub, and Lionexia to Champion European & Regional AI Independence
+
+ISTANBUL & LONDON — September 7, 2026
+
+The Ercüment Erden Syndicate announces the launch of a zero-external-dependency technology ecosystem designed to eliminate cloud monopoly lock-in and guarantee full compliance with the EU AI Act across a $143.9B TAM opportunity.
+
+- Ercüment Erden (Founder & Chief Architect): "After negotiating multi-billion-dollar energy contracts, data sovereignty is the ultimate moat. ErcuOS lives entirely within the borders of its owners."
+- Ahmet Rıfat Albuz (Head of Media Strategy, TÜRKİNFORM): "We ensure algorithmic governance is communicated clearly. Alparai provides verifiable, unbiased compliance."
+- Prof. Dr. Musa Aygül (Legal Governance Chair): "Zero-Penalty framework under EU AI Act Article 73 with pre-approved cross-border arbitration."
+
+Specs: 142 Lego Engines | 0.012ms Latency | 1 Billion ops/sec Giga-Ops
+Virtual Deal Room: https://ercumenterden.com/dealroom`;
+      } else if (lang === 'de') {
+        box.innerText = `ZUR SOFORTIGEN VERÖFFENTLICHUNG / EMBARGOFREI
+
+Ercüment Erden Syndikat lanciert souveränes Deep-Tech-Ökosystem: ErcuOS, Alparai, DecasHub und Lionexia begründen neue Ära der europäischen KI- und Datensouveränität
+
+ISTANBUL & FRANKFURT AM MAIN — 7. September 2026
+
+Das Ercüment Erden Syndikat gibt heute den offiziellen Start einer vollständig unabhängigen Deep-Tech-Infrastruktur bekannt, die als europäische Antwort auf Cloud-Monopole und EU AI Act-Risiken konzipiert ist.
+
+- Ercüment Erden: "Vom Energiemarkt zur souveränen KI-Architektur: Unabhängigkeit ist der entscheidende Wettbewerbsvorteil."
+- Ahmet Rıfat Albuz (Chefredakteur TÜRKİNFORM): "Vertrauen ist die neue Währung. Wir bauen keine Black Boxes, sondern vertrauenswürdige Infrastrukturen."
+- Prof. Dr. Musa Aygül: "Vollständige Konformität mit EU AI Act Artikel 73 und proaktive Haftungsminimierung für Unternehmen der DACH-Region."
+
+Kennzahlen: 142 Lego-Engines | 0,012ms ZKP-Maskierung | 1 Milliarde Operationen/Sekunde
+Deal Room Zugang: https://ercumenterden.com/dealroom`;
+      }
+    }
+
+    function shareTwitter(text) {
+      const url = encodeURIComponent('https://ercumenterden.com');
+      window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + url, '_blank');
+    }
+
+    function shareLinkedIn() {
+      const url = encodeURIComponent('https://ercumenterden.com');
+      window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + url, '_blank');
+    }
+  </script>
+</body>
+</html>

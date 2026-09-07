@@ -1,0 +1,25 @@
+# Secrets and Environment Variables
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+id_rsa
+id_ed25519
+*.secret
+
+# API Keys & Auth Tokens
+*token*
+*secret*
+credentials.json
+client_secret*.json
+
+# Dependencies & Build
+node_modules/
+dist/
+.cache/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,62 @@
+{
+  "founder": {
+    "name": "Ercüment Erden",
+    "title": "Kurucu & Egemen Sistemler Baş Mimarı",
+    "bio": "Bilişim, enerji sözleşmeleri ve derin yapay zeka sistemleri mimarı. Çocukluktan gelen satış disiplinini, milyon dolarlık enerji kontratları ve uluslararası yapay zeka regülasyon sistemleriyle birleştiren vizyoner kurucu.",
+    "competencies": [
+      "Satış Stratejisi & Müzakere Dehası",
+      "Milyon Dolarlık Enerji ve Emtia Sözleşmeleri",
+      "Dağıtık Kuantum & Egemen İşletim Sistemleri Mimarisi",
+      "Sıfır Dış Bağımlılıklı (Sovereign) Teknoloji Altyapısı"
+    ]
+  },
+  "syndicate": [
+    {
+      "name": "Ahmet Rıfat Albuz",
+      "role": "Medya Stratejisi & İletişim Otoritesi",
+      "organization": "TÜRKİNFORM & Yeni Nesil TV",
+      "focus": "25 yıllık medya tecrübesi, viral büyüme, perkolasyon tabanlı PR ve kurumsal iletişim."
+    },
+    {
+      "name": "Prof. Dr. Musa Aygül",
+      "role": "Hukuki Yönetişim & Uluslararası Tahkim Otoritesi",
+      "organization": "Akademik & Hukuk Heyeti",
+      "focus": "AB Yapay Zeka Yasası (EU AI Act), KVKK/GDPR uyumu, algoritmik hesap verebilirlik ve uluslararası tahkim."
+    }
+  ],
+  "projects": [
+    {
+      "id": "alparai",
+      "name": "Alparai",
+      "domain": "alparai.com",
+      "category": "Yapay Zeka Anayasa, Etik ve Olay Raporlama Platformu",
+      "status": "Canlıda (Port 3000)"
+    },
+    {
+      "id": "decashub",
+      "name": "DecasHub",
+      "domain": "decashub.com",
+      "category": "Egemen Girişim & Bulut Dağıtım İşletim Sistemi",
+      "status": "Canlıda (Port 3002)"
+    },
+    {
+      "id": "lionexia",
+      "name": "Lionexia",
+      "domain": "lionexia.com",
+      "category": "B2B Gizlilik, Veri Maskeleme ve Arbitraj Motoru",
+      "status": "Canlıda (Port 3005)"
+    },
+    {
+      "id": "ercuos",
+      "name": "ErcuOS",
+      "domain": "ercuos.com",
+      "category": "Egemen Çok-Çekirdekli Turing-Complete AI İşletim Sistemi",
+      "status": "Canlıda (Port 2027)"
+    }
+  ],
+  "meta": {
+    "portalName": "Ercüment Erden Sovereign Authority & Investor Deal Room",
+    "version": "2.5.0",
+    "engine": "v67_sovereign_ai_model_orchestrator (Groq / openai/gpt-oss-120b)"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "campaign": "Ercüment Erden Egemen Teknoloji Ekosistemi Lansmanı",
+  "author": "9. HEZARFEN (NEXUS) Medya ve Büyüme Mimarı",
+  "syndicatePartner": "Ahmet Rıfat Albuz (TÜRKİNFORM & yeninesil.tv)",
+  "generatedAt": "2026-09-07T17:20:46.526Z",
+  "files": {
+    "calendar": "D:\\01_SaaS_Products\\ercumenterden.com\\social\\content_calendar_7day.md",
+    "videoBlueprints": "D:\\01_SaaS_Products\\ercumenterden.com\\social\\viral_video_blueprints.md"
+  },
+  "metrics": {
+    "calendarWordCount": 1,
+    "videoWordCount": 1,
+    "calendarViralScore": 49.875,
+    "videoViralScore": 131.712
+  },
+  "distributionMatrix": {
+    "leadPartner": {
+      "name": "Ahmet Rıfat Albuz",
+      "role": "Medya Stratejisi ve İletişim Otoritesi",
+      "outlets": [
+        "TÜRKİNFORM",
+        "Yeni Nesil TV (yeninesil.tv)"
+      ]
+    },
+    "tier1_exclusive": {
+      "title": "Özel Röportaj ve Doğrudan Yayın",
+      "channels": [
+        "TÜRKİNFORM Özel Manşet",
+        "Yeni Nesil TV Stüdyo Yayını & Video Söyleşi",
+        "ahmetrifatalbuz.com Analiz Köşesi"
+      ],
+      "targetTiming": "09:00 TSI (Salı / Çarşamba Pik Saati)"
+    },
+    "tier2_national_press": {
+      "title": "Ulusal Ekonomi & Teknoloji Basını",
+      "channels": [
+        "Anadolu Ajansı (AA) Finans & Teknoloji Masası",
+        "Bloomberg HT Teknoloji ve Girişimcilik",
+        "Dünya Gazetesi - Teknoloji ve Derin Girişimler",
+        "Webrazzi, ShiftDelete.Net, DonanımHaber Manşetleri"
+      ]
+    },
+    "tier3_global_syndication": {
+      "title": "Küresel Dağıtım & Sınır Ötesi Ağ",
+      "channels": [
+        "PR Newswire Tech Wire Europe",
+        "Hacker News (Show HN)",
+        "LinkedIn Founder Authority & Long-Form Article"
+      ]
+    },
+    "tier4_investor_room": {
+      "title": "Kurucu ve Yatırımcı Veri Odası",
+      "channels": [
+        "ercumenterden.com/press-release",
+        "Investor Deal Room (Korumalı Veri Odası)"
+      ]
+    }
+  }
+}

@@ -33,7 +33,7 @@ export const CrucibleTimeline: React.FC<CrucibleTimelineProps> = ({ lang }) => {
             <History className="h-3.5 w-3.5" />
             <span>{t.sectionBadge}</span>
           </div>
-          <h2 className="text-3xl font-black tracking-tight text-white sm:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
             {t.sectionTitle}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-zinc-400 sm:text-lg">
@@ -54,7 +54,7 @@ export const CrucibleTimeline: React.FC<CrucibleTimelineProps> = ({ lang }) => {
               <div className="glass-card flex-1 rounded-2xl p-6 sm:p-8">
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-4">
                   <div className="flex items-center gap-3">
-                    <span className="font-mono text-xl font-black text-[#00F0FF] sm:text-2xl">
+                    <span className="font-mono text-xl font-bold text-[#00F0FF] sm:text-2xl">
                       {item.year}
                     </span>
                     <span className="rounded bg-white/5 px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-zinc-300">

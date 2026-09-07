@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
         </div>
 
         {/* Sculpted Towering Name */}
-        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[1.05] mb-4">
+        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-4">
           <span className="text-gradient block">ERCÜMENT ERDEN</span>
         </h1>
 
@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <a
             href="#ecosystem"
-            className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-slate-200 to-white px-6 py-3 font-mono text-xs font-black uppercase tracking-wider text-[#07090E] primary-glow hover:brightness-110 transition-all"
+            className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-slate-200 to-white px-6 py-3 font-mono text-xs font-bold uppercase tracking-wider text-[#07090E] primary-glow hover:brightness-110 transition-all"
           >
             <span>{t.primaryCta}</span>
             <ArrowDown className="h-4 w-4" />
@@ -80,7 +80,7 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
               <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">
                 {item.label}
               </span>
-              <span className="font-mono text-xl sm:text-2xl font-black text-[#00F0FF]">
+              <span className="font-mono text-xl sm:text-2xl font-bold text-[#00F0FF]">
                 {item.value}
               </span>
               <span className="font-mono text-[10px] text-slate-500 mt-1">

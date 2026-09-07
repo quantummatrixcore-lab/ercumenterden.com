@@ -19,7 +19,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onLanguageChange }) => {
         {/* Left: Monogram & Status Pill */}
         <div className="flex items-center gap-3.5">
           <a href="#" className="flex items-center gap-2 group">
-            <span className="font-mono text-lg font-black tracking-tighter text-[#00F0FF] group-hover:scale-105 transition-transform">
+            <span className="font-mono text-lg font-bold tracking-tighter text-[#00F0FF] group-hover:scale-105 transition-transform">
               {t.monogram}
             </span>
           </a>

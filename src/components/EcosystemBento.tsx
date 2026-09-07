@@ -25,7 +25,7 @@ export const EcosystemBento: React.FC<EcosystemBentoProps> = ({ lang }) => {
             <Activity className="h-3.5 w-3.5 text-[#00F0FF]" />
             <span>{t.sectionBadge}</span>
           </div>
-          <h2 className="text-3xl font-black tracking-tight text-white sm:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
             {t.sectionTitle}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-zinc-400 sm:text-lg">

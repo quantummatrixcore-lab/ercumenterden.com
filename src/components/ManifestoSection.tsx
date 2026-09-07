@@ -20,7 +20,7 @@ export const ManifestoSection: React.FC<ManifestoSectionProps> = ({ lang }) => {
             <BookOpen className="h-3.5 w-3.5" />
             <span>{t.sectionBadge}</span>
           </div>
-          <h2 className="text-3xl font-black tracking-tight text-white sm:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
             {t.sectionTitle}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-zinc-400 sm:text-lg">
@@ -36,7 +36,7 @@ export const ManifestoSection: React.FC<ManifestoSectionProps> = ({ lang }) => {
               className="glass-card relative flex flex-col justify-between rounded-2xl p-6 sm:p-8 transition-all hover:border-[#00F0FF]/40"
             >
               <div>
-                <div className="font-mono text-4xl font-black text-[#00F0FF]/30 sm:text-5xl">
+                <div className="font-mono text-4xl font-bold text-[#00F0FF]/30 sm:text-5xl">
                   {principle.number}
                 </div>
                 <h3 className="mt-4 text-xl font-bold tracking-tight text-white sm:text-2xl">

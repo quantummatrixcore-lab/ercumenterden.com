@@ -30,12 +30,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ercumenterden.com"),
   title: "Ercüment Erden | Founder & Sovereign Systems Architect",
   description:
-    "Official Executive Authority Portal of Ercüment Erden — Founder of ALPAR AI, DecasHub Sovereign & Agent-OS. Pioneer of Turkey's 2019 IoT shared charging infrastructure.",
+    "Official Executive Authority Portal of Ercüment Erden — Founder of ALPAR AI, DecasHub Sovereign, Lionexia & ErcuOS. Pioneer of Turkey's 2019 IoT shared charging infrastructure.",
   keywords: [
     "Ercüment Erden",
     "ALPAR AI",
     "DecasHub Sovereign",
-    "Agent-OS Layer",
+    "Lionexia",
+    "ErcuOS",
     "Rabbit Charge",
     "AI Trust & Incident Registry",
     "Deep-Tech Founder",
@@ -57,7 +58,7 @@ export const metadata: Metadata = {
     url: "https://ercumenterden.com",
     title: "Ercüment Erden | Founder & Sovereign Systems Architect",
     description:
-      "Architecting Sovereign Systems: From Hardware to AI Accountability. Founder of ALPAR AI, DecasHub Sovereign & Agent-OS.",
+      "Architecting Sovereign Systems: From Hardware to AI Accountability. Founder of ALPAR AI, DecasHub Sovereign, Lionexia & ErcuOS.",
     siteName: "Ercüment Erden Executive Portal",
   },
   twitter: {

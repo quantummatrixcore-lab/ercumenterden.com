@@ -69,11 +69,11 @@ export const content = {
       manifestoSub: "From Hardware to AI Accountability.",
       narrative:
         "In the era of artificial intelligence, building technology is not merely writing code; it is architecting systemic sovereignty against data exploitation, predatory capital, and AI manipulation. Forged in embedded hardware trenches, tested against frontier AI corporations, and hardened through capital battles.",
-      primaryCta: "Explore Ecosystem Trinity",
+      primaryCta: "Explore Sovereign Ecosystem",
       secondaryCta: "Review Case Study 001",
       directLineCta: "Encrypted Contact",
       ticker: [
-        { label: "ACTIVE ENGINES", value: "28 Autonomous", desc: "Agent-OS Core" },
+        { label: "ACTIVE ENGINES", value: "142 Lego", desc: "ErcuOS Core" },
         { label: "AI RADAR AUDIT", value: "23 Frontier Models", desc: "ALPAR AI Registry" },
         { label: "VENTURE AUTONOMY", value: "100% Anti-Dilution", desc: "DecasHub Sovereign" },
         { label: "HARDWARE ROOTS", value: "2019 IoT Network", desc: "Rabbit Charge Infrastructure" },
@@ -81,7 +81,7 @@ export const content = {
     },
     ecosystem: {
       sectionBadge: "CORE PILLARS",
-      sectionTitle: "The Ecosystem Trinity",
+      sectionTitle: "The Sovereign Ecosystem Pillars",
       sectionDescription:
         "Three interlocking sovereign architectures engineered to protect human agency, compute performance, and equity ownership in the AI era.",
       cards: [
@@ -233,12 +233,12 @@ export const content = {
         },
         {
           year: "2026",
-          title: "DecasHub Sovereign & The Agent-OS Core",
+          title: "DecasHub Sovereign & The Lionexia Engine",
           role: "Chief Architect & Sovereign Founder",
           category: "AUTONOMOUS VENTURE ARCHITECTURE",
           badge: "SOVEREIGN SYSTEM SINGULARITY",
           summary:
-            "Synthesized 7 years of battle scars into DecasHub and Agent-OS. Built cryptographic IP protection to neutralize idea theft, algorithmic fair valuation algorithms to stop venture dilution, and a sovereign multi-agent OS to orchestrate enterprise digital twins.",
+            "Synthesized 7 years of battle scars into DecasHub, Lionexia and ErcuOS. Built cryptographic IP protection to neutralize idea theft, algorithmic fair valuation algorithms to stop venture dilution, and a sovereign high-frequency execution architecture.",
           takeaway:
             "We don't train corporate cogs. We forge sovereign CEOs who hold unbreakable mathematical and technological independence.",
           metrics: ["28 Autonomous Agents", "Zero Idea-Theft", "Autonomous AI CFO"],
@@ -320,7 +320,7 @@ export const content = {
       inquiryOptions: [
         "Venture Partnership & DecasHub Sovereign",
         "AI Accountability, ALPAR AI & Incident Audit",
-        "Agent-OS Core & Enterprise Licensing",
+        "Lionexia & ErcuOS Enterprise Licensing",
         "Keynote & Institutional Thought Leadership",
         "Press & Investigative Inquiries",
       ],
@@ -337,7 +337,7 @@ export const content = {
       links: [
         { label: "ALPAR AI", href: "https://alparai.com" },
         { label: "DecasHub", href: "#ecosystem" },
-        { label: "Agent-OS", href: "https://os.ercumenterden.com" },
+        { label: "Lionexia", href: "https://lionexia.com" },
         { label: "TÜRKINFORM", href: "https://turkinform.com.tr" },
       ],
     },
@@ -366,11 +366,11 @@ export const content = {
       manifestoSub: "Fikirden Egemenliğe.",
       narrative:
         "Yapay zeka çağında teknoloji üretmek yalnızca kod yazmak değildir; sermaye gaspına, veri ihlallerine ve yapay zeka illüzyonlarına karşı sistemik egemenlik kurmaktır. Sahadaki donanım siperlerinde pişen, küresel yapay zeka devlerine karşı hak arayan ve sermaye savaşlarıyla çelikleşen bir kurucu.",
-      primaryCta: "Ekosistem Üçlüsünü Keşfet",
+      primaryCta: "Egemen Ekosistemi Keşfet",
       secondaryCta: "001 Nolu Vakayı İncele (Grok)",
       directLineCta: "Doğrudan Şifreli İletişim",
       ticker: [
-        { label: "AKTİF MOTOR", value: "28 Otonom", desc: "Agent-OS Çekirdeği" },
+        { label: "AKTİF MOTOR", value: "142 Lego", desc: "ErcuOS Çekirdeği" },
         { label: "YAPAY ZEKA RADARI", value: "23 Küresel Model", desc: "ALPAR AI Sicili" },
         { label: "GİRİŞİM EGEMENLİĞİ", value: "%100 Seyrelme Koruması", desc: "DecasHub Sovereign" },
         { label: "DONANIM KÖKLERİ", value: "2019 IoT Ağı", desc: "Rabbit Charge Altyapısı" },
@@ -378,7 +378,7 @@ export const content = {
     },
     ecosystem: {
       sectionBadge: "TEMEL KALELER",
-      sectionTitle: "Ekosistem Üçlüsü",
+      sectionTitle: "Egemen Ekosistem Sütunları",
       sectionDescription:
         "Yapay zeka çağında kurucunun iradesini, işlemci performansını ve sermaye egemenliğini korumak için tasarlanmış üç birbirine kenetli sistem.",
       cards: [
@@ -405,28 +405,7 @@ export const content = {
           accentColor: "cyan",
           highlight: "VAKA 001: GROK PASAPORT İHLALİ BELGELENDİ",
         },
-        {
-          id: "agent-os",
-          badge: "OTONOM AJAN ORKESTRASYONU & EDGE SWARM",
-          name: "Agent-OS",
-          tagline: "Otonom Çoklu Ajan İşletim Sistemi",
-          description:
-            "Gelişmiş yapay zeka ajanlarını, kurumsal dijital ikizleri ve dağıtık iş akışlarını sıfır gecikmeyle yöneten bağımsız yeni nesil yapay zeka işletim katmanı.",
-          metrics: [
-            { label: "Aktif Motor", value: "28 Otonom" },
-            { label: "Edge Mesh", value: "< 1 ms" },
-            { label: "Entegrasyon", value: "600+ Yapay Zeka" },
-          ],
-          features: [
-            "Çoklu model rotası ve sıfır kesintili yedekleme",
-            "Kurumsal hafıza ve otonom karar matrisi",
-            "Gerçek zamanlı tarayıcı ve terminal icraat kalkanı",
-          ],
-          ctaText: "AGENT-OS'U İNCELE",
-          ctaUrl: "https://os.ercumenterden.com",
-          accentColor: "emerald",
-          highlight: "GERÇEK ZAMANLI TARAYICI VE TERMİNAL İCRAAT KALKANI",
-        },
+        
         {
           id: "decashub",
           badge: "OTONOM GİRİŞİM İŞLETİM SİSTEMİ",
@@ -553,12 +532,12 @@ export const content = {
         },
         {
           year: "2026",
-          title: "DecasHub Sovereign & Agent-OS Katmanı",
+          title: "DecasHub Sovereign & Lionexia Motoru",
           role: "Baş Mimar & Egemen Kurucu",
           category: "OTONOM GİRİŞİM MİMARİSİ",
           badge: "EGEMEN SİSTEM TEKİLLİĞİ",
           summary:
-            "7 yıllık ağır girişim tecrübeleri DecasHub ve Agent-OS üzerinde birleşti. Fikir hırsızlığını sıfırlayan kriptografik tescil, hisse gaspını durduran algoritmik değerleme ve kurumsal yapay zeka ikizlerini yöneten egemen çoklu ajan işletim sistemi inşa edildi.",
+            "7 yıllık ağır girişim tecrübeleri DecasHub, Lionexia ve ErcuOS üzerinde birleşti. Fikir hırsızlığını sıfırlayan kriptografik tescil, hisse gaspını durduran algoritmik değerleme ve kurumsal yapay zeka ikizlerini yöneten egemen işlem motoru inşa edildi.",
           takeaway:
             "Kurumsal çarkların kölesi olan çalışanlar değil; kendi teknolojisinin, sermayesinin ve matematiğinin efendisi olan egemen kurucular.",
           metrics: ["28 Otonom Ajan", "Sıfır Fikir Hırsızlığı", "Otonom AI CFO"],
@@ -640,7 +619,7 @@ export const content = {
       inquiryOptions: [
         "Yatırım & DecasHub Sovereign Ortaklığı",
         "ALPAR AI & Yapay Zeka Denetim Talebi",
-        "Agent-OS Katmanı & Kurumsal Lisanslama",
+        "Lionexia & ErcuOS Kurumsal Lisanslama",
         "Konferans & Üst Düzey Düşünce Liderliği",
         "Basın & Röportaj Talepleri",
       ],
@@ -657,7 +636,7 @@ export const content = {
       links: [
         { label: "ALPAR AI", href: "https://alparai.com" },
         { label: "DecasHub", href: "#ecosystem" },
-        { label: "Agent-OS", href: "https://os.ercumenterden.com" },
+        { label: "Lionexia", href: "https://lionexia.com" },
         { label: "TÜRKINFORM", href: "https://turkinform.com.tr" },
       ],
     },

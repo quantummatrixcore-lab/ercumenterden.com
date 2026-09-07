@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { content, Language } from '@/data/content';
@@ -18,7 +18,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onLanguageChange }) => {
       <div className="flex justify-between items-center px-5 sm:px-8 py-3">
         {/* Left: Monogram & Status Pill */}
         <div className="flex items-center gap-3.5">
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="/" className="flex items-center gap-2 group">
             <span className="font-mono text-lg font-bold tracking-tighter text-[#00F0FF] group-hover:scale-105 transition-transform">
               {t.monogram}
             </span>
@@ -26,7 +26,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onLanguageChange }) => {
           <div className="status-pill px-2.5 py-0.5 rounded-full flex items-center gap-1.5 hidden sm:flex">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00F0FF] animate-pulse" />
             <span className="font-mono text-[10px] font-bold text-[#00F0FF] uppercase tracking-widest">
-              28 AGENTS ACTIVE
+              142 LEGO BLOCKS ACTIVE
             </span>
           </div>
         </div>
@@ -48,6 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onLanguageChange }) => {
         <div className="flex items-center gap-3">
           <div className="flex items-center bg-[#0F172A]/80 rounded-full border border-white/10 px-2.5 py-1 text-xs font-mono">
             <button
+              type="button"
               onClick={() => onLanguageChange('en')}
               className={`transition-colors px-1 ${
                 lang === 'en' ? 'text-[#00F0FF] font-bold' : 'text-slate-400 hover:text-white'
@@ -57,6 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onLanguageChange }) => {
             </button>
             <span className="text-slate-600 px-1">/</span>
             <button
+              type="button"
               onClick={() => onLanguageChange('tr')}
               className={`transition-colors px-1 ${
                 lang === 'tr' ? 'text-[#00F0FF] font-bold' : 'text-slate-400 hover:text-white'
@@ -75,6 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onLanguageChange }) => {
 
           {/* Mobile Menu Toggle */}
           <button
+            type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="flex items-center justify-center p-1.5 text-slate-300 hover:text-white md:hidden"
             aria-label="Toggle Menu"

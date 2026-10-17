@@ -64,6 +64,14 @@ export const metadata: Metadata = {
     description:
       "Architecting Sovereign Systems: From Hardware to AI Accountability. Founder of ALPAR AI, DecasHub Sovereign, DeHost & Lionexia.",
     siteName: "Ercüment Erden Executive Portal",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 512,
+        height: 512,
+        alt: "Ercüment Erden — Founder portrait",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -71,14 +79,19 @@ export const metadata: Metadata = {
     description:
       "Architecting Sovereign Systems: From Hardware to AI Accountability.",
     creator: "@ercumenterden",
+    images: ["/og-image.png"],
   },
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
       { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
     ],
-    apple: "/icon.svg",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
   },
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({

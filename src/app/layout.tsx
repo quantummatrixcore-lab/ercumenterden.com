@@ -39,8 +39,6 @@ export const metadata: Metadata = {
     "Lionexia",
     "Agent-OS",
     "Rabbit Charge",
-    "Prof. Dr. Musa Aygül",
-    "Ahmet Rıfat Albuz",
     "AI Trust & Incident Registry",
     "EU AI Act",
     "Deep-Tech Founder",

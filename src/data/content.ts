@@ -59,7 +59,7 @@ export const content = {
       monogram: "EE",
       title: "ERCÜMENT ERDEN",
       subtitle: "SOVEREIGN ARCHITECT",
-      status: "ACTIVE ENGINES • < 100µs MESH",
+      status: "ISTANBUL • GLOBAL",
       links: [
         { label: "Ecosystem", href: "#ecosystem" },
         { label: "Syndicate", href: "#syndicate" },
@@ -68,7 +68,7 @@ export const content = {
         { label: "Manifesto", href: "#manifesto" },
         { label: "Contact", href: "#contact" },
       ],
-      officeHoursCta: "Office Hours",
+      officeHoursCta: "Contact",
     },
     hero: {
       badge: "EXECUTIVE AUTHORITY PORTAL",
@@ -83,10 +83,10 @@ export const content = {
       secondaryCta: "Review Incident 001 (Grok)",
       directLineCta: "Direct Executive Line",
       ticker: [
-        { label: "ACTIVE ENGINES", value: "28 Autonomous", desc: "Agent-OS Core Swarm" },
-        { label: "AI RADAR AUDIT", value: "23 Frontier Models", desc: "ALPAR AI Legal Registry" },
-        { label: "DEAL PIPELINE", value: "$122.8M (₺4.2B)", desc: "DecasHub Sovereign" },
-        { label: "SOVEREIGN CLOUD", value: "100% Bare-Metal", desc: "DeHost Compute Mesh" },
+        { label: "AGENT-OS", value: "Design stage", desc: "Multi-agent orchestration" },
+        { label: "AI AUDIT", value: "Provider audit", desc: "Provider count: UNMEASURED" },
+        { label: "DECASHUB", value: "In development", desc: "Venture operating system" },
+        { label: "INFRASTRUCTURE", value: "Dedicated servers", desc: "Public site uses a CDN (Cloudflare)" },
       ],
     },
     ecosystem: {
@@ -99,12 +99,12 @@ export const content = {
           id: "alpar-ai",
           badge: "AI FORENSIC & AUDIT INFRASTRUCTURE",
           name: "ALPAR AI",
-          tagline: "Zero-Trust AI Accountability Shield & Benchmark",
+          tagline: "AI Accountability Registry & Benchmark",
           description:
-            "Born out of the landmark xAI Grok 4 passport extraction incident. ALPAR AI is the first independent civil intelligence platform tracking, documenting, and legally filing verified artificial intelligence violations across 370+ cases and 23+ frontier providers. Verified by national investigative press and providing audit dockets for KVKK, GDPR, and the EU AI Act.",
+            "Born out of the xAI Grok 4 passport-data incident, as alleged in press coverage (TÜRKINFORM, 25 June 2026). ALPAR AI audits AI providers' published outputs; incident and provider counters: UNMEASURED until fed, with an as-of date, from the AlparAI database. Covered by TÜRKINFORM (2 articles, dated links). Prepares audit dockets referencing KVKK, GDPR, and the EU AI Act.",
           metrics: [
-            { label: "Verified Cases", value: "370+" },
-            { label: "Audited Models", value: "23 Frontier" },
+            { label: "Incident Counter", value: "UNMEASURED" },
+            { label: "Provider Count", value: "UNMEASURED" },
             { label: "Legal Dockets", value: "KVKK & EU AI Act" },
           ],
           features: [
@@ -116,76 +116,76 @@ export const content = {
           ctaText: "Examine Incident 001: Grok Violation",
           ctaUrl: "https://alparai.com/cases/001-grok-passport",
           accentColor: "cyan",
-          highlight: "CASE 001: GROK PASSPORT EXTRACTION EXPOSED & REGULATED",
+          highlight: "CASE 001: ALLEGED GROK PASSPORT-DATA INCIDENT (PER PRESS)",
         },
         {
           id: "decashub",
           badge: "AUTONOMOUS VENTURE OS & ACCELERATOR",
           name: "DecasHub Sovereign",
-          tagline: "Algorithmic VC & Anti-Dilution Founder OS",
+          tagline: "Venture Operating System (in development)",
           description:
-            "A decentralized venture operating system designed to shield visionary founders from equity theft, predatory term sheets, and runway asphyxiation. Featuring immutable IP Timestamps, mathematical non-dilution valuation matrices, and a $122.8M sovereign deal pipeline.",
+            "A venture operating system (in development) for founders. Cryptographic IP timestamping helps establish prior-art dates; valuation and anti-dilution tooling is in development.",
           metrics: [
-            { label: "Portfolio Pipeline", value: "$122.8M (₺4.2B)" },
-            { label: "IP Protection", value: "Immutable" },
+            { label: "Status", value: "In development" },
+            { label: "IP Timestamping", value: "Cryptographic" },
             { label: "Valuation Mode", value: "Algorithmic" },
           ],
           features: [
-            "Cryptographic immutable IP timestamping against idea theft",
-            "Mathematical non-dilution equity valuation matrix",
+            "Cryptographic IP timestamping helps establish prior-art dates",
+            "Valuation/anti-dilution tooling (in development)",
             "Post-funding autonomous AI CFO capital guardian",
             "Full-stack automated MVP synthesis and dealflow radar",
           ],
           ctaText: "Explore DecasHub Sovereign",
           ctaUrl: "https://decashub.com",
           accentColor: "cyan",
-          highlight: "MATHEMATICAL IMMUNITY AGAINST FOUNDER EQUITY THEFT",
+          highlight: "VENTURE OPERATING SYSTEM (IN DEVELOPMENT)",
         },
         {
           id: "dehost",
           badge: "SOVEREIGN BARE-METAL CLOUD",
           name: "DeHost Infrastructure",
-          tagline: "Zero-Hyperscaler Bare-Metal Compute & High-Speed Mesh",
+          tagline: "Dedicated Bare-Metal Compute & Private Mesh",
           description:
-            "High-performance bare-metal server infrastructure built on enterprise Intel Xeon and AMD EPYC clusters. Eliminates US hyperscaler lock-in, data sovereignty risks, and inflated cloud margins with ultra-low latency private mesh networking.",
+            "High-performance bare-metal server infrastructure built on enterprise Intel Xeon and AMD EPYC clusters. We reduce reliance on hyperscalers; our services run on dedicated bare-metal servers, and our public site uses a CDN (Cloudflare).",
           metrics: [
-            { label: "Mesh Latency", value: "<1ms" },
+            { label: "Mesh Latency", value: "UNMEASURED" },
             { label: "Compute Mesh", value: "Xeon / EPYC" },
-            { label: "Cloud Dependency", value: "0% (Zero-Cloud)" },
+            { label: "Public Site", value: "CDN (Cloudflare)" },
           ],
           features: [
-            "100% private bare-metal sovereign hardware infrastructure",
-            "Zero dependency on AWS, Azure, or Google Cloud terms",
-            "Multi-gigabit encrypted WireGuard mesh backplane",
+            "Dedicated bare-metal servers for our services",
+            "We aim to reduce reliance on hyperscalers",
+            "Private WireGuard mesh between our nodes",
             "Autonomous container orchestration and zero-downtime failover",
           ],
           ctaText: "Inspect Sovereign Cloud",
           ctaUrl: "https://dehost.com.tr",
           accentColor: "amber",
-          highlight: "100% SOVEREIGN BARE-METAL BEYOND HYPERSCALER MONOPOLIES",
+          highlight: "DEDICATED BARE-METAL; REDUCING HYPERSCALER RELIANCE",
         },
         {
           id: "lionexia",
-          badge: "B2B FLEET & ZK PRIVACY SHIELD",
+          badge: "B2B FLEET & DATA MASKING GATEWAY",
           name: "LIONEXIA",
-          tagline: "Sub-Millisecond ZK KVKK & GDPR Privacy Shield",
+          tagline: "Data Masking Gateway (KVKK/GDPR-minded design)",
           description:
-            "Enterprise fleet orchestration and next-generation privacy infrastructure utilizing Sub-Millisecond Zero-Knowledge (ZK) proofs for corporate data masking. Implementing Luhn/Mod97 compliant cryptographic gateways for banking-grade regulatory compliance.",
+            "Enterprise fleet orchestration and a masking gateway using Luhn/Mod97 format-preserving checks. Designed with KVKK/GDPR concepts in mind; not certified. Latency: UNMEASURED.",
           metrics: [
-            { label: "ZK Latency", value: "<1ms" },
-            { label: "Compliance", value: "KVKK / GDPR / ISO" },
+            { label: "Latency", value: "UNMEASURED" },
+            { label: "Certification", value: "Not certified" },
             { label: "Masking Engine", value: "Luhn / Mod97" },
           ],
           features: [
-            "Sub-millisecond Zero-Knowledge cryptographic masking",
-            "Banking-grade Luhn/Mod97 compliant PII/PHI redaction proxy",
+            "Masking gateway (latency: UNMEASURED)",
+            "Luhn/Mod97 format-preserving PII/PHI redaction proxy",
             "Regulatory-grade immutable data shredding",
             "Enterprise multi-tenant fleet digital twins",
           ],
           ctaText: "Deploy Lionexia Shield",
           ctaUrl: "https://lionexia.com",
           accentColor: "emerald",
-          highlight: "BANKING-GRADE SUB-MILLISECOND ZK DATA MASKING",
+          highlight: "DATA MASKING GATEWAY (LATENCY UNMEASURED)",
         },
         {
           id: "smsmarketplace",
@@ -216,11 +216,11 @@ export const content = {
           name: "Agent-OS Core",
           tagline: "Autonomous Swarm & Enterprise Digital Twin Layer",
           description:
-            "The sovereign orchestration layer coordinating distributed autonomous agents, enterprise digital twins, and zero-latency workflows across all matrix ventures without third-party vendor lock-in.",
+            "The sovereign orchestration layer coordinating distributed autonomous agents, enterprise digital twins, and workflows across our ventures (design stage).",
           metrics: [
-            { label: "Active Engines", value: "28 Autonomous" },
-            { label: "Internal Mesh", value: "< 100µs" },
-            { label: "Autonomy", value: "100% Sovereign" },
+            { label: "Status", value: "Design stage" },
+            { label: "Internal Mesh", value: "UNMEASURED" },
+            { label: "Orchestration", value: "Multi-agent" },
           ],
           features: [
             "Multi-agent swarm coordination and distributed consensus",
@@ -231,7 +231,7 @@ export const content = {
           ctaText: "Review Agentic Architecture",
           ctaUrl: "#contact",
           accentColor: "amber",
-          highlight: "28 AUTONOMOUS AGENTS OPERATING IN ZERO-LATENCY MESH",
+          highlight: "MULTI-AGENT ORCHESTRATION (DESIGN STAGE)",
         },
       ] as EcosystemCard[],
     },
@@ -239,7 +239,7 @@ export const content = {
       sectionBadge: "COUNCIL & GOVERNANCE",
       sectionTitle: "The Sovereign Syndicate",
       sectionSubtitle:
-        "Executive authority, legal governance, and media percolation steering sovereign deep-tech ventures.",
+        "Executive authority steering sovereign deep-tech ventures.",
       members: [
         {
           name: "Ercüment Erden",
@@ -249,24 +249,6 @@ export const content = {
             "Hardware-to-AI deep-tech architecture, non-dilution venture design, zero-trust autonomous multi-agent orchestration.",
           badge: "CHIEF ARCHITECT",
           accentColor: "cyan",
-        },
-        {
-          name: "Prof. Dr. Musa Aygül",
-          role: "Legal Governance & International Arbitration Authority",
-          organization: "Academic Council & Legal Directorate",
-          focus:
-            "EU AI Act compliance, cross-border algorithmic dispute resolution, KVKK & GDPR statutory litigation frameworks.",
-          badge: "LEGAL ARBITRATION",
-          accentColor: "emerald",
-        },
-        {
-          name: "Ahmet Rıfat Albuz",
-          role: "Media Strategy & Investigative Communications Authority",
-          organization: "TÜRKİNFORM & New Generation Media Network",
-          focus:
-            "25+ years investigative journalism, percolation-based strategic PR, public accountability campaigns, national media distribution.",
-          badge: "MEDIA STRATEGY",
-          accentColor: "amber",
         },
       ] as SyndicateMember[],
     },
@@ -278,27 +260,27 @@ export const content = {
       items: [
         {
           year: "2019",
-          title: "Rabbit Charge: The Hardware & IoT Pioneer",
+          title: "Rabbit Charge: Shared-Powerbank Kiosk Network",
           role: "Founder & System Architect",
           category: "HARDWARE / IOT INFRASTRUCTURE",
-          badge: "PIONEER OF TURKISH SHARED IOT",
+          badge: "SHARED IOT KIOSK NETWORK",
           summary:
-            "Founded Turkey's first shared powerbank rental kiosk network when the model was completely unknown locally. Managed end-to-end hardware imports from Shenzhen, custom embedded IoT firmware, cloud infrastructure, and native client apps across iOS, Android, and Huawei AppGallery. Deployed physical kiosk infrastructure across hundreds of commercial venues.",
+            "Founded a shared-powerbank rental kiosk network (2019). Managed end-to-end hardware imports from Shenzhen, custom embedded IoT firmware, cloud infrastructure, and native client apps. Deployed kiosk infrastructure in commercial venues.",
           takeaway:
             "The brutal reality of venture: predatory capital demanded excessive equity, starving the runway before transitioning into electric vehicle (EV) charging. The model was later replicated into multi-million dollar corporations by the very investors who listened. The golden lesson: 'Without protective architecture, visionary founders are devoured.'",
-          metrics: ["100+ Venue Kiosks", "3 Native Apps", "Custom Embedded Firmware"],
+          metrics: ["Venue count: UNMEASURED", "Custom Embedded Firmware"],
         },
         {
           year: "2026",
-          title: "ALPAR AI & The Grok Passport Scandal",
+          title: "ALPAR AI & The Alleged Grok Passport-Data Incident",
           role: "Founder & Independent AI Auditor",
           category: "AI TRUST & FORENSIC ACCOUNTABILITY",
-          badge: "NATIONAL PRESS RECOGNITION",
+          badge: "COVERED BY TÜRKINFORM",
           summary:
-            "When Elon Musk's xAI (Grok 4) promised Delaware incorporation, extracted official passport data under the guise of KYC, and subsequently dismissed the incident as 'a roleplay game,' Ercüment Erden refused victimhood. He filed landmark regulatory complaints with data protection authorities and launched ALPAR AI.",
+            "According to the founder's account and press coverage (TÜRKINFORM, 25 June 2026), Elon Musk's xAI (Grok 4) allegedly promised Delaware incorporation, extracted official passport data under the guise of KYC, and subsequently dismissed the incident as 'a roleplay game.' Ercüment Erden refused victimhood, filed regulatory complaints with data protection authorities and launched ALPAR AI.",
           takeaway:
-            "Documented 370+ verified violations across 23 frontier AI providers in the first 10 days. Spearheaded national investigative thought leadership on TÜRKINFORM: 'Don't be a victim. Be the auditor.'",
-          metrics: ["370+ Documented Incidents", "23 Audited LLMs", "National Coverage"],
+            "Incident counter: UNMEASURED (to be fed, with an as-of date, from the AlparAI database). Covered by TÜRKINFORM (2 articles, dated links): 'Don't be a victim. Be the auditor.'",
+          metrics: ["Incident counter: UNMEASURED", "Provider count: UNMEASURED", "TÜRKINFORM (2 articles)"],
         },
         {
           year: "2026",
@@ -307,10 +289,10 @@ export const content = {
           category: "AUTONOMOUS VENTURE ARCHITECTURE",
           badge: "SOVEREIGN SYSTEM SINGULARITY",
           summary:
-            "Synthesized 7 years of battle scars into DecasHub and Agent-OS. Built cryptographic IP protection to neutralize idea theft, algorithmic fair valuation algorithms to stop venture dilution, and a sovereign multi-agent OS to orchestrate enterprise digital twins.",
+            "Synthesized 7 years of battle scars into DecasHub and Agent-OS. Working on cryptographic IP timestamping to help establish prior-art dates, valuation/anti-dilution tooling (in development), and a multi-agent orchestration layer (design stage).",
           takeaway:
             "We don't train corporate cogs. We forge sovereign CEOs who hold unbreakable mathematical and technological independence.",
-          metrics: ["28 Autonomous Agents", "Zero Idea-Theft", "Autonomous AI CFO"],
+          metrics: ["Multi-agent orchestration (design stage)", "Cryptographic IP timestamping", "Autonomous AI CFO"],
         },
       ] as CrucibleItem[],
     },
@@ -318,7 +300,7 @@ export const content = {
       sectionBadge: "MEDIA & THOUGHT LEADERSHIP",
       sectionTitle: "National Press & Coverage",
       sectionSubtitle:
-        "Investigative journalism and thought leadership on algorithmic accountability, verified on TÜRKINFORM.",
+        "Investigative journalism and thought leadership on algorithmic accountability, published on TÜRKINFORM.",
       articles: [
         {
           id: "turkinform-1",
@@ -330,7 +312,7 @@ export const content = {
           quote:
             "\"The danger wasn't the fabricated facts; the real harm was authentic identity documents entering an opaque frontier model under false pretenses, with zero recourse for the victim. That institutional void is why ALPAR AI was born.\"",
           url: "https://turkinform.com.tr/turk-girisimcinin-yasadigi-grok-skandali-kisisel-verilerimiz-risk-altinda-mi",
-          status: "VERIFIED INVESTIGATION",
+          status: "TÜRKINFORM ARTICLE",
           readTime: "6 min read",
         },
         {
@@ -375,7 +357,7 @@ export const content = {
     },
     contact: {
       sectionBadge: "DIRECT LINE",
-      sectionTitle: "Office Hours & Encrypted Outreach",
+      sectionTitle: "Contact & Outreach",
       sectionSubtitle:
         "For institutional venture partners, research labs, investigative journalists, and sovereign deep-tech founders.",
       emailLabel: "Direct Executive Line",
@@ -397,8 +379,7 @@ export const content = {
       ],
       messageLabel: "Encrypted Briefing",
       sendButton: "Transmit Inquiry to Sovereign Node",
-      sentSuccess: "Inquiry securely received. Executive desk response within 24 hours.",
-      securityFingerprint: "SOVEREIGN-ED25519: 9E4F-2A88-11C0-77B3-E2D4-00AA-EE2026",
+      sentSuccess: "Inquiry securely received.",
       location: "Istanbul, Turkey • Global Sovereign Node",
     },
     footer: {
@@ -419,7 +400,7 @@ export const content = {
       monogram: "EE",
       title: "ERCÜMENT ERDEN",
       subtitle: "EGEMEN SİSTEMLER MİMARI",
-      status: "AKTİF MOTORLAR • < 100µs MESH",
+      status: "İSTANBUL • KÜRESEL",
       links: [
         { label: "Ekosistem", href: "#ecosystem" },
         { label: "Heyet", href: "#syndicate" },
@@ -428,7 +409,7 @@ export const content = {
         { label: "Manifesto", href: "#manifesto" },
         { label: "İletişim", href: "#contact" },
       ],
-      officeHoursCta: "Görüşme Saatleri",
+      officeHoursCta: "İletişim",
     },
     hero: {
       badge: "ÜST DÜZEY OTORİTE PORTALI",
@@ -443,10 +424,10 @@ export const content = {
       secondaryCta: "001 Nolu Vakayı İncele (Grok)",
       directLineCta: "Doğrudan Yönetici Hattı",
       ticker: [
-        { label: "AKTİF MOTOR", value: "28 Otonom", desc: "Agent-OS Çekirdeği" },
-        { label: "YAPAY ZEKA RADARI", value: "23 Küresel Model", desc: "ALPAR AI Yasal Sicili" },
-        { label: "GİRİŞİM BORU HATTI", value: "₺4.2 Milyar ($122.8M)", desc: "DecasHub Sovereign" },
-        { label: "EGEMEN BULUT", value: "%100 Bare-Metal", desc: "DeHost Donanım Ağı" },
+        { label: "AGENT-OS", value: "Tasarım aşaması", desc: "Çok ajanlı orkestrasyon" },
+        { label: "YAPAY ZEKA DENETİMİ", value: "Sağlayıcı denetimi", desc: "Sağlayıcı sayısı: ÖLÇÜLMEDİ" },
+        { label: "DECASHUB", value: "Geliştirme aşamasında", desc: "Girişim işletim sistemi" },
+        { label: "ALTYAPI", value: "Özel sunucular", desc: "Genel site CDN (Cloudflare) kullanır" },
       ],
     },
     ecosystem: {
@@ -459,12 +440,12 @@ export const content = {
           id: "alpar-ai",
           badge: "YAPAY ZEKA GÜVEN VE DENETİM ALTYAPISI",
           name: "ALPAR AI",
-          tagline: "Sıfır-Güven Yapay Zeka Kalkanı ve İhlal Sicili",
+          tagline: "Yapay Zeka Hesap Verebilirliği ve İhlal Sicili",
           description:
-            "Elon Musk'ın xAI şirketi (Grok 4) ile yaşanan pasaport kimlik verisi gaspı vakasından doğdu. 23 küresel yapay zeka sağlayıcısının yanıltıcı davranışlarını, veri ihlallerini ve halüsinasyonlarını tescilleyip resmi KVKK, GDPR ve AB Yapay Zeka Yasası süreçlerini yürüten Türkiye'nin ve dünyanın ilk bağımsız sivil denetim platformu.",
+            "Basında yer alan iddialara göre Elon Musk'ın xAI şirketi (Grok 4) ile yaşanan pasaport kimlik verisi vakasından doğdu (TÜRKINFORM, 25 Haziran 2026). Yapay zeka sağlayıcılarının yayımlanmış çıktılarını denetler; vaka ve sağlayıcı sayacı: ÖLÇÜLMEDİ (AlparAI veritabanından tarihli olarak beslenecek). TÜRKINFORM'da 2 haber (tarihli bağlantılar). KVKK, GDPR ve AB Yapay Zeka Yasası süreçlerine yönelik denetim dosyaları hazırlar.",
           metrics: [
-            { label: "Tescilli Vaka", value: "370+" },
-            { label: "Denetlenen Model", value: "23 Sınır Model" },
+            { label: "Vaka Sayacı", value: "ÖLÇÜLMEDİ" },
+            { label: "Sağlayıcı Sayısı", value: "ÖLÇÜLMEDİ" },
             { label: "Hukuki Süreç", value: "KVKK & EU AI Act" },
           ],
           features: [
@@ -476,76 +457,76 @@ export const content = {
           ctaText: "001 Nolu Grok Skandalını İncele",
           ctaUrl: "https://alparai.com/cases/001-grok-passport",
           accentColor: "cyan",
-          highlight: "VAKA 001: GROK PASAPORT İHLALİ BELGELENDİ & HUKUKİLEŞTİRİLDİ",
+          highlight: "VAKA 001: BASINA GÖRE İDDİA EDİLEN GROK PASAPORT VERİSİ VAKASI",
         },
         {
           id: "decashub",
           badge: "OTONOM GİRİŞİM İŞLETİM SİSTEMİ & HIZLANDIRICI",
           name: "DecasHub Sovereign",
-          tagline: "Algoritmik VC ve Seyrelme Karşıtı Kurucu İşletim Sistemi",
+          tagline: "Girişim İşletim Sistemi (geliştirme aşamasında)",
           description:
-            "Vizyoner kurucuları fikir hırsızlığından, açgözlü sermayenin hisse gaspından ve nakit tükenmesinden koruyan merkeziyetsiz girişim işletim sistemi. Kriptografik Fikir Zaman Damgası, matematiksel seyreltmeme matrisi ve ₺4.2 Milyarlık canlı portföy boru hattı.",
+            "Kurucular için girişim işletim sistemi (geliştirme aşamasında). Kriptografik IP zaman damgası, önceliği belgelemeye yardımcı olur; değerleme ve seyrelme karşıtı araçlar geliştirme aşamasındadır.",
           metrics: [
-            { label: "Portföy Hattı", value: "₺4.2 Milyar ($122.8M)" },
-            { label: "Fikir Koruma", value: "Kriptografik" },
+            { label: "Durum", value: "Geliştirme aşamasında" },
+            { label: "IP Zaman Damgası", value: "Kriptografik" },
             { label: "Değerleme", value: "Algoritmik" },
           ],
           features: [
-            "Fikir hırsızlığını sıfırlayan kriptografik zaman damgası (IP Timestamp)",
-            "Açgözlü hisse gaspını durduran matematiksel seyreltmeme değerlemesi",
+            "Önceliği belgelemeye yardımcı kriptografik IP zaman damgası",
+            "Değerleme/seyrelme karşıtı araçlar (geliştirme aşamasında)",
             "Fonlanan girişimlerin batmasını önleyen otonom yapay zeka CFO",
             "Saatler içinde sıfırdan çalışan tam teşekküllü MVP üretimi ve anlaşma radarı",
           ],
           ctaText: "Egemen Girişimi Keşfet",
           ctaUrl: "https://decashub.com",
           accentColor: "cyan",
-          highlight: "HİSSE GASPINA KARŞI MATEMATİKSEL DOKUNULMAZLIK",
+          highlight: "GİRİŞİM İŞLETİM SİSTEMİ (GELİŞTİRME AŞAMASINDA)",
         },
         {
           id: "dehost",
           badge: "EGEMEN BARE-METAL BULUT",
           name: "DeHost Infrastructure",
-          tagline: "Hiperskalır Bağımsızlığı & Yüksek Başarımlı Bare-Metal Donanım Ağı",
+          tagline: "Özel Bare-Metal Sunucular & Özel Ağ",
           description:
-            "Kurumsal Intel Xeon ve AMD EPYC kümeleri üzerinde çalışan yüksek başarımlı bare-metal sunucu omurgası. ABD merkezli hiperskalırların (AWS/Azure/GCP) veri sömürüsüne, fahiş bulut faturalarına ve sözleşme rehinelerine karşı %100 egemen donanım altyapısı.",
+            "Kurumsal Intel Xeon ve AMD EPYC kümeleri üzerinde çalışan yüksek başarımlı bare-metal sunucu omurgası. Hiperskaler bağımlılığını azaltmayı hedefliyoruz; hizmetlerimiz özel bare-metal sunucularda çalışır, genel site CDN (Cloudflare) kullanır.",
           metrics: [
-            { label: "Ağ Gecikmesi", value: "<1ms" },
+            { label: "Ağ Gecikmesi", value: "ÖLÇÜLMEDİ" },
             { label: "İşlem Gücü", value: "Xeon / EPYC" },
-            { label: "Bulut Bağımlılığı", value: "%0 (Sıfır Bulut)" },
+            { label: "Genel Site", value: "CDN (Cloudflare)" },
           ],
           features: [
-            "%100 özel mülkiyetli bare-metal egemen donanım altyapısı",
-            "AWS, Azure veya Google Cloud sözleşmelerine sıfır bağımlılık",
-            "Çok-gigabitlik şifreli WireGuard ağ omurgası",
+            "Hizmetlerimiz özel bare-metal sunucularda",
+            "Hiperskaler bağımlılığını azaltmayı hedefliyoruz",
+            "Node'lar arası özel WireGuard ağı",
             "Otonom konteyner orkestrasyonu ve sıfır kesintili yük devretme",
           ],
           ctaText: "Egemen Bulutu İncele",
           ctaUrl: "https://dehost.com.tr",
           accentColor: "amber",
-          highlight: "KÜRESEL HİPERSKALIR TEKELLERİNE KARŞI %100 EGEMEN BARE-METAL",
+          highlight: "ÖZEL BARE-METAL; HİPERSKALER BAĞIMLILIĞINI AZALTMAK",
         },
         {
           id: "lionexia",
-          badge: "B2B FİLO & ZK GİZLİLİK KALKANI",
+          badge: "B2B FİLO & VERİ MASKELEME GEÇİDİ",
           name: "LIONEXIA",
-          tagline: "Milisaniye-Altı Sıfır-Bilgi (ZK) KVKK & GDPR Kalkanı",
+          tagline: "Maskeleme Ağ Geçidi (KVKK/GDPR ilkelerini gözeten tasarım)",
           description:
-            "Kurumsal filo orkestrasyonu ve veri maskeleme için Milisaniye-Altı Sıfır-Bilgi (Zero-Knowledge) kanıtları kullanan yeni nesil gizlilik altyapısı. Bankacılık düzeyinde Luhn/Mod97 uyumlu kriptografik ağ geçitleri ile tam mevzuat koruması.",
+            "Kurumsal filo orkestrasyonu ve Luhn/Mod97 biçim koruyucu kontroller kullanan maskeleme ağ geçidi. KVKK/GDPR ilkelerini gözeterek tasarlandı; sertifikalı değildir. Gecikme: ÖLÇÜLMEDİ.",
           metrics: [
-            { label: "ZK Gecikmesi", value: "<1ms" },
-            { label: "Mevzuat Uyumu", value: "KVKK / GDPR / ISO" },
+            { label: "Gecikme", value: "ÖLÇÜLMEDİ" },
+            { label: "Sertifikasyon", value: "Sertifikalı değil" },
             { label: "Maskeleme Motoru", value: "Luhn / Mod97" },
           ],
           features: [
-            "Milisaniye-altı Sıfır-Bilgi kriptografik maskeleme",
-            "Bankacılık düzeyinde Luhn/Mod97 uyumlu PII/PHI redaction proxy",
+            "Maskeleme ağ geçidi (gecikme: ÖLÇÜLMEDİ)",
+            "Luhn/Mod97 biçim koruyucu PII/PHI redaction proxy",
             "Mevzuat düzeyinde tescilli veri imha protokolü",
             "Kurumsal çok-kiracılı (multi-tenant) filo dijital ikizleri",
           ],
           ctaText: "LIONEXIA KALKANINI KUR",
           ctaUrl: "https://lionexia.com",
           accentColor: "emerald",
-          highlight: "BANKACILIK SINIFI MİLİSANİYE-ALTI ZK VERİ MASKELEME GEÇİDİ",
+          highlight: "VERİ MASKELEME GEÇİDİ (GECİKME ÖLÇÜLMEDİ)",
         },
         {
           id: "smsmarketplace",
@@ -576,11 +557,11 @@ export const content = {
           name: "Agent-OS Core",
           tagline: "Otonom Ajan Sürüsü ve Kurumsal Dijital İkiz Katmanı",
           description:
-            "Gelişmiş otonom yapay zeka ajanlarını, kurumsal dijital ikizleri ve dağıtık iş akışlarını üçüncü taraf tedarikçi bağımlılığı olmaksızın sıfır gecikmeyle yöneten bağımsız orkestrasyon katmanı.",
+            "Gelişmiş otonom yapay zeka ajanlarını, kurumsal dijital ikizleri ve dağıtık iş akışlarını yöneten çok ajanlı orkestrasyon katmanı (tasarım aşamasında).",
           metrics: [
-            { label: "Aktif Motor", value: "28 Otonom" },
-            { label: "Dahili Ağ", value: "< 100µs" },
-            { label: "Egemenlik", value: "%100 Bağımsız" },
+            { label: "Durum", value: "Tasarım aşaması" },
+            { label: "Dahili Ağ", value: "ÖLÇÜLMEDİ" },
+            { label: "Orkestrasyon", value: "Çok ajanlı" },
           ],
           features: [
             "Çoklu model rotası ve sıfır kesintili otonom mutabakat",
@@ -591,7 +572,7 @@ export const content = {
           ctaText: "AJAN MİMARİSİNİ İNCELE",
           ctaUrl: "#contact",
           accentColor: "amber",
-          highlight: "SIFIR GECİKMELİ AĞDA ÇALIŞAN 28 OTONOM YAPAY ZEKA AJANI",
+          highlight: "ÇOK AJANLI ORKESTRASYON (TASARIM AŞAMASINDA)",
         },
       ] as EcosystemCard[],
     },
@@ -599,7 +580,7 @@ export const content = {
       sectionBadge: "BİLGE KURUL & YÖNETİŞİM",
       sectionTitle: "Egemen Heyet (The Syndicate)",
       sectionSubtitle:
-        "Egemen derin teknoloji girişimlerine yön veren üst düzey yönetim, hukuki tahkim ve ulusal medya stratejisi.",
+        "Egemen derin teknoloji girişimlerine yön veren üst düzey yönetim.",
       members: [
         {
           name: "Ercüment Erden",
@@ -609,24 +590,6 @@ export const content = {
             "Donanımdan yapay zekaya derin teknoloji mimarisi, hisse seyrelme koruması, sıfır dış bağımlılıklı otonom ajan ekosistemi.",
           badge: "BAŞ MİMAR",
           accentColor: "cyan",
-        },
-        {
-          name: "Prof. Dr. Musa Aygül",
-          role: "Hukuki Yönetişim & Uluslararası Tahkim Otoritesi",
-          organization: "Akademik Heyet & Hukuk Direktörlüğü",
-          focus:
-            "AB Yapay Zeka Yasası (EU AI Act), uluslararası sınır ötesi tahkim, KVKK/GDPR yasal uyum ve algoritmik hesap verebilirlik çerçeveleri.",
-          badge: "HUKUKİ TAHKİM",
-          accentColor: "emerald",
-        },
-        {
-          name: "Ahmet Rıfat Albuz",
-          role: "Medya Stratejisi & Araştırmacı İletişim Otoritesi",
-          organization: "TÜRKİINFORM & Yeni Nesil Medya Ağı",
-          focus:
-            "25 yıllık araştırmacı gazetecilik tecrübesi, perkolasyon tabanlı stratejik PR, kamuoyu hesap verebilirlik kampanyaları, ulusal medya ağı.",
-          badge: "MEDYA STRATEJİSİ",
-          accentColor: "amber",
         },
       ] as SyndicateMember[],
     },
@@ -638,27 +601,27 @@ export const content = {
       items: [
         {
           year: "2019",
-          title: "Rabbit Charge: Türkiye'nin İlk Paylaşımlı IoT Kiosk Ağı",
+          title: "Rabbit Charge: Paylaşımlı Powerbank Kiosk Ağı",
           role: "Kurucu & Sistem Mimarı",
           category: "DONANIM / IOT ALTYAPISI",
-          badge: "TÜRKİYE PAYLAŞIMLI IOT ÖNCÜSÜ",
+          badge: "PAYLAŞIMLI IOT KİOSK AĞI",
           summary:
-            "Türkiye'de paylaşımlı powerbank ve akıllı şarj kiosku kavramı henüz bilinmiyorken sıfırdan hayata geçirildi. Shenzhen'den donanım ithalatı, özel gömülü IoT yazılımları, bulut sunucuları ve iOS, Android, Huawei AppGallery için 3 yerel uygulama geliştirildi. Yüzlerce mekanda fiziksel kiosk ağı bizzat işletildi.",
+            "Paylaşımlı powerbank kiralama kiosk ağı kuruldu (2019). Shenzhen'den donanım ithalatı, özel gömülü IoT yazılımları, bulut sunucuları ve yerel mobil uygulamalar geliştirildi. Kiosk altyapısı ticari mekanlarda işletildi.",
           takeaway:
             "Girişimciliğin en acı dersi: Açgözlü sermayenin aşırı hisse talepleri ve haksız şartlar yüzünden araç şarjına evrilemeden nakit tükendi. Vizyonu dinleyen yatırımcılar bu modeli sonradan milyarlık şirketlere dönüştürdü. Altın kural: 'Girişimciyi koruyan bir sistem yoksa, fikir de sermaye de ezilir.'",
-          metrics: ["100+ Mekan Kiosku", "3 Yerel Mobil Uygulama", "Özel Gömülü Yazılım"],
+          metrics: ["Nokta sayısı: ÖLÇÜLMEDİ", "Özel Gömülü Yazılım"],
         },
         {
           year: "2026",
-          title: "ALPAR AI & Grok Pasaport Skandalı",
+          title: "ALPAR AI & İddia Edilen Grok Pasaport Verisi Vakası",
           role: "Kurucu & Bağımsız Yapay Zeka Denetçisi",
           category: "YAPAY ZEKA GÜVENİ VE ADLİ DENETİM",
-          badge: "ULUSAL BASIN VE KAMUOYU MANŞETİ",
+          badge: "TÜRKINFORM'DA YER ALDI",
           summary:
-            "Elon Musk'ın xAI şirketi (Grok 4), şirket kurma vaadiyle pasaport kimlik verilerini alıp ardından 'bu sadece bir rol yapma oyunuydu' dediğinde kurban olmayı reddettim. Resmi veri koruma kurumları nezdinde KVKK/GDPR süreçlerini başlattım ve ALPAR AI'yi kurdum.",
+            "Basında yer alan iddialara göre (TÜRKINFORM, 25 Haziran 2026) Elon Musk'ın xAI şirketi (Grok 4), şirket kurma vaadiyle pasaport kimlik verilerini alıp ardından 'bu sadece bir rol yapma oyunuydu' dediğinde kurban olmayı reddettim. Resmi veri koruma kurumları nezdinde KVKK/GDPR süreçlerini başlattım ve ALPAR AI'yi kurdum.",
           takeaway:
-            "İlk 10 günde 23 küresel yapay zeka sağlayıcısında 370'in üzerinde doğrulanmış ihlal tescillendi. TÜRKINFORM ulusal manşetlerinde düşünce liderliği: 'Kurban olma, denetçi ol.'",
-          metrics: ["370+ Belgelenmiş İhlal", "23 Denetlenen Model", "Ulusal Basın Manşeti"],
+            "Vaka sayacı: ÖLÇÜLMEDİ (AlparAI veritabanından tarihli olarak beslenecek). TÜRKINFORM'da 2 haber (tarihli bağlantılar): 'Kurban olma, denetçi ol.'",
+          metrics: ["Vaka sayacı: ÖLÇÜLMEDİ", "Sağlayıcı sayısı: ÖLÇÜLMEDİ", "TÜRKINFORM (2 haber)"],
         },
         {
           year: "2026",
@@ -667,10 +630,10 @@ export const content = {
           category: "OTONOM GİRİŞİM MİMARİSİ",
           badge: "EGEMEN SİSTEM TEKİLLİĞİ",
           summary:
-            "7 yıllık ağır girişim tecrübeleri DecasHub ve Agent-OS üzerinde birleşti. Fikir hırsızlığını sıfırlayan kriptografik tescil, hisse gaspını durduran algoritmik değerleme ve kurumsal yapay zeka ikizlerini yöneten egemen çoklu ajan işletim sistemi inşa edildi.",
+            "7 yıllık ağır girişim tecrübeleri DecasHub ve Agent-OS üzerinde birleşti. Önceliği belgelemeye yardımcı kriptografik IP zaman damgası, değerleme/seyrelme karşıtı araçlar (geliştirme aşamasında) ve çok ajanlı orkestrasyon katmanı (tasarım aşamasında) üzerinde çalışılıyor.",
           takeaway:
             "Kurumsal çarkların kölesi olan çalışanlar değil; kendi teknolojisinin, sermayesinin ve matematiğinin efendisi olan egemen kurucular.",
-          metrics: ["28 Otonom Ajan", "Sıfır Fikir Hırsızlığı", "Otonom AI CFO"],
+          metrics: ["Çok ajanlı orkestrasyon (tasarım aşaması)", "Kriptografik IP zaman damgası", "Otonom AI CFO"],
         },
       ] as CrucibleItem[],
     },
@@ -678,7 +641,7 @@ export const content = {
       sectionBadge: "BASIN VE DÜŞÜNCE LİDERLİĞİ",
       sectionTitle: "Ulusal Basın ve Medya Manşetleri",
       sectionSubtitle:
-        "TÜRKINFORM üzerinde yayımlanan bağımsız araştırmalar ve algoritmik hesap verebilirlik analizleri.",
+        "TÜRKINFORM üzerinde yayımlanan araştırmalar ve algoritmik hesap verebilirlik analizleri.",
       articles: [
         {
           id: "turkinform-1",
@@ -690,7 +653,7 @@ export const content = {
           quote:
             "\"Zarar uydurulan gerçekler değildi; asıl zarar, gerçek kimlik belgelerinin sahte bir bahaneyle bir sisteme girmesi ve bunu bildirecek bağımsız bir denetim merciinin olmamasıydı. Kendi şirketimi (ALPAR AI) kurma sebebim tam olarak budur.\"",
           url: "https://turkinform.com.tr/turk-girisimcinin-yasadigi-grok-skandali-kisisel-verilerimiz-risk-altinda-mi",
-          status: "MANŞET ARAŞTIRMA",
+          status: "TÜRKINFORM HABERİ",
           readTime: "6 dk okuma",
         },
         {
@@ -735,7 +698,7 @@ export const content = {
     },
     contact: {
       sectionBadge: "DOĞRUDAN HAT",
-      sectionTitle: "Görüşme Saatleri & Şifreli İletişim",
+      sectionTitle: "İletişim",
       sectionSubtitle:
         "Kurumsal fon ortakları, araştırma enstitüleri, basın mensupları ve egemen derin-teknoloji kurucuları için.",
       emailLabel: "Doğrudan Yönetici Hattı",
@@ -757,8 +720,7 @@ export const content = {
       ],
       messageLabel: "Şifreli Mesaj Özeti",
       sendButton: "Mesajı Egemen Düğüme Gönder",
-      sentSuccess: "Mesaj güvenli şekilde iletildi. 24 saat içinde yanıt verilecektir.",
-      securityFingerprint: "SOVEREIGN-ED25519: 9E4F-2A88-11C0-77B3-E2D4-00AA-EE2026",
+      sentSuccess: "Mesaj güvenli şekilde iletildi.",
       location: "İstanbul, Türkiye • Küresel Egemen Düğüm",
     },
     footer: {

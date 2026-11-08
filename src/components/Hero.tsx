@@ -21,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#0F172A]/70 px-3.5 py-1 text-xs backdrop-blur-md">
           <span className="h-1.5 w-1.5 rounded-full bg-[#00F0FF] animate-pulse" />
           <span className="font-mono text-[11px] font-bold tracking-wider text-slate-300">
-            SYSTEMS NOMINAL • MESH LATENCY &lt; 100µs • ISTANBUL &amp; GLOBAL
+            ISTANBUL &amp; GLOBAL
           </span>
         </div>
 
@@ -84,7 +84,7 @@ export const Hero: React.FC<HeroProps> = ({ lang }) => {
                 {item.value}
               </span>
               <span className="font-mono text-[10px] text-slate-500 mt-1">
-                {item.desc || 'Verified Protocol'}
+                {item.desc}
               </span>
             </div>
           ))}

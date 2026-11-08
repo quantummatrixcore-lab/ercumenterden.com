@@ -63,7 +63,7 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
             © {new Date().getFullYear()} {t.rights}
           </div>
           <div className="font-mono text-[10px] tracking-widest text-zinc-400">
-            {t.badge} • ZERO LATENCY VERIFIED
+            {t.badge}
           </div>
         </div>
       </div>

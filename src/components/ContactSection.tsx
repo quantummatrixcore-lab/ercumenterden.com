@@ -9,7 +9,6 @@ import {
   Send,
   Lock,
   MapPin,
-  Key,
   ShieldCheck
 } from 'lucide-react';
 
@@ -94,17 +93,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
               </div>
             </div>
 
-            {/* Cryptographic Node & Fingerprint Card */}
+            {/* Location Card */}
             <div className="glass-card rounded-2xl p-6 sm:p-8 font-mono text-xs space-y-4">
               <div className="flex items-center gap-2 text-zinc-400">
-                <Key className="h-4 w-4 text-[#06D6A0]" />
-                <span className="font-semibold uppercase tracking-wider">Cryptographic Identity</span>
-              </div>
-              <div className="rounded-xl border border-white/10 bg-[#05070C] p-3 text-zinc-300 break-all text-[11px]">
-                {t.securityFingerprint}
-              </div>
-
-              <div className="flex items-center gap-2 text-zinc-400 pt-2 border-t border-white/10">
                 <MapPin className="h-4 w-4 text-[#00F0FF]" />
                 <span>{t.location}</span>
               </div>

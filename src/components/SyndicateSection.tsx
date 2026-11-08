@@ -58,7 +58,7 @@ export const SyndicateSection: React.FC<SyndicateSectionProps> = ({ lang }) => {
         </div>
 
         {/* 3 Members Grid */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:max-w-xl">
           {t.members.map((member, idx) => (
             <div
               key={idx}

@@ -23,12 +23,6 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, onLanguageChange }) => {
               {t.monogram}
             </span>
           </a>
-          <div className="status-pill px-2.5 py-0.5 rounded-full flex items-center gap-1.5 hidden sm:flex">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00F0FF] animate-pulse" />
-            <span className="font-mono text-[10px] font-bold text-[#00F0FF] uppercase tracking-widest">
-              142 LEGO BLOCKS ACTIVE
-            </span>
-          </div>
         </div>
 
         {/* Center: Desktop Navigation Links */}

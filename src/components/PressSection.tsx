@@ -54,7 +54,7 @@ export const PressSection: React.FC<PressSectionProps> = ({ lang }) => {
             </div>
             <div className="flex shrink-0 items-center gap-2 rounded-xl border border-white/10 bg-[#05070C]/80 px-4 py-2.5 font-mono text-xs text-zinc-300">
               <span className="text-[#06D6A0]">●</span>
-              <span>{lang === 'tr' ? '2 Doğrulanmış Dosya' : '2 Verified Investigations'}</span>
+              <span>{lang === 'tr' ? 'TÜRKINFORM\'da 2 Haber' : '2 TÜRKINFORM Articles'}</span>
             </div>
           </div>
         </div>

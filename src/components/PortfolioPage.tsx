@@ -5,7 +5,6 @@ import { Language } from '@/data/content';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { EcosystemBento } from '@/components/EcosystemBento';
-import { SyndicateSection } from '@/components/SyndicateSection';
 import { CrucibleTimeline } from '@/components/CrucibleTimeline';
 import { PressSection } from '@/components/PressSection';
 import { ManifestoSection } from '@/components/ManifestoSection';
@@ -48,7 +47,6 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ initialLang = 'en'
       <main>
         <Hero lang={lang} />
         <EcosystemBento lang={lang} />
-        <SyndicateSection lang={lang} />
         <CrucibleTimeline lang={lang} />
         <PressSection lang={lang} />
         <ManifestoSection lang={lang} />

@@ -28,16 +28,15 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ercumenterden.com"),
-  title: "Ercüment Erden | Founder & Sovereign Systems Architect",
+  title: "Ercüment Erden | Founder, ALPAR AI and DecasHub",
   description:
-    "Official Executive Authority Portal of Ercüment Erden — Founder of ALPAR AI, DecasHub Sovereign, DeHost & Lionexia. Pioneer of Turkey's 2019 IoT shared charging infrastructure.",
+    "Official Executive Authority Portal of Ercüment Erden — Founder, ALPAR AI and DecasHub. Ventures: ALPAR AI, DecasHub, Lionexia, UDT.",
   keywords: [
     "Ercüment Erden",
     "ALPAR AI",
-    "DecasHub Sovereign",
-    "DeHost",
+    "DecasHub",
     "Lionexia",
-    "Agent-OS",
+    "UDT",
     "Rabbit Charge",
     "AI Trust & Incident Registry",
     "EU AI Act",
@@ -58,9 +57,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     alternateLocale: ["tr_TR"],
     url: "https://ercumenterden.com",
-    title: "Ercüment Erden | Founder & Sovereign Systems Architect",
+    title: "Ercüment Erden | Founder, ALPAR AI and DecasHub",
     description:
-      "Architecting Sovereign Systems: From Hardware to AI Accountability. Founder of ALPAR AI, DecasHub Sovereign, DeHost & Lionexia.",
+      "Architecting Sovereign Systems: From Hardware to AI Accountability. Founder, ALPAR AI and DecasHub.",
     siteName: "Ercüment Erden Executive Portal",
     images: [
       {
@@ -73,7 +72,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ercüment Erden | Founder & Sovereign Systems Architect",
+    title: "Ercüment Erden | Founder, ALPAR AI and DecasHub",
     description:
       "Architecting Sovereign Systems: From Hardware to AI Accountability.",
     creator: "@ercumenterden",
